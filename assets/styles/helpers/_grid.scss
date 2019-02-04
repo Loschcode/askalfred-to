@@ -1,39 +1,55 @@
-// ===========================================================
-// Grid
-// ===========================================================
-//
-// @see http://gridle.org/
-//
-// Setup the grid system with gridle
-//
+/**
+ * Default global spacing units
+ */
 
-// Dependency
-@import 'gridle';
+$spacing-unit:  10px !default;
+$border-radius: 5px !default;
 
-// Setting up the grid
-@include gridle_setup((context: 12, gutter-width: 10px, direction: ltr, debug: true));
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
 
-@include gridle_register_state(mobile, (max-width : 768px));
-@include gridle_register_state(tablet, (min-width : 768px));
-@include gridle_register_state(desktop, (min-width : 992px));
-@include gridle_register_state(lg, (min-width : 1200px));
+// Default
+$small-breakpoint:      480px !default;
+$medium-breakpoint:     760px !default;
+$wide-breakpoint:       960px !default;
+$x-wide-breakpoint:     1160px !default;
 
-// Generate css classes (to use in the html)
-@include gridle_generate_classes();
+/*------------------------------------*\
+    #GRID
+\*------------------------------------*/
 
-// Setup the static container
-.container {
-  margin : 0 auto;
-  max-width : 960px;
-  width: 95%;
+/**
+ * We use the Avalanche CSS grid system to achieve layout. These settings
+ * override the default settings of the library. A list of all configurable
+ * settings can be found here: https://github.com/colourgarden/avalanche
+ */
 
-  @include gridle_state(md) {
-    width: 100%;
-  }
-}
+$av-gutter:  $spacing-unit;
+$av-widths:  (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-[class*="grid-"] {
-  @include gridle_state(xs) {
-    width: 100%;
-  }
-}
+$av-breakpoint-class-chain:  '-at-';
+$av-width-class-style:       'percent';
+$av-width-class-namespace:   'grid__cell--';
+
+$av-enable-grid-right:   true;
+$av-enable-grid-flush:   true;
+$av-enable-grid-middle:  true;
+$av-enable-grid-auto:    true;
+$av-enable-grid-rev:     true;
+$av-enable-grid-center:  true;
+$av-enable-grid-large:   true;
+
+/**
+ * The following is required to ensure the grid's breakpoints stay up to date
+ * when changed in the project.
+ */
+
+$av-breakpoints: (
+    'small':    "screen and (min-width: #{$small-breakpoint})",
+    'medium':   "screen and (min-width: #{$medium-breakpoint})",
+    'wide':     "screen and (min-width: #{$wide-breakpoint})",
+    'x-wide':   "screen and (min-width: #{$x-wide-breakpoint})",
+);
+
+@import 'node_modules/avalanche-css/avalanche';

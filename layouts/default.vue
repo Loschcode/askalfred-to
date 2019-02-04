@@ -2,26 +2,21 @@
   <div class="default">
     <div class="container">
 
-      <!-- Buttons top right -->
-      <div class="row">
-        <div class="gr-3">
-          How does it work ?
+      <div class="grid">
+        <!-- Buttons top right -->
+          <div class="grid__cell grid__cell--30">
+            How does it work ?
+          </div>
+          <div class="grid__cell grid__cell--30">
+            About us
+          </div>
+          <div class="grid__cell grid__cell--30">
+            Ask me anything
+          </div>
         </div>
-        <div class="gr-3">
-          About us
-        </div>
-        <div class="gr-3">
-          Ask me anything
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="gr-3">
-          I'm alfred
-        </div>
-        <div class="gr-9">
-
-        </div>
+      <!-- Inside layout -->
+      <div>
         <nuxt />
       </div>
     </div>
