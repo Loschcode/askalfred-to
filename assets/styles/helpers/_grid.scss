@@ -8,28 +8,32 @@
 //
 
 // Dependency
-@import 'gridle'
+@import 'gridle';
 
 // Setting up the grid
-// +gridle_setup((context: 12, gutter-width: 10px, direction: ltr, debug: true))
+@include gridle_setup((context: 12, gutter-width: 10px, direction: ltr, debug: true));
 
-// +gridle_register_state(mobile, (max-width : 768px))
-// +gridle_register_state(tablet, (min-width : 768px))
-// +gridle_register_state(desktop, (min-width : 992px))
-// +gridle_register_state(lg, (min-width : 1200px))
+@include gridle_register_state(mobile, (max-width : 768px));
+@include gridle_register_state(tablet, (min-width : 768px));
+@include gridle_register_state(desktop, (min-width : 992px));
+@include gridle_register_state(lg, (min-width : 1200px));
 
-// // Generate css classes (to use in the html)
-// +gridle_generate_classes()
+// Generate css classes (to use in the html)
+@include gridle_generate_classes();
 
-// // Setup the static container
-// .container
-//   margin : 0 auto
-//   max-width : 960px
-//   width: 95%
+// Setup the static container
+.container {
+  margin : 0 auto;
+  max-width : 960px;
+  width: 95%;
 
-//   +gridle_state(md)
-//     width: 100%
+  @include gridle_state(md) {
+    width: 100%;
+  }
+}
 
-// [class*="grid-"]
-//   +gridle_state(xs)
-//     width: 100%
+[class*="grid-"] {
+  @include gridle_state(xs) {
+    width: 100%;
+  }
+}
