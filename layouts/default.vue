@@ -1,45 +1,50 @@
 <template>
-  <div class="default">
-    <div class="container">
-
-      <div class="grid grid--right">
-        <div class="grid__cell grid__cell--50">
-          <!-- Buttons top right -->
-          <div class="grid">
-            <div class="grid__cell grid__cell--33">
+  <div class="default wrap container-fluid">
+    <div class="row">
+      <div class="col-md-offset-6 col-md-6">
+        <!-- Buttons top right -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="box">
               How does it work ?
             </div>
-            <div class="grid__cell grid__cell--33">
+          </div>
+          <div class="col-md-4">
+            <div class="box">
               About us
             </div>
-            <div class="grid__cell grid__cell--33">
-              Ask me anything
+          </div>
+          <div class="col-md-4">
+            <div class="box">Ask me anything
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="grid">
-        <div class="grid__cell grid__cell--50">
+    <div class="row middle-md">
+      <div class="col-md-6">
+        <div class="box">
           <h1>I'm Alfred</h1>
           <h2>Are you tired of losing time ?</h2>
-          <li>
-            <ul>You give me the task</ul>
-            <ul>I work on it</ul>
-            <ul>You enjoy the result</ul>
-          </li>
+          <ul>
+            <li>You give me the task</li>
+            <li>I work on it</li>
+            <li>You enjoy the result</li>
+          </ul>
 
           <a href="#">Ask me anything</a>
         </div>
-        <div class="grid__cell grid__cell--50">
-          IMAGE
-        </div>
       </div>
 
-      <!-- Inside layout -->
-      <div>
-        <nuxt />
+      <div class="col-md-6">
+        <div class="box">IMAGE</div>
       </div>
+    </div>
+
+    <!-- Inside layout -->
+    <div>
+      <nuxt />
     </div>
   </div>
 </template>
