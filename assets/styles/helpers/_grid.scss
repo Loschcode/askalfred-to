@@ -1,55 +1,55 @@
-/**
- * Default global spacing units
- */
+// /**
+//  * Default global spacing units
+//  */
 
-$spacing-unit:  10px !default;
-$border-radius: 5px !default;
+// $spacing-unit:  0px !default;
+// $border-radius: 5px !default;
 
-/*------------------------------------*\
-    #BREAKPOINTS
-\*------------------------------------*/
+// /*------------------------------------*\
+//     #BREAKPOINTS
+// \*------------------------------------*/
 
-// Default
-$small-breakpoint:      480px !default;
-$medium-breakpoint:     760px !default;
-$wide-breakpoint:       960px !default;
-$x-wide-breakpoint:     1160px !default;
+// // Default
+// $small-breakpoint:      480px !default;
+// $medium-breakpoint:     760px !default;
+// $wide-breakpoint:       960px !default;
+// $x-wide-breakpoint:     1160px !default;
 
-/*------------------------------------*\
-    #GRID
-\*------------------------------------*/
+// /*------------------------------------*\
+//     #GRID
+// \*------------------------------------*/
 
-/**
- * We use the Avalanche CSS grid system to achieve layout. These settings
- * override the default settings of the library. A list of all configurable
- * settings can be found here: https://github.com/colourgarden/avalanche
- */
+// /**
+//  * We use the Avalanche CSS grid system to achieve layout. These settings
+//  * override the default settings of the library. A list of all configurable
+//  * settings can be found here: https://github.com/colourgarden/avalanche
+//  */
 
-$av-gutter:  $spacing-unit;
-$av-widths:  (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+// $av-gutter:  $spacing-unit;
+// $av-widths:  (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-$av-breakpoint-class-chain:  '-at-';
-$av-width-class-style:       'percent';
-$av-width-class-namespace:   'grid__cell--';
+// $av-breakpoint-class-chain:  '-at-';
+// $av-width-class-style:       'percent';
+// $av-width-class-namespace:   'grid__cell--';
 
-$av-enable-grid-right:   true;
-$av-enable-grid-flush:   true;
-$av-enable-grid-middle:  true;
-$av-enable-grid-auto:    true;
-$av-enable-grid-rev:     true;
-$av-enable-grid-center:  true;
-$av-enable-grid-large:   true;
+// $av-enable-grid-right:   true;
+// $av-enable-grid-flush:   true;
+// $av-enable-grid-middle:  true;
+// $av-enable-grid-auto:    true;
+// $av-enable-grid-rev:     true;
+// $av-enable-grid-center:  true;
+// $av-enable-grid-large:   true;
 
-/**
- * The following is required to ensure the grid's breakpoints stay up to date
- * when changed in the project.
- */
+// /**
+//  * The following is required to ensure the grid's breakpoints stay up to date
+//  * when changed in the project.
+//  */
 
-$av-breakpoints: (
-    'small':    "screen and (min-width: #{$small-breakpoint})",
-    'medium':   "screen and (min-width: #{$medium-breakpoint})",
-    'wide':     "screen and (min-width: #{$wide-breakpoint})",
-    'x-wide':   "screen and (min-width: #{$x-wide-breakpoint})",
-);
+// $av-breakpoints: (
+//     'small':    "screen and (min-width: #{$small-breakpoint})",
+//     'medium':   "screen and (min-width: #{$medium-breakpoint})",
+//     'wide':     "screen and (min-width: #{$wide-breakpoint})",
+//     'x-wide':   "screen and (min-width: #{$x-wide-breakpoint})",
+// );
 
-@import 'node_modules/avalanche-css/avalanche';
+// @import 'node_modules/avalanche-css/avalanche';
