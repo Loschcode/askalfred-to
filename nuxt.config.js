@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   /*
    ** Headers of the page
@@ -34,6 +36,7 @@ module.exports = {
      */
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
+        config.resolve.alias["@"] = path.resolve("./");
         config.module.rules.push({
           enforce: "pre",
           test: /\.(js|vue)$/,

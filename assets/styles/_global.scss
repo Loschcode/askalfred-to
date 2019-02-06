@@ -1,40 +1,51 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
-  margin: 0;
-  font-family: $font-default
+* {
+  box-sizing: border-box;
 }
 
-// hr {
-//   border-top: 1px solid #eee;
-// }
+html,
+body {
+  height: 100%;
+  font-family: $font-default;
+  font-size: 16px;
+}
 
-// p {
-//   line-height: 1.6;
-//   text-indent: 1em;
-// }
-
-// ol {
-//   padding-left: 0;
-//   padding-right: 0;
-// }
-
-// li {
-//   margin-top: 0.4em;
-// }
-
-// h1 {
-//   font-size: 30px;
-//   span {
-//     font-size: 40px;
-//     vertical-align: text-top;
-//   }
-// }
-
-.row {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
+  -webkit-appearance: none;
+}
+
+input:focus,
+input:active {
+  outline: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-family: $font-title;
+}
+
+p {
+  font-size: 2.1rem;
+  font-family: $font-subtitle;
+}
+
+a {
+  text-decoration: none;
 }
