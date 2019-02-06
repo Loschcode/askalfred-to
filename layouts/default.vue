@@ -3,30 +3,32 @@
     <div class="wrap container-fluid">
       <div class="header-background"></div>
       <div class="header">
-        <div class="row">
-          <div class="col-md-offset-6 col-md-6">
+        <div class="row middle-md">
+          <div class="col-md-offset-5 col-md-7">
             <!-- Buttons top right -->
-            <div class="row">
+            <div class="row middle-md header-links">
               <div class="col-md-4">
-                <div class="box">
-                  How does it work ?
+                <div class="box header-links__link">
+                  <a href="#">How does it work?</a>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="box">
-                  About us
+                <div class="box header-links__link">
+                  <a href="#">About us</a>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="box">
-                  Ask me anything
+                <div class="box header-links__link">
+                  <div class="header-links__link--round">
+                    <a href="#">Ask me anything</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row middle-md">
+        <div class="row top-md">
           <div class="col-md-6">
             <div class="box header-left">
               <h1>I'm Alfred</h1>
@@ -47,7 +49,11 @@
           </div>
 
           <div class="col-md-6">
-            <div class="box">IMAGE</div>
+            <div class="box">
+              <div class="header-image">
+                <img src="/header_image.svg" />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -68,14 +74,37 @@
 <style lang="scss">
 @import "assets/styles/app";
 
+.header-image {
+  margin: 3em;
+  width: 20em;
+}
+
+.header-links {
+  a {
+    color: $color-white;
+  }
+  margin: auto;
+  padding-top: 2em;
+}
+
+.header-links__link {
+  text-align: center;
+}
+
+.header-links__link--round {
+  border-radius: 2em;
+  padding: 0.4em 0.8em 0.4em 0.8em;
+  border: 1px solid $color-white;
+}
+
 .call-to-action {
   margin: -0.5em;
   border-radius: 2em;
-  padding: 1.2em 3.3em 1.2em 3.3em;
-  font-size: 0.9rem;
+  padding: 1.3em 4em 1.3em 4em;
+  font-family: $font-alternative;
+  font-size: 0.8rem;
   text-transform: uppercase;
   background-color: $color-white;
-  font-family: $font-alternative;
   color: $color-blue;
   font-weight: bold;
 }
@@ -103,7 +132,8 @@
 }
 
 .header-left {
-  margin: 3em;
+  margin-left: 3em;
+  margin-top: 1em;
 
   p {
     padding-top: 0.3em;
@@ -111,7 +141,7 @@
 
   ul {
     padding-top: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 3.6em;
     list-style-type: none;
     list-style-position: inside;
     li {
@@ -119,6 +149,7 @@
       background: url("/bullet.svg") no-repeat left 10px;
       font-size: 1.2rem;
       margin-top: 0.7em;
+      font-weight: 200;
     }
   }
 }
