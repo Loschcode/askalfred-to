@@ -155,7 +155,11 @@
 }
 
 .header-introduction {
-  margin-left: spacing(7);
+  margin-left: spacing(15);
+  @include breakpoint("md") {
+    margin-left: spacing(10);
+  }
+
   margin-top: spacing(3);
 
   p {
