@@ -4,7 +4,7 @@
       <div class="header-background"></div>
       <div class="header">
         <div class="row middle-md">
-          <div class="col-md-offset-5 col-md-7">
+          <div class="col-md-offset-5 col-md-7 +more-than-md">
             <!-- Buttons top right -->
             <div class="row middle-md header-links">
               <div class="col-md-4">
@@ -29,7 +29,7 @@
         </div>
 
         <div class="row top-md">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="box header-left">
               <h1>I'm Alfred</h1>
               <p>Are you tired of<br />losing time ?</p>
@@ -48,9 +48,9 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6">
             <div class="box">
-              <div class="header-image">
+              <div class="header-image +more-than-xs">
                 <img src="/header_image.svg" />
               </div>
             </div>
@@ -125,10 +125,31 @@
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   padding-bottom: 33em;
+
+  @include breakpoint("sm") {
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    padding-bottom: 29em;
+  }
+  @include breakpoint("xs") {
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+  }
 }
 
 .after-background {
-  padding-top: 10em;
+  @include breakpoint("lg") {
+    padding-top: 2em;
+  }
+  @include breakpoint("md") {
+    padding-top: 5em;
+  }
+  @include breakpoint("sm") {
+    padding-top: 2em;
+  }
+  @include breakpoint("xs") {
+    padding-top: 10em;
+  }
 }
 
 .header-left {
