@@ -19,9 +19,9 @@
               </div>
               <div class="col-md-4">
                 <div class="box header-links__link">
-                  <div class="header-links__link--round">
+                  <span class="header-links__link--round">
                     <a href="#">Ask me anything</a>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@
 
 .header-image {
   margin: 3em;
-  width: 20em;
+  width: 22em;
 }
 
 .header-links {
@@ -93,7 +93,7 @@
 
 .header-links__link--round {
   border-radius: 2em;
-  padding: 0.4em 0.8em 0.4em 0.8em;
+  padding: 0.4em 1.2em 0.4em 1.2em;
   border: 1px solid $color-white;
 }
 
