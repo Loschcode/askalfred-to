@@ -61,11 +61,21 @@
 
       <!-- Inside layout -->
       <div class="row">
-        <div class="after-background"></div>
+        <div class="after-header-background"></div>
       </div>
 
       <div class="row">
         <nuxt />
+      </div>
+
+      <div class="footer-background">
+        <div class="row center-xs">
+          <div class="col-md-12">
+            <div class="footer">
+              <a href="#">Privacy policy</a> | <a href="#">About us</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -113,6 +123,27 @@
   color: $color-white;
 }
 
+.footer {
+  color: $color-white;
+  padding: 2em;
+  a {
+    color: $color-white;
+  }
+}
+
+.footer-background {
+  position: absolute;
+  left: -15%;
+  width: 130%;
+  bottom: 0;
+  background-color: $color-blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
 .header-background {
   z-index: -1;
   position: absolute;
@@ -137,7 +168,7 @@
   }
 }
 
-.after-background {
+.after-header-background {
   @include breakpoint("lg") {
     padding-top: 2em;
   }
