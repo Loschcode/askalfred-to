@@ -19,3 +19,24 @@
     @warn "Breakpoint mixin supports: mobile, computer";
   }
 }
+
+@mixin bottom-radius($percent) {
+  border-bottom-left-radius: $percent;
+  border-bottom-right-radius: $percent;
+}
+
+@mixin top-radius($percent) {
+  border-top-left-radius: $percent;
+  border-top-right-radius: $percent;
+}
+
+@mixin background-absolute() {
+  position: absolute;
+  left: -15%;
+  width: 130%;
+}
+
+@mixin default-list() {
+  list-style-type: none;
+  list-style-position: inside;
+}

@@ -1,0 +1,11 @@
+@function sizing($number: 1) {
+  @return $sizing_unit * $number;
+}
+
+@function spacing($number: 1) {
+  @return $spacing_unit * $number;
+}
+
+@function pixeling($number: 1) {
+  @return $pixeling_unit * $number;
+}

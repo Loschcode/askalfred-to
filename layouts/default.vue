@@ -6,20 +6,20 @@
         <div class="row middle-md">
           <div class="col-md-offset-5 col-md-7 +more-than-md">
             <!-- Buttons top right -->
-            <div class="row middle-md header-links">
+            <div class="row middle-md header-top-links">
               <div class="col-md-4">
-                <div class="box header-links__link">
+                <div class="box header-top-links__link">
                   <a href="#">How does it work?</a>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="box header-links__link">
+                <div class="box header-top-links__link">
                   <a href="#">About us</a>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="box header-links__link">
-                  <span class="header-links__link--round">
+                <div class="box header-top-links__link">
+                  <span class="header-top-links__link--round">
                     <a href="#">Ask me anything</a>
                   </span>
                 </div>
@@ -30,7 +30,7 @@
 
         <div class="row top-md">
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="box header-left">
+            <div class="box header-introduction">
               <h1>I'm Alfred</h1>
               <p>Are you tired of<br />losing time ?</p>
               <ul>
@@ -89,7 +89,7 @@
   width: 22em;
 }
 
-.header-links {
+.header-top-links {
   a {
     color: $color-white;
   }
@@ -97,11 +97,11 @@
   padding-top: 2em;
 }
 
-.header-links__link {
+.header-top-links__link {
   text-align: center;
 }
 
-.header-links__link--round {
+.header-top-links__link--round {
   border-radius: 2em;
   padding: 0.4em 1.2em 0.4em 1.2em;
   border: 1px solid $color-white;
@@ -112,7 +112,7 @@
   border-radius: 2em;
   padding: 1.3em 4em 1.3em 4em;
   font-family: $font-alternative;
-  font-size: 0.8rem;
+  font-size: sizing(2);
   text-transform: uppercase;
   background-color: $color-white;
   color: $color-blue;
@@ -123,87 +123,73 @@
   color: $color-white;
 }
 
+.header-background {
+  @include background-absolute();
+  @include bottom-radius(50%);
+  z-index: -1;
+  background: $color-blue url("/header_background.svg") no-repeat fixed center;
+  padding-bottom: 33em;
+
+  @include breakpoint("sm") {
+    @include bottom-radius(40%);
+    padding-bottom: spacing(95);
+  }
+  @include breakpoint("xs") {
+    @include bottom-radius(20%);
+  }
+}
+
+.after-header-background {
+  @include breakpoint("lg") {
+    padding-top: spacing(5);
+  }
+  @include breakpoint("md") {
+    padding-top: spacing(18);
+  }
+  @include breakpoint("sm") {
+    padding-top: spacing(8);
+  }
+  @include breakpoint("xs") {
+    padding-top: spacing(30);
+  }
+}
+
+.header-introduction {
+  margin-left: spacing(7);
+  margin-top: spacing(3);
+
+  p {
+    padding-top: spacing(1);
+  }
+
+  ul {
+    @include default-list();
+    padding-top: spacing(3);
+    padding-bottom: spacing(11);
+
+    li {
+      padding-left: spacing(4);
+      background: url("/bullet.svg") no-repeat left spacing(1.5);
+      font-size: sizing(3);
+      margin-top: spacing(3);
+      font-weight: 200;
+    }
+  }
+}
+
 .footer {
+  padding: spacing(6);
   color: $color-white;
-  padding: 2em;
   a {
     color: $color-white;
   }
 }
 
 .footer-background {
-  position: absolute;
-  left: -15%;
-  width: 130%;
+  @include background-absolute();
+  @include top-radius(50%);
   bottom: 0;
-  background-color: $color-blue;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-}
-
-.header-background {
-  z-index: -1;
-  position: absolute;
-  left: -15%;
-  width: 130%;
-  background-image: url("/header_background.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  padding-bottom: 33em;
-
-  @include breakpoint("sm") {
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
-    padding-bottom: 29em;
-  }
-  @include breakpoint("xs") {
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-  }
-}
-
-.after-header-background {
-  @include breakpoint("lg") {
-    padding-top: 2em;
-  }
-  @include breakpoint("md") {
-    padding-top: 5em;
-  }
-  @include breakpoint("sm") {
-    padding-top: 2em;
-  }
-  @include breakpoint("xs") {
-    padding-top: 10em;
-  }
-}
-
-.header-left {
-  margin-left: 3em;
-  margin-top: 1em;
-
-  p {
-    padding-top: 0.3em;
-  }
-
-  ul {
-    padding-top: 1em;
-    padding-bottom: 3.6em;
-    list-style-type: none;
-    list-style-position: inside;
-    li {
-      padding-left: 1.2em;
-      background: url("/bullet.svg") no-repeat left 10px;
-      font-size: 1.2rem;
-      margin-top: 0.7em;
-      font-weight: 200;
-    }
-  }
+  background: $color-blue no-repeat fixed left;
 }
 </style>
 

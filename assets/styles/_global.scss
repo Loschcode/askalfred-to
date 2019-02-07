@@ -37,12 +37,12 @@ img {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: sizing(12);
   font-family: $font-title;
 }
 
 p {
-  font-size: 2.1rem;
+  font-size: sizing(6);
   font-family: $font-subtitle;
 }
 
