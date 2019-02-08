@@ -7,6 +7,7 @@ $font-logo: "Rancho", sans-serif;
 $font-text: $font-default;
 $font-title: $font-logo;
 $font-subtitle: $font-default;
+$font-button: $font-alternative;
 
 $color-blue-purple-gradient: linear-gradient(-140deg, #7f83ef 6%, #3a7bd5 100%);
 $color-white: #ffffff;
@@ -23,3 +24,5 @@ $background-up: $color-blue-purple-gradient;
 $spacing-unit: 0.3em;
 $sizing-unit: 0.4rem;
 $pixeling-unit: 10px;
+
+$big-radius: 2em;
