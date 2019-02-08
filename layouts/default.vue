@@ -6,7 +6,7 @@
         <div class="row middle-md">
           <div class="col-md-offset-5 col-md-7 +more-than-md">
             <!-- Buttons top right -->
-            <div class="row middle-md header__top-links">
+            <div class="row middle-md header__top-block">
               <div class="col-md-4">
                 <div class="box header__top-link">
                   <a href="#">How does it work?</a>
@@ -61,7 +61,7 @@
 
       <!-- Inside layout -->
       <div class="row">
-        <div class="header__background-after"></div>
+        <div class="header__background-spacing"></div>
       </div>
 
       <div class="row">
@@ -93,7 +93,7 @@
   width: spacing(70);
 }
 
-.header__top-links {
+.header__top-block {
   a {
     color: $color-white;
   }
@@ -127,6 +127,7 @@
   @include bottom-radius(50%);
   z-index: -1;
   background: $color-blue url("/header_background.svg") no-repeat fixed center;
+  background-size: cover;
   padding-bottom: spacing(110);
 
   @include breakpoint("md") {
