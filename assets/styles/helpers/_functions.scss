@@ -2,10 +2,18 @@
   @return $sizing_unit * $number;
 }
 
-@function spacing($number: 1) {
-  @return $spacing_unit * $number;
+// @function spacing($number: 1) {
+//   @return $spacing_unit * $number;
+// }
+
+@function spacing($first, $second: null, $third: null, $fourth: null) {
+  @return spacing-multiply($first) spacing-multiply($second) spacing-multiply($third) spacing-multiply($fourth);
 }
 
 @function pixeling($number: 1) {
   @return $pixeling_unit * $number;
+}
+
+@function spacing-multiply($value) {
+  @return if($value, ($value * $spacing_unit), null);
 }

@@ -85,8 +85,8 @@
 @import "assets/styles/app";
 
 .header-image {
-  margin: 3em;
-  width: 22em;
+  margin: spacing(10);
+  width: spacing(70);
 }
 
 .header-top-links {
@@ -94,7 +94,7 @@
     color: $color-white;
   }
   margin: auto;
-  padding-top: 2em;
+  padding-top: spacing(6);
 }
 
 .header-top-links__link {
@@ -103,7 +103,7 @@
 
 .header-top-links__link--round {
   border-radius: 2em;
-  padding: 0.4em 1.2em 0.4em 1.2em;
+  padding: spacing(1, 4, 1, 4); // 0.4em 1.2em 0.4em 1.2em;
   border: 1px solid $color-white;
 }
 
