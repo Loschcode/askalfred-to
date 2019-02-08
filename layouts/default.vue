@@ -1,8 +1,8 @@
 <template>
   <div class="default">
     <div class="wrap container-fluid">
-      <div class="header__background"></div>
       <div class="header">
+        <div class="header__background"></div>
         <div class="row middle-md">
           <div class="col-md-offset-5 col-md-7 +more-than-md">
             <!-- Buttons top right -->
@@ -127,6 +127,7 @@
   @include bottom-radius(50%);
   z-index: -1;
   background: $color-blue url("/header_background.svg") no-repeat fixed center;
+  overflow: hidden;
   background-size: cover;
   padding-bottom: spacing(110);
 
@@ -199,6 +200,7 @@
   @include top-radius(50%);
   bottom: 0;
   background: $color-blue no-repeat fixed left;
+  overflow: hidden;
 }
 </style>
 
