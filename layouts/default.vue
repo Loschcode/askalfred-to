@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <div class="row top-md">
+        <div class="row top-md center-xs center-sm">
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="box header__introduction">
               <h1>I'm Alfred</h1>
@@ -161,9 +161,15 @@
 }
 
 .header__introduction {
+  text-align: left;
+
   margin-left: spacing(15);
-  @include breakpoint("md") {
-    margin-left: spacing(10);
+  @include breakpoint("sm") {
+    margin-left: spacing(0);
+    display: block;
+  }
+  @include breakpoint("xs") {
+    display: inline-block;
   }
 
   margin-top: spacing(3);
