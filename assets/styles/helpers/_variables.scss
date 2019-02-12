@@ -9,16 +9,22 @@ $font-title: $font-logo;
 $font-subtitle: $font-default;
 $font-button: $font-alternative;
 
+// Colors
 $color-blue-purple-gradient: linear-gradient(-140deg, #7f83ef 6%, #3a7bd5 100%);
 $color-white: #ffffff;
 $color-light-grey: #fafbfe;
 
 $color-blue: #5f8ae4;
 
-// Colors
+$color-flashy-blue: #eef9ff;
+$color-grey-blueish: #becde2;
+
 $background-main: $color-white;
 $background-down: $color-light-grey;
 $background-up: $color-blue-purple-gradient;
+$background-message-request: $color-flashy-blue;
+
+$border-message-request: $color-grey-blueish;
 
 // Spacing
 $spacing-unit: 0.3em;
