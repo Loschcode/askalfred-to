@@ -15,7 +15,7 @@ body {
   height: 100%;
   font-family: $font-default;
   font-size: sizing(2.5);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

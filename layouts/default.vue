@@ -86,6 +86,7 @@
 
 .header {
   color: $color-white;
+  position: relative;
 }
 
 .header__image {
@@ -147,7 +148,7 @@
 
 .header__background-spacing {
   @include breakpoint("lg") {
-    padding-top: spacing(5);
+    padding-top: spacing(10);
   }
   @include breakpoint("md") {
     padding-top: spacing(8);
@@ -202,6 +203,7 @@
 }
 
 .footer__background {
+  margin-top: 10em;
   @include background-absolute();
   @include top-radius(50%);
   bottom: 0;
