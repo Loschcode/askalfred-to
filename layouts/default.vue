@@ -68,11 +68,13 @@
         <nuxt />
       </div>
 
-      <div class="footer__background">
-        <div class="row center-xs">
-          <div class="col-md-12">
-            <div class="footer">
-              <a href="#">Privacy policy</a> | <a href="#">About us</a>
+      <div class="footer">
+        <div class="footer__background">
+          <div class="row center-xs">
+            <div class="col-md-12">
+              <div class="footer__terms">
+                <a href="#">Privacy policy</a> | <a href="#">About us</a>
+              </div>
             </div>
           </div>
         </div>
@@ -148,7 +150,7 @@
 
 .header__background-spacing {
   @include breakpoint("lg") {
-    padding-top: spacing(10);
+    padding-top: spacing(17);
   }
   @include breakpoint("md") {
     padding-top: spacing(8);
@@ -195,6 +197,11 @@
 }
 
 .footer {
+  position: relative;
+  padding-top: spacing(20);
+}
+
+.footer__terms {
   padding: spacing(6);
   color: $color-white;
   a {
