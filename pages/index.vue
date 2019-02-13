@@ -6,14 +6,16 @@
     <!-- How does it work ? -->
     <div class="how">
       <div class="row">
-        <div class="how__background"></div>
+        <div class="how__title">
+          <h2>How does it work?</h2>
+        </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          HATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />
-
-          HATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />
-          WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />WHATEVER<br />
+          <div class="how__content">
+            Content here
+            <div class="how__after-content"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -23,11 +25,31 @@
 <style lang="scss">
 @import "assets/styles/app";
 
-.how__background {
+.how {
+  h2 {
+    font-size: sizing(4);
+    font-weight: 600;
+  }
+}
+.how__title {
   padding: 10vh;
   width: 100%;
   @include top-radius(100%);
-  background-color: red; //$color-light-grey;
+  background-color: $color-light-grey;
+}
+
+.how__content {
+  position: relative;
+  background-color: $color-light-grey;
+}
+
+.how__after-content {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 110%;
+  height: 7vh;
+  background-color: $color-light-grey;
 }
 </style>
 
