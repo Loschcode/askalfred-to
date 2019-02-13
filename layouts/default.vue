@@ -145,6 +145,8 @@
   }
   @include breakpoint("xs") {
     @include bottom-radius(20%);
+    left: -25%;
+    width: 150%;
   }
 }
 

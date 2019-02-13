@@ -1,12 +1,12 @@
 <template>
   <section class="col-md-12">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-offset-1 col-md-4">
         <div class="box what__image">
           <img src="/index_phone.svg" />
         </div>
       </div>
-      <div class="col-md-offset-4 col-md-4">
+      <div class="col-md-offset-2 col-md-4">
         <div class="box what__details">
           <h2>What can you ask to Alfred?</h2>
           <p>He can do any task you don't want to do.</p>
@@ -34,8 +34,22 @@
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <a
+                class="what__call-to-action"
+                href="#"
+              >
+                See more examples
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+      How does it work stuff
     </div>
   </section>
 </template>
@@ -51,7 +65,19 @@ export default {
 <style lang="scss">
 @import "assets/styles/app";
 
+.what__call-to-action {
+  @include button-radius("big");
+  margin: -0.5em;
+  padding: spacing(4, 12, 4, 12);
+  font-size: sizing(2);
+  text-transform: uppercase;
+  background-color: $color-blue;
+  color: $color-white;
+  font-weight: bold;
+}
+
 .what__messages {
+  padding-bottom: spacing(8);
 }
 
 .messages {
