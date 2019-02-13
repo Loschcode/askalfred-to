@@ -1,55 +1,61 @@
 <template>
   <section class="col-md-12">
-    <div class="row">
-      <div class="col-md-offset-1 col-md-4">
-        <div class="box what__image">
-          <img src="/index_phone.svg" />
+    <!-- What can you ask ? -->
+    <div class="what">
+      <div class="row center-xs">
+        <div class="col-md-4">
+          <div class="box what__image +more-than-sm">
+            <img src="/index_phone.svg" />
+          </div>
         </div>
-      </div>
-      <div class="col-md-offset-2 col-md-4">
-        <div class="box what__details">
-          <h2>What can you ask to Alfred?</h2>
-          <p>He can do any task you don't want to do.</p>
+        <div class="col-md-offset-2 col-md-4">
+          <div class="box what__details">
+            <h2>What can you ask to Alfred?</h2>
+            <p>He can do any task you don't want to do.</p>
 
-          <div class="row">
-            <div class="col-md-12">
-              <div class="what__messages">
+            <div class="row center-xs">
+              <div class="col-md-12 col-xs-10">
+                <div class="what__messages">
 
-                <div class="row end-md">
-                  <div class="col-md-12">
-                    <div class="box messages messages__request">
-                      <div class="messages__request-arrow"></div>
-                      I want to organize a romantic dinner with my girlfriend.
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="box messages messages__request">
+                        <div class="messages__request-arrow"></div>
+                        I want to organize a romantic dinner with my girlfriend.
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row between-md">
-                  <div class="col-md-12">
-                    <div class="box messages messages__answer">
-                      <div class="messages__answer-arrow"></div>
-                      Sure, what budget do you have?
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="box messages messages__answer">
+                        <div class="messages__answer-arrow"></div>
+                        Sure, what budget do you have?
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-md-12">
-              <a
-                class="what__call-to-action"
-                href="#"
-              >
-                See more examples
-              </a>
+            <div class="row center-xs">
+              <div class="col-md-12">
+                <a
+                  class="what__call-to-action"
+                  href="#"
+                >
+                  See more examples
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      How does it work stuff
+    <!-- How does it work ? -->
+    <div class="how">
+      <div class="row">
+        How does it work stuff
+      </div>
     </div>
   </section>
 </template>
@@ -64,6 +70,10 @@ export default {
 
 <style lang="scss">
 @import "assets/styles/app";
+
+.what {
+  padding-bottom: spacing(10);
+}
 
 .what__call-to-action {
   @include button-radius("big");

@@ -64,7 +64,7 @@
         <div class="header__background-spacing"></div>
       </div>
 
-      <div class="row">
+      <div class="row center-xs">
         <nuxt />
       </div>
 
