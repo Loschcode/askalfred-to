@@ -7,5 +7,19 @@
 }
 
 .start-sm {
-  text-align: left;
+  @include breakpoint("sm") {
+    text-align: left;
+  }
+}
+
+.start-md {
+  @include breakpoint("md") {
+    text-align: left;
+  }
+}
+
+.start-lg {
+  @include breakpoint("lg") {
+    text-align: left;
+  }
 }
