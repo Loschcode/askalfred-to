@@ -14,12 +14,22 @@
           <div class="row">
             <div class="col-md-12">
               <div class="what__messages">
-                <div class="messages messages__request">
-                  <div class="messages__request-arrow"></div>
-                  I want to organize a romantic dinner with my girlfriend.
+
+                <div class="row end-md">
+                  <div class="col-md-12">
+                    <div class="box messages messages__request">
+                      <div class="messages__request-arrow"></div>
+                      I want to organize a romantic dinner with my girlfriend.
+                    </div>
+                  </div>
                 </div>
-                <div class="messages messages__answer">
-                  Sure, what budget do you have?
+                <div class="row between-md">
+                  <div class="col-md-12">
+                    <div class="box messages messages__answer">
+                      <div class="messages__answer-arrow"></div>
+                      Sure, what budget do you have?
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -42,27 +52,34 @@ export default {
 @import "assets/styles/app";
 
 .what__messages {
-  padding-top: spacing(5);
 }
 
 .messages {
   position: relative;
   padding: spacing(3);
+  display: flex;
+  margin-top: spacing(1);
+  margin-bottom: spacing(1);
+  max-width: 370px;
+  word-wrap: break-word;
+  border-radius: 2px;
 }
 
 .messages__request {
   background-color: $background-message-request;
   border: 1px solid $border-message-request;
-  border-radius: 2px;
+  text-align: right;
+  float: right;
 }
 
 .messages__request-arrow {
   position: absolute;
-  right: -30px;
+  right: -18px;
+  top: 32%;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 12.5px 2px 12.5px 25px;
+  border-width: 10px 2px 10px 15px;
   border-color: transparent transparent transparent $border-message-request;
 }
 
@@ -71,11 +88,41 @@ export default {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 12.5px 2px 12.5px 25px;
+  border-width: 10px 2px 10px 15px;
   border-color: transparent transparent transparent $background-message-request;
   content: "";
-  top: -22px;
+  top: -10px;
   right: 0px;
+}
+
+.messages__answer {
+  background-color: $background-message-answer;
+  border: 1px solid $border-message-answer;
+  text-align: left;
+  float: left;
+}
+
+.messages__answer-arrow {
+  position: absolute;
+  left: -18px;
+  top: 32%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 15px 10px 2px;
+  border-color: transparent $border-message-answer transparent transparent;
+}
+
+.messages__answer-arrow:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 15px 10px 2px;
+  border-color: transparent $background-message-answer transparent transparent;
+  content: "";
+  top: -10px;
+  left: 0px;
 }
 
 .what__image {
@@ -91,6 +138,7 @@ export default {
   }
   p {
     padding-top: spacing(1);
+    padding-bottom: spacing(5);
     font-size: sizing(3);
     font-weight: 200;
   }
