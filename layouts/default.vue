@@ -1,6 +1,6 @@
 <template>
   <div class="default">
-    <div class="wrap container-fluid">
+    <div class="wrap container">
       <div class="header">
         <div class="header__background"></div>
         <div class="row middle-md">
