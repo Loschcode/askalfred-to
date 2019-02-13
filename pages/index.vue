@@ -37,14 +37,16 @@
               </div>
             </div>
 
-            <div class="row center-xs">
+            <div class="row center-xs start-sm">
               <div class="col-md-12">
-                <a
-                  class="what__call-to-action"
-                  href="#"
-                >
-                  See more examples
-                </a>
+                <div class="box">
+                  <a
+                    class="what__call-to-action"
+                    href="#"
+                  >
+                    See more examples
+                  </a>
+                </div>
               </div>
             </div>
           </div>
