@@ -90,10 +90,6 @@ export default {
 }
 
 .what__details {
-  h2 {
-    font-size: sizing(4);
-    font-weight: 600;
-  }
   p {
     padding-top: spacing(1);
     padding-bottom: spacing(5);

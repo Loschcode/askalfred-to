@@ -6,18 +6,21 @@ $font-logo: "Rancho", sans-serif;
 
 $font-text: $font-default;
 $font-title: $font-logo;
-$font-subtitle: $font-default;
+$font-subtitle: $font-alternative;
+$font-paragraph: $font-default;
 $font-button: $font-alternative;
 
 // Colors
 $color-blue-purple-gradient: linear-gradient(-140deg, #7f83ef 6%, #3a7bd5 100%);
 $color-white: #ffffff;
 $color-light-grey: #fafbfe;
-
 $color-blue: #5f8ae4;
+$color-persistent-blue: #4979d5;
 
 $color-flashy-blue: #eef9ff;
 $color-grey-blueish: #becde2;
+
+$color-detail: #808988;
 
 $background-main: $color-white;
 $background-down: $color-light-grey;
