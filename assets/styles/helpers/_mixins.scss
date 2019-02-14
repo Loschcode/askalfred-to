@@ -36,6 +36,12 @@
   width: 130%;
 }
 
+@mixin no-max-width() {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
 @mixin default-list() {
   list-style-type: none;
   list-style-position: inside;

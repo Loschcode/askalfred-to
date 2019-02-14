@@ -1,6 +1,6 @@
 <template>
   <div class="default">
-    <div class="wrap container">
+    <div class="wrap container-fluid">
       <div class="header">
         <div class="header__background"></div>
         <div class="row middle-md">
@@ -58,15 +58,20 @@
         </div>
 
       </div>
-
       <!-- Inside layout -->
       <div class="row">
         <div class="header__background-spacing"></div>
       </div>
 
+    </div>
+
+    <div class="wrap container">
       <div class="row center-xs">
         <nuxt />
       </div>
+    </div>
+
+    <div class="wrap container-fluid">
 
       <div class="footer">
         <div class="footer__background">
@@ -77,6 +82,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

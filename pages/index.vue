@@ -12,7 +12,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="how__content">
+          <div class="how__content undo-wrap">
             Content here
             <div class="how__after-content"></div>
           </div>
@@ -31,24 +31,26 @@
     font-weight: 600;
   }
 }
+
 .how__title {
   padding: 10vh;
-  width: 100%;
+  @include no-max-width();
   @include top-radius(100%);
   background-color: $color-light-grey;
 }
 
 .how__content {
+  @include no-max-width();
   position: relative;
   background-color: $color-light-grey;
 }
 
 .how__after-content {
+  @include no-max-width();
   z-index: -1;
   position: absolute;
   top: 0;
-  width: 110%;
-  height: 7vh;
+  height: 12vh;
   background-color: $color-light-grey;
 }
 </style>

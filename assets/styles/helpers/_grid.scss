@@ -6,6 +6,10 @@
   max-width: 1420px;
 }
 
+.undo-wrap {
+  max-width: none;
+}
+
 .start-sm {
   @include breakpoint("sm") {
     text-align: left;
