@@ -129,6 +129,7 @@
   background-color: $color-white;
   color: $color-blue;
   font-weight: bold;
+  margin: auto 0;
 }
 
 .header__background {
