@@ -50,7 +50,7 @@
                   </div>
                 </div>
                 <!-- Image -->
-                <div class="col-md-5 col-xs-8 first-xs first-sm last-md">
+                <div class="col-md-4 col-xs-8 first-xs first-sm last-md">
                   <div class="box">
                     <img src="/he-works-on-it.svg" />
                   </div>
@@ -80,7 +80,6 @@
               </div>
             </div>
 
-            <!-- TODO: redo this shit it's not working -->
             <div class="how__after-content"></div>
           </div>
         </div>
@@ -93,9 +92,9 @@
 @import "assets/styles/app";
 
 .how__details {
+  padding-bottom: spacing(5);
   @include breakpoint("sm") {
     padding-top: spacing(5);
-    padding-bottom: spacing(5);
   }
 
   img {
@@ -128,7 +127,8 @@
 }
 
 .how__title {
-  padding: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 7vh;
   @include no-max-width();
   @include top-radius(100%);
   background-color: $color-light-grey;
