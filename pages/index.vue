@@ -14,19 +14,66 @@
         <div class="col-md-12">
           <div class="how__content undo-wrap">
 
+            <!-- You send requests to Alfred -->
             <div class="how__details">
               <div class="row center-xs middle-xs">
+                <!-- Image -->
                 <div class="col-md-5 col-xs-8">
                   <div class="box">
                     <img src="/how-you-send-request-to-alfred.svg" />
                   </div>
                 </div>
+                <!-- Text -->
                 <div class="col-md-4 col-xs-8">
                   <div class="box">
                     <h3>You send requests to Alfred</h3>
                     <p>If you encounter a time consuming task, just give it away to Alfred. It can be as simple as ordering something where phone calls are involved, organizing some nice vacations without specific dates or even fetching the documents needed for a visa.</p>
                     <div class="how__details--tag">
                       Step 1
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- He works on it -->
+            <div class="how__details">
+              <div class="row center-xs middle-xs">
+                <!-- Text -->
+                <div class="col-md-offset-1 col-md-4 col-xs-8">
+                  <div class="box">
+                    <h3>He works on it</h3>
+                    <p>Alfred will work on the task and eventually get back to you for more details or data so he can fulfill it correctly. He will do all the hard part of searching, calling, registering for you.</p>
+                    <div class="how__details--tag">
+                      Step 2
+                    </div>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-md-5 col-xs-8 first-xs first-sm last-md">
+                  <div class="box">
+                    <img src="/he-works-on-it.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- He gives you the results -->
+            <div class="how__details">
+              <div class="row center-xs middle-xs">
+                <!-- Image -->
+                <div class="col-md-5 col-xs-8">
+                  <div class="box">
+                    <img src="/he-gives-you-the-results.svg" />
+                  </div>
+                </div>
+                <!-- Text -->
+                <div class="col-md-4 col-xs-8">
+                  <div class="box">
+                    <h3>He gives you the results</h3>
+                    <p>Alfred will give you the result of his investigation and all the details of what he has done. Depending your decision he can even go further and keep going with it until you’re 100% satisfied.</p>
+                    <div class="how__details--tag">
+                      Step 3
                     </div>
                   </div>
                 </div>
@@ -46,8 +93,14 @@
 @import "assets/styles/app";
 
 .how__details {
+  @include breakpoint("sm") {
+    padding-top: spacing(5);
+    padding-bottom: spacing(5);
+  }
+
   img {
     width: 15em;
+    padding-bottom: spacing(2);
   }
   h3 {
     color: $color-persistent-blue;
@@ -89,10 +142,8 @@
 
 .how__after-content {
   @include no-max-width();
-  z-index: -1;
   position: absolute;
-  top: 0;
-  height: 12vh;
+  height: 10vh;
   background-color: $color-light-grey;
 }
 </style>
