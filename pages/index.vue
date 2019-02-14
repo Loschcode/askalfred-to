@@ -15,13 +15,13 @@
           <div class="how__content undo-wrap">
 
             <div class="how__details">
-              <div class="row center-md middle-md">
-                <div class="col-md-5">
+              <div class="row center-xs middle-xs">
+                <div class="col-md-5 col-xs-8">
                   <div class="box">
                     <img src="/how-you-send-request-to-alfred.svg" />
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-8">
                   <div class="box">
                     <h3>You send requests to Alfred</h3>
                     <p>If you encounter a time consuming task, just give it away to Alfred. It can be as simple as ordering something where phone calls are involved, organizing some nice vacations without specific dates or even fetching the documents needed for a visa.</p>
@@ -57,6 +57,9 @@
   p {
     font-size: sizing(2.5);
     max-width: 80%;
+    @include breakpoint("xs") {
+      max-width: 100%;
+    }
     color: $color-detail;
     text-align: justify;
   }
@@ -69,9 +72,6 @@
   font-size: sizing(2);
   text-transform: uppercase;
   font-weight: 600;
-}
-
-.how {
 }
 
 .how__title {

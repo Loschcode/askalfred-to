@@ -35,7 +35,7 @@
             </div>
           </div>
 
-          <div class="row center-xs start-sm">
+          <div class="row center-xs center-sm start-md start-lg">
             <div class="col-md-12">
               <div class="box">
                 <a
