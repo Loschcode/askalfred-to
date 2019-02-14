@@ -6,7 +6,7 @@
           <img src="/index_phone.svg" />
         </div>
       </div>
-      <div class="col-md-offset-2 col-md-4 center-sm start-lg">
+      <div class="col-md-offset-1 col-md-4 center-sm start-lg">
         <div class="box what__details">
           <h2>What can you ask to Alfred?</h2>
           <p>He can do any task you don't want to do.</p>
@@ -85,7 +85,7 @@ export default {
 
 .what__image {
   img {
-    width: 200em;
+    height: 40vh;
   }
 }
 
