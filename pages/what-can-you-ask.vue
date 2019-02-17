@@ -87,7 +87,7 @@
     @include button-radius(medium);
     background-color: #e4edff;
     p {
-      color: #4979d5;
+      color: $color-persistent-blue;
     }
   }
 
@@ -96,14 +96,14 @@
   padding: sizing(3);
 
   h3 {
-    color: #4979d5;
+    color: $color-persistent-blue;
     font-weight: 600;
     text-align: left;
   }
 
   p {
     margin-top: sizing(2);
-    color: #808988;
+    color: $color-detail;
     font-size: sizing(2.7);
     text-align: justify;
   }
