@@ -2,7 +2,7 @@
   <div class="default-header">
     <div class="default-header__background"></div>
     <div class="row middle-md">
-      <div class="col-md-offset-5 col-md-7 +more-than-md">
+      <div class="col-md-offset-5 col-md-7 +more-than-sm">
         <!-- Buttons top right -->
         <div class="row middle-md default-header__top-block">
           <div class="col-md-4">
@@ -26,12 +26,12 @@
       </div>
     </div>
 
-    <div class="row top-md center-xs center-sm">
-      <div class="col-md-12">
+    <div class="row top-md center-xs center-sm start-md">
+      <div class="col-md-6 col-lg-5">
         <div class="box default-header__introduction">
           <h1>
-            <div class="head__first">What can you</div>
-            <div class="header__last">ask to Alfred?</div>
+            <div class="title__first">What can you</div>
+            <div class="title__last">ask to Alfred?</div>
           </h1>
         </div>
       </div>
@@ -45,6 +45,13 @@
 
 <style lang="scss">
 @import "assets/styles/app";
+.title__first {
+  text-align: left;
+}
+
+.title__last {
+  text-align: right;
+}
 
 .default-header {
   color: $color-white;

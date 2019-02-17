@@ -2,7 +2,7 @@
   <div class="landing-header">
     <div class="landing-header__background"></div>
     <div class="row middle-md">
-      <div class="col-md-offset-5 col-md-7 +more-than-md">
+      <div class="col-md-offset-5 col-md-7 +more-than-sm">
         <!-- Buttons top right -->
         <div class="row middle-md landing-header__top-block">
           <div class="col-md-4">
