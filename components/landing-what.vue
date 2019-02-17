@@ -3,7 +3,7 @@
     <div class="row center-xs">
       <div class="col-md-4">
         <div class="box what__image +more-than-sm">
-          <img src="/index_phone.svg" />
+          <img src="/landing-what/phone.svg" />
         </div>
       </div>
       <div class="col-md-offset-1 col-md-4 center-sm start-lg">
@@ -52,14 +52,6 @@
     </div>
   </div>
 </template>
-
-<script>
-
-export default {
-  components: {
-  }
-}
-</script>
 
 <style lang="scss">
 @import "assets/styles/app";
@@ -172,7 +164,7 @@ export default {
 
 <script>
 export default {
-  name: 'What',
+  name: 'LandingWhat',
   props: {
   }
 }
