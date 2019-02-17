@@ -5,14 +5,9 @@
       <div class="col-md-offset-5 col-md-7 +more-than-sm">
         <!-- Buttons top right -->
         <div class="row middle-md default-header__top-block">
-          <div class="col-md-4">
+          <div class="col-md-offset-4 col-md-4">
             <div class="box default-header__top-link">
               <a href="#">Back to home page</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box default-header__top-link">
-              <a href="#">About us</a>
             </div>
           </div>
           <div class="col-md-4">
@@ -30,8 +25,8 @@
       <div class="col-md-6 col-lg-5">
         <div class="box default-header__introduction">
           <h1>
-            <div class="title__first">What can you</div>
-            <div class="title__last">ask to Alfred?</div>
+            <div class="title__first">{{title[0]}}</div>
+            <div class="title__last">{{title[1]}}</div>
           </h1>
         </div>
       </div>
@@ -144,6 +139,9 @@
 <script>
 export default {
   name: 'DefaultHeader',
+  computed: {
+    title () { return this.$store.state.header.title }
+  },
   props: {
   }
 }

@@ -96,8 +96,13 @@
 </style>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
   layout: 'default',
+  created () {
+    this.$store.commit('header/setTitle', ['What can you', 'ask to Alfred'])
+  },
   components: {
   }
 }
