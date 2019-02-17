@@ -6,7 +6,7 @@
           <div class="privacy-policy__block">
             <h3>What does this policy cover</h3>
 
-            <p>Welcome to AskAlfred, a service served by the french company XXX-XXX-XXX (“AskAlfred,” “we,” or “us”). Our Privacy Policy explains how we collect, use, disclose, and protect information that applies to our Service, and your choices about the collection and use of your information.</p>
+            <p>Welcome to AskAlfred, a service served by the french company 753-806-413-00013 (“AskAlfred,” “we,” or “us”). Our Privacy Policy explains how we collect, use, disclose, and protect information that applies to our Service, and your choices about the collection and use of your information.</p>
 
             <p>This policy sets out how AskAlfred collects and uses the information that we collect about you when you use the AskAlfred services. This policy also explains the choices that you can make about the way that we use your information.</p>
 
@@ -187,7 +187,7 @@
   ul {
     @include default-list();
     padding-top: spacing(3);
-    padding-bottom: spacing(11);
+    padding-bottom: spacing(3);
 
     li {
       list-style-type: disc;
