@@ -139,6 +139,7 @@
 
   p {
     padding-top: spacing(1);
+    line-height: spacing(3);
   }
 
   ul {
