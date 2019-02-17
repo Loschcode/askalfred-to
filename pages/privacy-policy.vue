@@ -3,7 +3,7 @@
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-          <div class="privacy-policy__block">
+          <div class="page__block">
             <h3>What does this policy cover</h3>
 
             <p>Welcome to AskAlfred, a service served by the french company 753-806-413-00013 (“AskAlfred,” “we,” or “us”). Our Privacy Policy explains how we collect, use, disclose, and protect information that applies to our Service, and your choices about the collection and use of your information.</p>
@@ -164,38 +164,6 @@
 
 <style lang="scss">
 @import "assets/styles/app";
-.privacy-policy__block {
-  margin-left: sizing(5);
-  margin-right: sizing(5);
-  padding: sizing(5);
-  
-  color: $color-detail;
-  text-align: justify;
-
-  h3 {
-    color: $color-persistent-blue;
-    font-weight: 600;
-    text-align: left;
-    padding-top: spacing(5);
-  }
-
-  p {
-    margin-top: sizing(2);
-    font-size: sizing(2.7);
-  }
-
-  ul {
-    @include default-list();
-    padding-top: spacing(3);
-    padding-bottom: spacing(3);
-
-    li {
-      list-style-type: disc;
-      padding-left: spacing(2);
-      margin-top: spacing(1);
-    }
-  }
-}
 </style>
 
 <script>

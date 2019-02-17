@@ -1,0 +1,35 @@
+.page {
+}
+
+.page__block {
+  margin-left: sizing(5);
+  margin-right: sizing(5);
+  padding: sizing(5);
+  
+  color: $color-detail;
+  text-align: justify;
+
+  h3 {
+    color: $color-persistent-blue;
+    font-weight: 600;
+    text-align: left;
+    padding-top: spacing(5);
+  }
+
+  p {
+    margin-top: sizing(2);
+    font-size: sizing(2.7);
+  }
+
+  ul {
+    @include default-list();
+    padding-top: spacing(3);
+    padding-bottom: spacing(3);
+
+    li {
+      list-style-type: disc;
+      padding-left: spacing(2);
+      margin-top: spacing(1);
+    }
+  }
+}
