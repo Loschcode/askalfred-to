@@ -85,7 +85,7 @@
   &:hover {
     cursor: pointer;
     @include button-radius(medium);
-    background-color: #e4edff;
+    background-color: $background-hover-links;
     p {
       color: $color-persistent-blue;
     }
