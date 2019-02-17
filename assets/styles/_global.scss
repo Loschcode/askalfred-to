@@ -64,3 +64,8 @@ a {
   color: $color-blue;
   font-family: $font-button;
 }
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="default">
+  <div class="wrapper landing">
     <div class="wrap container-fluid">
       <landing-header />
     </div>

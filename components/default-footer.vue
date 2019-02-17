@@ -16,7 +16,6 @@
 @import "assets/styles/app";
 
 .footer {
-  position: relative;
   padding-top: spacing(20);
 }
 

@@ -1,11 +1,11 @@
 <template>
-  <div class="default">
+  <div class="wrapper default">
     <div class="wrap container-fluid">
       <default-header />
     </div>
 
     <div class="wrap container">
-      <div class="row center-xs">
+      <div class="row">
         <nuxt />
       </div>
     </div>
