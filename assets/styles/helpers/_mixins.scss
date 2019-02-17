@@ -52,3 +52,29 @@
     border-radius: $big-radius;
   }
 }
+
+@mixin header-background($height) {
+  @include background-absolute();
+  @include bottom-radius(50%);
+  z-index: -1;
+  background: $color-blue url("/landing-header/background.svg") no-repeat fixed center;
+  overflow: hidden;
+  background-size: cover;
+  padding-bottom: spacing($height);
+
+  @include breakpoint("md") {
+    @include bottom-radius(40%);
+    padding-bottom: spacing($height * 0.9);
+  }
+
+  @include breakpoint("sm") {
+    @include bottom-radius(40%);
+    padding-bottom: spacing($height * 0.9);
+  }
+
+  @include breakpoint("xs") {
+    @include bottom-radius(20%);
+    left: -25%;
+    width: 150%;
+  }
+}

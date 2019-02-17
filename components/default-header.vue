@@ -1,23 +1,23 @@
 <template>
-  <div class="header">
-    <div class="header__background"></div>
+  <div class="default-header">
+    <div class="default-header__background"></div>
     <div class="row middle-md">
       <div class="col-md-offset-5 col-md-7 +more-than-md">
         <!-- Buttons top right -->
-        <div class="row middle-md header__top-block">
+        <div class="row middle-md default-header__top-block">
           <div class="col-md-4">
-            <div class="box header__top-link">
-              <a href="#">How does it work?</a>
+            <div class="box default-header__top-link">
+              <a href="#">Back to home page</a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="box header__top-link">
+            <div class="box default-header__top-link">
               <a href="#">About us</a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="box header__top-link">
-              <span class="header__top-link--round">
+            <div class="box default-header__top-link">
+              <span class="default-header__top-link--round">
                 <a href="#">Ask me anything</a>
               </span>
             </div>
@@ -27,36 +27,18 @@
     </div>
 
     <div class="row top-md center-xs center-sm">
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <div class="box header__introduction">
-          <h1>I'm Alfred</h1>
-          <p>Are you tired of<br />losing time ?</p>
-          <ul>
-            <li>You give me the task</li>
-            <li>I work on it</li>
-            <li>You enjoy the result</li>
-          </ul>
-
-          <a
-            class="header__call-to-action"
-            href="#"
-          >
-            Ask me anything
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-sm-6">
-        <div class="box">
-          <div class="header__image +more-than-xs">
-            <img src="/header/phone-fist.svg" />
-          </div>
+      <div class="col-md-12">
+        <div class="box default-header__introduction">
+          <h1>
+            <div class="head__first">What can you</div>
+            <div class="header__last">ask to Alfred?</div>
+          </h1>
         </div>
       </div>
     </div>
     <!-- Inside layout -->
     <div class="row">
-      <div class="header__background-spacing"></div>
+      <div class="default-header__background-spacing"></div>
     </div>
   </div>
 </template>
@@ -64,35 +46,35 @@
 <style lang="scss">
 @import "assets/styles/app";
 
-.header {
+.default-header {
   color: $color-white;
   position: relative;
 }
 
-.header__image {
+.default-header__image {
   margin: spacing(10);
   width: spacing(70);
 }
 
-.header__top-block {
+.default-header__top-block {
   a {
     color: $color-white;
   }
   margin: auto;
   padding-top: spacing(6);
 
-  .header__top-link {
+  .default-header__top-link {
     text-align: center;
   }
 
-  .header__top-link--round {
+  .default-header__top-link--round {
     @include button-radius("big");
     padding: spacing(1, 4, 1, 4);
     border: 1px solid $color-white;
   }
 }
 
-.header__call-to-action {
+.default-header__call-to-action {
   @include button-radius("big");
   margin: -0.5em;
   padding: spacing(4, 12, 4, 12);
@@ -104,47 +86,15 @@
   margin: auto 0;
 }
 
-.header__background {
-  @include background-absolute();
-  @include bottom-radius(50%);
-  z-index: -1;
-  background: $color-blue url("/header/background.svg") no-repeat fixed center;
-  overflow: hidden;
-  background-size: cover;
-  padding-bottom: spacing(110);
-
-  @include breakpoint("md") {
-    @include bottom-radius(40%);
-    padding-bottom: spacing(95);
-  }
-
-  @include breakpoint("sm") {
-    @include bottom-radius(40%);
-    padding-bottom: spacing(95);
-  }
-  @include breakpoint("xs") {
-    @include bottom-radius(20%);
-    left: -25%;
-    width: 150%;
-  }
+.default-header__background {
+  @include header-background(60);
 }
 
-.header__background-spacing {
-  @include breakpoint("lg") {
-    padding-top: spacing(17);
-  }
-  @include breakpoint("md") {
-    padding-top: spacing(8);
-  }
-  @include breakpoint("sm") {
-    padding-top: spacing(8);
-  }
-  @include breakpoint("xs") {
-    padding-top: spacing(30);
-  }
+.default-header__background-spacing {
+  padding-top: spacing(25);
 }
 
-.header__introduction {
+.default-header__introduction {
   text-align: left;
 
   margin-left: spacing(15);
@@ -180,7 +130,7 @@
 
 <script>
 export default {
-  name: 'LandingHeader',
+  name: 'DefaultHeader',
   props: {
   }
 }

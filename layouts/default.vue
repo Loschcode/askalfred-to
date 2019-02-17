@@ -1,7 +1,7 @@
 <template>
   <div class="default">
     <div class="wrap container-fluid">
-      <landing-header />
+      <default-header />
     </div>
 
     <div class="wrap container">
@@ -21,15 +21,15 @@
 </style>
 
 <script>
-import LandingHeader from '../components/landing-header';
+import DefaultHeader from '../components/default-header';
 import DefaultFooter from '../components/default-footer';
 
 export default {
-  name: 'Landing',
+  name: 'Default',
   props: {
   },
   components: {
-    LandingHeader,
+    DefaultHeader,
     DefaultFooter
   }
 }

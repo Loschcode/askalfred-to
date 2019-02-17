@@ -105,40 +105,18 @@
 }
 
 .landing-header__background {
-  @include background-absolute();
-  @include bottom-radius(50%);
-  z-index: -1;
-  background: $color-blue url("/landing-header/background.svg") no-repeat fixed
-    center;
-  overflow: hidden;
-  background-size: cover;
-  padding-bottom: spacing(110);
-
-  @include breakpoint("md") {
-    @include bottom-radius(40%);
-    padding-bottom: spacing(95);
-  }
-
-  @include breakpoint("sm") {
-    @include bottom-radius(40%);
-    padding-bottom: spacing(95);
-  }
-  @include breakpoint("xs") {
-    @include bottom-radius(20%);
-    left: -25%;
-    width: 150%;
-  }
+  @include header-background(110);
 }
 
 .landing-header__background-spacing {
   @include breakpoint("lg") {
-    padding-top: spacing(17);
+    padding-top: spacing(18);
   }
   @include breakpoint("md") {
-    padding-top: spacing(8);
+    padding-top: spacing(15);
   }
   @include breakpoint("sm") {
-    padding-top: spacing(8);
+    padding-top: spacing(10);
   }
   @include breakpoint("xs") {
     padding-top: spacing(30);
@@ -181,7 +159,7 @@
 
 <script>
 export default {
-  name: 'Landinglanding-header',
+  name: 'LandingHeader',
   props: {
   }
 }
