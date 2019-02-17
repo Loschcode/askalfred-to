@@ -1,182 +1,36 @@
 <template>
   <div class="default">
     <div class="wrap container-fluid">
-      <div class="header">
-        <div class="header__background"></div>
-        <div class="row middle-md">
-          <div class="col-md-12">
-            LAYOUT
-          </div>
-        </div>
+      <landing-header />
+    </div>
 
-        <div class="wrap container">
-          <div class="row center-xs">
-            <nuxt />
-          </div>
-        </div>
-
-        <div class="wrap container-fluid">
-
-          <div class="footer">
-            <div class="footer__background">
-              <div class="row center-xs">
-                <div class="col-md-12">
-                  <div class="footer__terms">
-                    <a href="#">Privacy policy</a> | <a href="#">About us</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="wrap container">
+      <div class="row center-xs">
+        <nuxt />
       </div>
+    </div>
+
+    <div class="wrap container-fluid">
+      <default-footer />
     </div>
   </div>
 </template>
 
 <style lang="scss">
 @import "assets/styles/app";
-
-.header {
-  color: $color-white;
-  position: relative;
-}
-
-.header__image {
-  margin: spacing(10);
-  width: spacing(70);
-}
-
-.header__top-block {
-  a {
-    color: $color-white;
-  }
-  margin: auto;
-  padding-top: spacing(6);
-
-  .header__top-link {
-    text-align: center;
-  }
-
-  .header__top-link--round {
-    @include button-radius("big");
-    padding: spacing(1, 4, 1, 4);
-    border: 1px solid $color-white;
-  }
-}
-
-.header__call-to-action {
-  @include button-radius("big");
-  margin: -0.5em;
-  padding: spacing(4, 12, 4, 12);
-  font-size: sizing(2);
-  text-transform: uppercase;
-  background-color: $color-white;
-  color: $color-blue;
-  font-weight: bold;
-  margin: auto 0;
-}
-
-.header__background {
-  @include background-absolute();
-  @include bottom-radius(50%);
-  z-index: -1;
-  background: $color-blue url("/header/background.svg") no-repeat fixed center;
-  overflow: hidden;
-  background-size: cover;
-  padding-bottom: spacing(110);
-
-  @include breakpoint("md") {
-    @include bottom-radius(40%);
-    padding-bottom: spacing(95);
-  }
-
-  @include breakpoint("sm") {
-    @include bottom-radius(40%);
-    padding-bottom: spacing(95);
-  }
-  @include breakpoint("xs") {
-    @include bottom-radius(20%);
-    left: -25%;
-    width: 150%;
-  }
-}
-
-.header__background-spacing {
-  @include breakpoint("lg") {
-    padding-top: spacing(17);
-  }
-  @include breakpoint("md") {
-    padding-top: spacing(8);
-  }
-  @include breakpoint("sm") {
-    padding-top: spacing(8);
-  }
-  @include breakpoint("xs") {
-    padding-top: spacing(30);
-  }
-}
-
-.header__introduction {
-  text-align: left;
-
-  margin-left: spacing(15);
-  @include breakpoint("sm") {
-    margin-left: spacing(0);
-    display: block;
-  }
-  @include breakpoint("xs") {
-    display: inline-block;
-  }
-
-  margin-top: spacing(3);
-
-  p {
-    padding-top: spacing(1);
-  }
-
-  ul {
-    @include default-list();
-    padding-top: spacing(3);
-    padding-bottom: spacing(11);
-
-    li {
-      padding-left: spacing(4);
-      background: url("/bullet.svg") no-repeat left spacing(1.5);
-      font-size: sizing(3);
-      margin-top: spacing(3);
-      font-weight: 200;
-    }
-  }
-}
-
-.footer {
-  position: relative;
-  padding-top: spacing(20);
-}
-
-.footer__terms {
-  padding: spacing(6);
-  color: $color-white;
-  a {
-    color: $color-white;
-  }
-}
-
-.footer__background {
-  margin-top: 10em;
-  @include background-absolute();
-  @include top-radius(50%);
-  bottom: 0;
-  background: $color-blue no-repeat fixed left;
-  overflow: hidden;
-}
 </style>
 
 <script>
+import LandingHeader from '../components/landing-header';
+import DefaultFooter from '../components/default-footer';
+
 export default {
-  name: 'Default',
+  name: 'Landing',
   props: {
+  },
+  components: {
+    LandingHeader,
+    DefaultFooter
   }
 }
 </script>

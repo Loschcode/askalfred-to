@@ -1,23 +1,23 @@
 <template>
-  <div class="landing-header">
-    <div class="landing-header__background"></div>
+  <div class="header">
+    <div class="header__background"></div>
     <div class="row middle-md">
       <div class="col-md-offset-5 col-md-7 +more-than-md">
         <!-- Buttons top right -->
-        <div class="row middle-md landing-header__top-block">
+        <div class="row middle-md header__top-block">
           <div class="col-md-4">
-            <div class="box landing-header__top-link">
+            <div class="box header__top-link">
               <a href="#">How does it work?</a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="box landing-header__top-link">
+            <div class="box header__top-link">
               <a href="#">About us</a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="box landing-header__top-link">
-              <span class="landing-header__top-link--round">
+            <div class="box header__top-link">
+              <span class="header__top-link--round">
                 <a href="#">Ask me anything</a>
               </span>
             </div>
@@ -28,7 +28,7 @@
 
     <div class="row top-md center-xs center-sm">
       <div class="col-md-6 col-sm-6 col-xs-12">
-        <div class="box landing-header__introduction">
+        <div class="box header__introduction">
           <h1>I'm Alfred</h1>
           <p>Are you tired of<br />losing time ?</p>
           <ul>
@@ -38,7 +38,7 @@
           </ul>
 
           <a
-            class="landing-header__call-to-action"
+            class="header__call-to-action"
             href="#"
           >
             Ask me anything
@@ -48,15 +48,15 @@
 
       <div class="col-md-6 col-sm-6">
         <div class="box">
-          <div class="landing-header__image +more-than-xs">
-            <img src="/landing-header/phone-fist.svg" />
+          <div class="header__image +more-than-xs">
+            <img src="/header/phone-fist.svg" />
           </div>
         </div>
       </div>
     </div>
     <!-- Inside layout -->
     <div class="row">
-      <div class="landing-header__background-spacing"></div>
+      <div class="header__background-spacing"></div>
     </div>
   </div>
 </template>
@@ -64,35 +64,35 @@
 <style lang="scss">
 @import "assets/styles/app";
 
-.landing-header {
+.header {
   color: $color-white;
   position: relative;
 }
 
-.landing-header__image {
+.header__image {
   margin: spacing(10);
   width: spacing(70);
 }
 
-.landing-header__top-block {
+.header__top-block {
   a {
     color: $color-white;
   }
   margin: auto;
   padding-top: spacing(6);
 
-  .landing-header__top-link {
+  .header__top-link {
     text-align: center;
   }
 
-  .landing-header__top-link--round {
+  .header__top-link--round {
     @include button-radius("big");
     padding: spacing(1, 4, 1, 4);
     border: 1px solid $color-white;
   }
 }
 
-.landing-header__call-to-action {
+.header__call-to-action {
   @include button-radius("big");
   margin: -0.5em;
   padding: spacing(4, 12, 4, 12);
@@ -104,12 +104,11 @@
   margin: auto 0;
 }
 
-.landing-header__background {
+.header__background {
   @include background-absolute();
   @include bottom-radius(50%);
   z-index: -1;
-  background: $color-blue url("/landing-header/background.svg") no-repeat fixed
-    center;
+  background: $color-blue url("/header/background.svg") no-repeat fixed center;
   overflow: hidden;
   background-size: cover;
   padding-bottom: spacing(110);
@@ -130,7 +129,7 @@
   }
 }
 
-.landing-header__background-spacing {
+.header__background-spacing {
   @include breakpoint("lg") {
     padding-top: spacing(17);
   }
@@ -145,7 +144,7 @@
   }
 }
 
-.landing-header__introduction {
+.header__introduction {
   text-align: left;
 
   margin-left: spacing(15);
@@ -181,7 +180,7 @@
 
 <script>
 export default {
-  name: 'Landinglanding-header',
+  name: 'LandingHeader',
   props: {
   }
 }
