@@ -2,7 +2,7 @@
   <div class="landing-how">
     <div class="row">
       <div class="landing-how__title">
-        <h2>landing-how does it work?</h2>
+        <h2>How does it work?</h2>
       </div>
     </div>
     <div class="row">

@@ -95,10 +95,16 @@
 
 .default-header__background {
   @include header-background(60);
+  @include breakpoint("xs") {
+    @include header-background(50);
+  }
 }
 
 .default-header__background-spacing {
   padding-top: spacing(25);
+  @include breakpoint("xs") {
+    padding-top: spacing(15);
+  }
 }
 
 .default-header__introduction {

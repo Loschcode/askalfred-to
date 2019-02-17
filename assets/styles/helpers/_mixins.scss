@@ -50,6 +50,8 @@
 @mixin button-radius($size: medium) {
   @if $size == big {
     border-radius: $big-radius;
+  } @else if $size == medium {
+    border-radius: $medium-radius;
   }
 }
 
