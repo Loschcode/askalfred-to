@@ -30,6 +30,7 @@
     @include default-list();
     padding-top: spacing(3);
     padding-bottom: spacing(3);
+    line-height: spacing(5);
 
     li {
       list-style-type: disc;
