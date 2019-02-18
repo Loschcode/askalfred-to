@@ -37,12 +37,9 @@
             <li>You enjoy the result</li>
           </ul>
 
-          <a
-            class="landing-header__call-to-action"
-            href="#"
-          >
-            Ask me anything
-          </a>
+          <span class="landing-header__call-to-action">
+            <a href="#">Ask me anything</a>
+          </span>
         </div>
       </div>
 
@@ -76,6 +73,7 @@
 
 .landing-header__top-block {
   a {
+    @include extend-clickable();
     color: $color-white;
   }
   margin: auto;
@@ -102,6 +100,9 @@
   color: $color-blue;
   font-weight: bold;
   margin: auto 0;
+  a {
+    @include extend-clickable(5em);
+  }
 }
 
 .landing-header__background {

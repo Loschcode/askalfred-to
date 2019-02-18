@@ -38,12 +38,9 @@
           <div class="row center-xs center-sm start-md start-lg">
             <div class="col-md-12">
               <div class="box">
-                <a
-                  class="what__call-to-action"
-                  href="#"
-                >
-                  See more examples
-                </a>
+                <span class="what__call-to-action">
+                  <a href="#">See more examples</a>
+                </span>
               </div>
             </div>
           </div>
@@ -67,8 +64,11 @@
   font-size: sizing(2);
   text-transform: uppercase;
   background-color: $color-blue;
-  color: $color-white;
-  font-weight: bold;
+  a {
+    @include extend-clickable(5em);
+    color: $color-white;
+    font-weight: bold;
+  }
 }
 
 .what__messages {

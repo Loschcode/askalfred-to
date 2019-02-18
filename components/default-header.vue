@@ -60,6 +60,7 @@
 
 .default-header__top-block {
   a {
+    @include extend-clickable();
     color: $color-white;
   }
   margin: auto;
