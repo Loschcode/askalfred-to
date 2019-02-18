@@ -16,7 +16,8 @@
     "@nuxtjs/redirect-module": "^0.2.0",
     "flexboxgrid": "^6.3.1",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "tingle.js": "^0.14.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

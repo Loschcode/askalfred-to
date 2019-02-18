@@ -38,7 +38,7 @@
           </ul>
 
           <span class="landing-header__call-to-action">
-            <a href="#">Ask me anything</a>
+            <a v-on:click="startModal()" href="#">Ask me anything</a>
           </span>
         </div>
       </div>
@@ -160,9 +160,18 @@
 </style>
 
 <script>
+import TingleModal from '../components/tingle-modal'
+
 export default {
   name: 'LandingHeader',
+  methods: {
+    startModal() {
+      // TODO : work on this
+      // TingleModal.makeModal();
+    }
+  },
   props: {
+    // TingleModal
   }
 }
 </script>
