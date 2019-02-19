@@ -39,7 +39,7 @@
 
           <span class="landing-header__call-to-action">
             <a
-              v-on:click="openAsk()"
+              v-on:click="openModal('askModal')"
               href="#"
             >Ask me anything</a>
           </span>
@@ -177,8 +177,8 @@ import Modal from '../components/modal'
 export default {
   name: 'LandingHeader',
   methods: {
-    openAsk () {
-      this.$refs.askModal.open()
+    openModal (ref) {
+      this.$refs[ref].open()
     }
   },
 
