@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper landing">
+  <div class="wrapper landing tingle-content-wrapper">
     <div class="wrap container-fluid">
       <landing-header />
     </div>

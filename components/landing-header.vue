@@ -38,7 +38,10 @@
           </ul>
 
           <span class="landing-header__call-to-action">
-            <a v-on:click="startModal()" href="#">Ask me anything</a>
+            <a
+              v-on:click="startModal()"
+              href="#"
+            >Ask me anything</a>
           </span>
         </div>
       </div>
@@ -165,9 +168,79 @@ import TingleModal from '../components/tingle-modal'
 export default {
   name: 'LandingHeader',
   methods: {
-    startModal() {
-      // TODO : work on this
-      // TingleModal.makeModal();
+    startModal () {
+      if (process.client) {
+        var vm = this
+        var tingle = require('tingle.js');
+
+        var modal = new tingle.modal({
+          footer: false,
+          stickyFooter: false,
+          closeMethods: ['overlay', 'button', 'escape'],
+          closeLabel: "Close",
+          // cssClass: ['custom-class-1', 'custom-class-2'],
+          onOpen: function () {
+            console.log('modal open');
+          },
+          onClose: function () {
+            console.log('modal closed');
+          },
+          beforeClose: function () {
+            // here's goes some logic
+            // e.g. save content before closing the modal
+            return true; // close the modal
+            return false; // nothing happens
+          }
+        });
+
+        // // set content
+        modal.setContent('<h1>here\'s some content</h1>');
+
+        // // add a button
+        // modal.addFooterBtn('Button label', 'tingle-btn tingle-btn--primary', function() {
+        //     // here goes some logic
+        //     modal.close();
+        // });
+
+        // // add another button
+        // modal.addFooterBtn('Dangerous action !', 'tingle-btn tingle-btn--danger', function() {
+        //     // here goes some logic
+        //     modal.close();
+        // });
+
+        // // open modal
+        modal.open();
+
+        // // close modal
+        // modal.close();
+
+        //   this.tingle = new tingle.modal({
+        //     footer: vm.buttons.length > 0,
+        //     onOpen () {
+        //       if (typeof vm.onopen === 'function') {
+        //         vm.onopen.call(vm)
+        //       }
+        //     },
+        //     onBeforeClose () {
+        //       if (typeof vm.onbeforeclose === 'function') {
+        //         vm.onbeforeclose.call(vm)
+        //       }
+        //     },
+        //     onClose () {
+        //       if (typeof vm.onclose === 'function') {
+        //         vm.onclose.call(vm)
+        //         vm.tingle.destroy()
+        //       }
+        //     }
+        //   })
+
+        //   this.tingle.setContent(this.$el)
+
+        //   this.buttons.forEach(button => {
+        //     this.tingle.addFooterBtn(button.text, button.class || 'tingle-btn', button.action)
+        //   })
+        // }
+      }
     }
   },
   props: {
