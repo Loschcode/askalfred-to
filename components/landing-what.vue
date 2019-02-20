@@ -38,7 +38,7 @@
           <div class="row center-xs center-sm start-md start-lg">
             <div class="col-md-12">
               <div class="box">
-                <span class="what__call-to-action">
+                <span class="button__on-white what__call-to-action">
                   <a href="#">See more examples</a>
                 </span>
               </div>
@@ -51,28 +51,18 @@
 </template>
 
 <style lang="scss">
-@import "assets/styles/app";
-
 .what {
   padding-bottom: spacing(10);
 }
 
-.what__call-to-action {
-  @include button-radius("big");
-  margin: -0.5em;
-  padding: spacing(4, 12, 4, 12);
-  font-size: sizing(2);
-  text-transform: uppercase;
-  background-color: $color-blue;
-  a {
-    @include extend-clickable(5em);
-    color: $color-white;
-    font-weight: bold;
-  }
-}
-
 .what__messages {
   padding-bottom: spacing(8);
+}
+
+.what__call-to-action {
+  a {
+    @include extend-clickable(5em !important, 5em !important);
+  }
 }
 
 .what__image {

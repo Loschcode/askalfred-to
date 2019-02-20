@@ -83,7 +83,6 @@
 </template>
 
 <style lang="scss">
-@import "assets/styles/app";
 .landing-how__details {
   padding-bottom: spacing(5);
   @include breakpoint("sm") {

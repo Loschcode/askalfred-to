@@ -13,8 +13,6 @@
 </template>
 
 <style lang="scss">
-@import "assets/styles/app";
-
 .footer {
   padding-top: spacing(20);
 }

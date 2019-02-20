@@ -39,7 +39,6 @@
 </template>
 
 <style lang="scss">
-@import "assets/styles/app";
 .title__first {
   text-align: left;
 }

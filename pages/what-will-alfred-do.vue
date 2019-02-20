@@ -65,7 +65,6 @@
 </template>
 
 <style lang="scss">
-@import "assets/styles/app";
 .what-will-alfred-do__block {
   &:hover {
     cursor: pointer;

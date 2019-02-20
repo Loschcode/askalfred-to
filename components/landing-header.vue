@@ -44,14 +44,6 @@
             >Ask me anything</a>
           </span>
 
-          <modal ref="askModal">
-            This is some real content
-            <a href="#">jkljlkj</a> This is some real content
-            <a href="#">jkljlkj</a> This is some real content
-            <a href="#">jkljlkj</a> This is some real content
-            <a href="#">jkljlkj</a> This is some real content
-          </modal>
-
         </div>
       </div>
 
@@ -67,11 +59,67 @@
     <div class="row">
       <div class="landing-header__background-spacing"></div>
     </div>
+
+    <modal ref="askModal">
+      <div class="ask-modal">
+        <div class="wrap container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Alfred is coming soon!</h2>
+              <p>
+                Our team is working on making Alfred just perfect for you. Sign-up now and get it for free in advance!
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="input">
+                <input type="email" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="ask-modal__call-to-action">
+                <span class="button__on-white button__on-white--squared ask-modal__call-to-action-button">
+                  <a href="#">Get it for free now</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </modal>
   </div>
 </template>
 
 <style lang="scss">
-@import "assets/styles/app";
+.ask-modal {
+  text-align: center;
+
+  p {
+    margin: spacing(2);
+    color: $color-grey-modal;
+    font-weight: 200;
+    font-size: sizing(3);
+  }
+  input {
+    font-size: sizing(5);
+  }
+}
+
+.ask-modal__call-to-action {
+  margin-top: spacing(2);
+  padding-top: 1em;
+}
+
+.ask-modal__call-to-action-button {
+  a {
+    font-size: sizing(2);
+    padding-left: 5em;
+  }
+  margin-left: 5em;
+}
 
 .landing-header {
   color: $color-white;
@@ -113,7 +161,7 @@
   font-weight: bold;
   margin: auto 0;
   a {
-    @include extend-clickable(5em);
+    @include extend-clickable(5em, 5em);
   }
 }
 

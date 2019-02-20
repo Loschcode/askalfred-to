@@ -53,15 +53,15 @@
             <p>We use the information we collect about you for the following purposes:</p>
 
             <ul>
-            <li>Providing you with the Service: We use the information that you provide us to provide the Service to you. This includes allowing you to log in to AskAlfred, operating and maintaining the Service, giving you access to your designs and billing you for transactions that you make via the Service. We also use information we collect about you automatically to remember information about you so that you will not have to re-enter it during your visit or the next time you visit the site</li>
-            <li>For data analytics: We use information about you to help us improve the Canva Service and our users’ experience, including by monitoring aggregate metrics such as total number of visitors, traffic, and demographic patterns.</li>
-            <li>Customising the Service for you: We use information you provide us and information about you to make sure that your use of the Service is customised to your needs. For example, if you tell us your profession to recommend designs that are likely to be relevant to you.</li>
-            <li>To communicate with you about the Service: We use your contact information to get in touch with you and to send communications about critical elements of the Service. For example, we may send you emails about technical issues, security alerts or administrative matters.</li>
-            <li>To promote and drive engagement with the AskAlfred Service: We use your contact information to get in touch with you about features and offers relating to the Service that we think you would be interested in. We also use information we collect about you to make sure that you get the most relevant offers and promotions based on your use of the Service, and your preferences. You can opt-out of getting these communications as described below.</li>
-            <li>Customer happiness: We use information about you, information that you provide to our customer happiness team, and information about your interactions with the Service to resolve technical issues you experience with the Service, and to ensure that we can repair and improve the Service for all AskAlfred users.</li>
-            <li>For security measures: We use information about you to monitor activity that we think is suspicious or potentially fraudulent, and to identify violations or this Privacy Policy or our Terms of Use.</li>
-            <li>For matters that you have specifically consent to: From time to time AskAlfred may seek your consent to use your information for a particular purpose. Where you consent to our doing so, we will use it for that purpose. Where you no longer want us to use your information for that purpose you may withdraw your consent to this use.</li>
-            <li>For matters that we are required to use your information by law: AskAlfred will use or disclose your information where we reasonably believe that such action is necessary to (a) comply with the law and the reasonable requests of law enforcement; (b) to enforce our Terms of Use or to protect the security or integrity of our Service; and/or (c) to exercise or protect the rights, property, or personal safety of AskAlfred, our Users or others.</li>
+              <li>Providing you with the Service: We use the information that you provide us to provide the Service to you. This includes allowing you to log in to AskAlfred, operating and maintaining the Service, giving you access to your designs and billing you for transactions that you make via the Service. We also use information we collect about you automatically to remember information about you so that you will not have to re-enter it during your visit or the next time you visit the site</li>
+              <li>For data analytics: We use information about you to help us improve the Canva Service and our users’ experience, including by monitoring aggregate metrics such as total number of visitors, traffic, and demographic patterns.</li>
+              <li>Customising the Service for you: We use information you provide us and information about you to make sure that your use of the Service is customised to your needs. For example, if you tell us your profession to recommend designs that are likely to be relevant to you.</li>
+              <li>To communicate with you about the Service: We use your contact information to get in touch with you and to send communications about critical elements of the Service. For example, we may send you emails about technical issues, security alerts or administrative matters.</li>
+              <li>To promote and drive engagement with the AskAlfred Service: We use your contact information to get in touch with you about features and offers relating to the Service that we think you would be interested in. We also use information we collect about you to make sure that you get the most relevant offers and promotions based on your use of the Service, and your preferences. You can opt-out of getting these communications as described below.</li>
+              <li>Customer happiness: We use information about you, information that you provide to our customer happiness team, and information about your interactions with the Service to resolve technical issues you experience with the Service, and to ensure that we can repair and improve the Service for all AskAlfred users.</li>
+              <li>For security measures: We use information about you to monitor activity that we think is suspicious or potentially fraudulent, and to identify violations or this Privacy Policy or our Terms of Use.</li>
+              <li>For matters that you have specifically consent to: From time to time AskAlfred may seek your consent to use your information for a particular purpose. Where you consent to our doing so, we will use it for that purpose. Where you no longer want us to use your information for that purpose you may withdraw your consent to this use.</li>
+              <li>For matters that we are required to use your information by law: AskAlfred will use or disclose your information where we reasonably believe that such action is necessary to (a) comply with the law and the reasonable requests of law enforcement; (b) to enforce our Terms of Use or to protect the security or integrity of our Service; and/or (c) to exercise or protect the rights, property, or personal safety of AskAlfred, our Users or others.</li>
             </ul>
 
             <h3>Legal bases for processing information under the GDPR (for users in the EEA)</h3>
@@ -69,10 +69,10 @@
             <p>For AskAlfred users in the the European Economic Area (EEA) AskAlfred processes your information in accordance with European laws and regulations such as the General Data Protection Regulation (GDPR). The GDPR governs how AskAlfred may process your information, and the rights that EEA users have in relation to it. This means that AskAlfred will collect and use your information only where:</p>
 
             <ul>
-            <li>We need it to provide you the Service and fulfil our obligations to you under our Terms of Service. This includes providing you with access to the information that you create in your designs.</li>
-            <li>It it justified because of a legitimate interest such as for research and development or marketing the Service (but only where our legitimate interest isn’t overridden by your interest in protecting your data).</li>
-            <li>You consent to us using your information in a certain way.</li>
-            <li>It is necessary for compliance with our legal obligations.</li>
+              <li>We need it to provide you the Service and fulfil our obligations to you under our Terms of Service. This includes providing you with access to the information that you create in your designs.</li>
+              <li>It it justified because of a legitimate interest such as for research and development or marketing the Service (but only where our legitimate interest isn’t overridden by your interest in protecting your data).</li>
+              <li>You consent to us using your information in a certain way.</li>
+              <li>It is necessary for compliance with our legal obligations.</li>
             </ul>
 
             <p>If you have consented to our use of your information you may withdraw that consent at any time. Depending on the situation you can either withdraw your consent by emailing <a href="mailto:support@askalfred.app">support@askalfred.app</a>, or through your account settings page. Where we are using your information because of a legitimate interest to do so, you have the right to object to that use. However, if you do so it may mean that it is not possible for you to continue using the Services.</p>
@@ -86,14 +86,14 @@
             <p>We may share your information with third-party service providers for the purpose of providing the Service to you and to facilitate AskAlfred’s interests, as outline above . Those service providers will only be provided with access to your information as is reasonably necessary for the purpose that AskAlfred has engaged the service provider, and we will require that such third parties comply with this Privacy Policy and any applicable laws.</p>
 
             <p>Some of the third parties that AskAlfred may share your personal information with include providers who assist AskAlfred with functions such as:</p>
-            
+
             <ul>
-            <li>Billing;</li>
-            <li>Customer support and customer management;</li>
-            <li>Email services;</li>
-            <li>Hosting and storage;</li>
-            <li>Analytics; and</li>
-            <li>Delivery of physical products;</li>
+              <li>Billing;</li>
+              <li>Customer support and customer management;</li>
+              <li>Email services;</li>
+              <li>Hosting and storage;</li>
+              <li>Analytics; and</li>
+              <li>Delivery of physical products;</li>
             </ul>
 
             <h3>Who you may choose to share your User Content with</h3>
@@ -101,9 +101,9 @@
             <p>AskAlfred may share your information with third parties in certain circumstances, such as where:</p>
 
             <ul>
-            <li>we are required to do so as a result of a court order, subpoena or other legal requirement;</li>
-            <li>we believe that it is necessary to protect you or AskAlfred, such as where we consider that there is a need to investigate potentially fraudulent or criminal activity; or</li>
-            <li>you have consented to our sharing it with a third party for a particular purpose.</li>
+              <li>we are required to do so as a result of a court order, subpoena or other legal requirement;</li>
+              <li>we believe that it is necessary to protect you or AskAlfred, such as where we consider that there is a need to investigate potentially fraudulent or criminal activity; or</li>
+              <li>you have consented to our sharing it with a third party for a particular purpose.</li>
             </ul>
 
             <p>AskAlfred may also share your information with a third party in circumstances where we sell divest or transfer AskAlfred (including any shares in AskAlfred), or any combination of its products, services, assets and/or businesses to a third party. Information such as customer names and email addresses, User Content and other user information related to the Service may be among the items sold or otherwise transferred in these types of transactions. We may also sell, assign or otherwise transfer such information in the course of corporate divestitures, mergers, acquisitions, bankruptcies, dissolutions, reorganisations, liquidations, similar transactions or proceedings involving all or a portion of the AskAlfred.</p>
@@ -163,7 +163,6 @@
 </template>
 
 <style lang="scss">
-@import "assets/styles/app";
 </style>
 
 <script>

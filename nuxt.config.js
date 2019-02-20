@@ -14,7 +14,7 @@ module.exports = {
     link: [{ rel: "icon", type: "image/ico", href: "/favicon.png" }]
   },
 
-  modules: ["@nuxtjs/redirect-module"],
+  modules: ["@nuxtjs/redirect-module", "@nuxtjs/style-resources"],
 
   redirect: [
     // { from: '^/$', to: '/url' }
@@ -22,7 +22,16 @@ module.exports = {
   /**
    * CSS loads
    */
-  css: ["@/assets/styles/app.scss"],
+  styleResources: {
+    scss: ["@assets/styles/helpers.scss"]
+  },
+
+  css: [
+    {
+      src: "@assets/styles/app.scss",
+      lang: "scss"
+    }
+  ],
   /*
    ** Customize the progress bar color
    */

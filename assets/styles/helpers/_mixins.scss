@@ -47,9 +47,15 @@
   list-style-position: inside;
 }
 
-@mixin extend-clickable($area: 2em) {
-  padding: $area;
-  margin: -$area;
+@mixin extend-clickable($width: 2em, $height: 2em) {
+  padding-top: $height;
+  padding-bottom: $height;
+  padding-left: $width;
+  padding-right: $width;
+  margin-top: -$height;
+  margin-bottom: -$height;
+  margin-left: -$width;
+  margin-right: -$width;
   display: inline-block;
 }
 
@@ -58,6 +64,8 @@
     border-radius: $big-radius;
   } @else if $size == medium {
     border-radius: $medium-radius;
+  } @else if $size == small {
+    border-radius: $small-radius;
   }
 }
 

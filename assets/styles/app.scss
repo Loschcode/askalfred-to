@@ -5,27 +5,17 @@
 // Boot the core system to use in our custom scss main file.
 //
 
-@import "helpers/reset";
+// App
+@import "app/reset";
+@import "app/libraries";
+@import "app/fonts";
+@import "app/grid";
+@import "app/tweaks";
+@import "app/responsive";
 
-// Libraries
-@import "helpers/libraries";
-
-// Helpers
-@import "helpers/fonts";
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "helpers/grid";
-@import "helpers/tweaks";
-@import "helpers/functions";
-
-// Components
+// // Components
 @import "components/page";
+@import "components/button";
 
-// Responsive loaded after everything to overwrite things
-@import "helpers/responsive";
-
-// Hooks
-// @import 'hooks/antyhing'
-
-// Global styling
-@import "global";
+// // Base styling
+@import "app/base";
