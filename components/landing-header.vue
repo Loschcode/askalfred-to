@@ -63,23 +63,26 @@
     <modal ref="askModal">
       <div class="ask-modal">
         <div class="wrap container">
-          <div class="row">
-            <div class="col-md-12">
+          <div class="row center-md">
+            <div class="col-md-6">
               <h2>Alfred is coming soon!</h2>
               <p>
                 Our team is working on making Alfred just perfect for you. Sign-up now and get it for free in advance!
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
+          <div class="row center-md">
+            <div class="col-md-6">
               <div class="input">
-                <input type="email" />
+                <input
+                  type="email"
+                  placeholder="my-email@gmail.com"
+                />
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
+          <div class="row center-md">
+            <div class="col-md-6">
               <div class="ask-modal__call-to-action">
                 <span class="button__on-white button__on-white--squared ask-modal__call-to-action-button">
                   <a href="#">Get it for free now</a>
@@ -104,7 +107,12 @@
     font-size: sizing(3);
   }
   input {
-    font-size: sizing(5);
+    font-size: sizing(3);
+    width: spacing(49);
+    color: $color-persistent-blue;
+    padding: 0.5em;
+    border: 1px solid $color-grey-modal;
+    @include placeholder-color($color-grey-modal);
   }
 }
 
@@ -114,11 +122,12 @@
 }
 
 .ask-modal__call-to-action-button {
+  background-color: $color-persistent-blue;
   a {
     font-size: sizing(2);
-    padding-left: 5em;
+    padding-left: 3.1em;
+    padding-right: 3.1em;
   }
-  margin-left: 5em;
 }
 
 .landing-header {
