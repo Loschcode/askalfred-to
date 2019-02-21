@@ -64,7 +64,7 @@
       <div class="ask-modal">
         <div class="wrap container">
           <div class="row center-md">
-            <div class="col-md-10">
+            <div class="col-md-12">
               <h2>Alfred is coming soon!</h2>
               <p>
                 Our team is working on making Alfred just perfect for you. Sign-up now and get it for free in advance!
@@ -72,7 +72,7 @@
             </div>
           </div>
           <div class="row center-md">
-            <div class="col-md-10">
+            <div class="col-md-12">
               <div class="input">
                 <input
                   type="email"
@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="row center-md">
-            <div class="col-md-10">
+            <div class="col-md-12">
               <div class="ask-modal__call-to-action">
                 <span class="button__on-white button__on-white--squared ask-modal__call-to-action-button">
                   <a href="#">Get it for free now</a>
@@ -98,6 +98,8 @@
 
 <style lang="scss">
 .ask-modal {
+  width: 30vw;
+  padding: 1em;
   text-align: center;
 
   p {
@@ -107,6 +109,7 @@
     font-size: sizing(3);
   }
   input {
+    border-radius: 5px;
     text-align: center;
     font-size: sizing(3);
     width: spacing(49);
@@ -120,6 +123,7 @@
 .ask-modal__call-to-action {
   margin-top: spacing(2);
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .ask-modal__call-to-action-button {
