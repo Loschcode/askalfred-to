@@ -41,10 +41,16 @@
 <style lang="scss">
 .title__first {
   text-align: left;
+  @include breakpoint("sm") {
+    text-align: center;
+  }
 }
 
 .title__last {
   text-align: right;
+  @include breakpoint("sm") {
+    text-align: center;
+  }
 }
 
 .default-header {
@@ -112,6 +118,9 @@
   }
   @include breakpoint("xs") {
     display: inline-block;
+    h1 {
+      font-size: sizing(11);
+    }
   }
 
   margin-top: spacing(3);

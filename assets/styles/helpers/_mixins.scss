@@ -1,22 +1,32 @@
-@mixin breakpoint($class) {
-  @if $class == xs {
+// @mixin breakpoint($breakpoint) {
+//   @if map-has-key($breakpoints, $breakpoint) {
+//     @media screen and (min-width: map-get($breakpoints, $breakpoint)), print {
+//       @content;
+//     }
+//   } @else {
+//     @warn 'The breakpoint #{$breakpoint} is not registered in mixins/_respond_to.scss';
+//   }
+// }
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == xs {
     @media (max-width: 767px) {
       @content;
     }
-  } @else if $class == sm {
+  } @else if $breakpoint == sm {
     @media (max-width: 991px) {
       @content;
     }
-  } @else if $class == md {
+  } @else if $breakpoint == md {
     @media (max-width: 1199px) {
       @content;
     }
-  } @else if $class == lg {
+  } @else if $breakpoint == lg {
     @media (min-width: 1200px) {
       @content;
     }
   } @else {
-    @warn "Breakpoint mixin supports: mobile, computer";
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
 }
 

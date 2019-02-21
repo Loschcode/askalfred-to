@@ -63,7 +63,7 @@
     <modal ref="askModal">
       <div class="ask-modal">
         <div class="wrap container">
-          <div class="row center-md">
+          <div class="row center-xs">
             <div class="col-md-12">
               <h2>Alfred is coming soon!</h2>
               <p>
@@ -71,7 +71,7 @@
               </p>
             </div>
           </div>
-          <div class="row center-md">
+          <div class="row center-xs">
             <div class="col-md-12">
               <div class="input">
                 <input
@@ -81,7 +81,7 @@
               </div>
             </div>
           </div>
-          <div class="row center-md">
+          <div class="row center-xs">
             <div class="col-md-12">
               <div class="ask-modal__call-to-action">
                 <span class="button__on-white button__on-white--squared ask-modal__call-to-action-button">
@@ -98,7 +98,18 @@
 
 <style lang="scss">
 .ask-modal {
-  width: 30vw;
+  @include breakpoint("lg") {
+    width: 30vw;
+  }
+  @include breakpoint("md") {
+    width: 40vw;
+  }
+  @include breakpoint("sm") {
+    width: 50vw;
+  }
+  @include breakpoint("xs") {
+    width: 80vw;
+  }
   padding: 1em;
   text-align: center;
 
