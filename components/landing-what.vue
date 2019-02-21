@@ -67,7 +67,7 @@
 
 .what__image {
   img {
-    height: 40vh;
+    height: 18em;
   }
 }
 
