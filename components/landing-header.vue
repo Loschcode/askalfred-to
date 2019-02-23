@@ -38,11 +38,10 @@
           </ul>
 
           <span class="landing-header__call-to-action">
-            <a
-              v-on:click="openModal('askModal')"
-              href="#"
-            >Ask me anything</a>
+            <a @click="openModal('modals-ask-me-anything')">Ask me anything</a>
           </span>
+
+          <modals-ask-me-anything ref="modals-ask-me-anything" />
 
         </div>
       </div>
@@ -60,92 +59,10 @@
       <div class="landing-header__background-spacing"></div>
     </div>
 
-    <modal ref="askModal">
-      <div class="ask-modal">
-        <div class="wrap container">
-          <div class="row center-xs">
-            <div class="col-md-12">
-              <h2>Alfred is coming soon!</h2>
-              <p>
-                Our team is working on making Alfred just perfect for you. Sign-up now and get it for free in advance!
-              </p>
-            </div>
-          </div>
-          <div class="row center-xs">
-            <div class="col-md-12">
-              <div class="input">
-                <input
-                  type="email"
-                  placeholder="my-email@gmail.com"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row center-xs">
-            <div class="col-md-12">
-              <div class="ask-modal__call-to-action">
-                <span class="button__on-white button__on-white--squared ask-modal__call-to-action-button">
-                  <a href="#">Get it for free now</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </modal>
   </div>
 </template>
 
 <style lang="scss">
-.ask-modal {
-  @include breakpoint("lg") {
-    width: 30vw;
-  }
-  @include breakpoint("md") {
-    width: 40vw;
-  }
-  @include breakpoint("sm") {
-    width: 50vw;
-  }
-  @include breakpoint("xs") {
-    width: 80vw;
-  }
-  padding: 1em;
-  text-align: center;
-
-  p {
-    margin: spacing(2);
-    color: $color-grey-modal;
-    font-weight: 200;
-    font-size: sizing(3);
-  }
-  input {
-    border-radius: 5px;
-    text-align: center;
-    font-size: sizing(3);
-    width: spacing(49);
-    color: $color-persistent-blue;
-    padding: 0.5em;
-    border: 1px solid $color-grey-modal;
-    @include placeholder-color($color-grey-modal);
-  }
-}
-
-.ask-modal__call-to-action {
-  margin-top: spacing(2);
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.ask-modal__call-to-action-button {
-  background-color: $color-persistent-blue;
-  a {
-    font-size: sizing(2);
-    padding-left: 3.1em;
-    padding-right: 3.1em;
-  }
-}
-
 .landing-header {
   color: $color-white;
   position: relative;
@@ -245,7 +162,7 @@
 </style>
 
 <script>
-import Modal from '../components/modal'
+import ModalsAskMeAnything from '../components/modals/ask-me-anything'
 
 export default {
   name: 'LandingHeader',
@@ -263,7 +180,7 @@ export default {
   props: {
   },
   components: {
-    Modal
+    ModalsAskMeAnything
   }
 }
 </script>

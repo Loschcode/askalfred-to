@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 .modal {
 }
 </style>
@@ -23,7 +23,8 @@ export default {
     return {
       tingle: null,
       modal: null,
-      isOpened: false
+      isOpened: false,
+      content: ''
     }
   },
 
@@ -33,36 +34,49 @@ export default {
     }
   },
 
+  watch: {
+    content (next, prev) {
+      this.modal.setContent(next)
+    }
+  },
+
   methods: {
     open () {
       this.setupModal()
-      this.renderModal();
+      this.renderModal()
+    },
+
+    close () {
+      this.unloadModal()
     },
 
     setupModal () {
       var vm = this
       this.modal = new this.tingle.modal({
-        footer: false,
-        stickyFooter: false,
         closeMethods: ['overlay', 'button', 'escape'],
-        closeLabel: "Close",
         onOpen () {
-          vm.isOpened = true;
+          vm.isOpened = true
         },
         onClose () {
-          vm.isOpened = false;
+          vm.isOpened = false
         },
         beforeClose () {
-          // return false if you want
-          // to prevent modal closing
           return true
         }
       });
     },
 
+    setContentWithSlot () {
+      this.content = this.$el
+    },
+
     renderModal () {
-      this.modal.setContent(this.$el)
-      this.modal.open();
+      this.setContentWithSlot();
+      this.modal.open()
+    },
+
+    unloadModal () {
+      this.modal.close()
     }
   }
 }
