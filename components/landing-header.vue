@@ -7,7 +7,10 @@
         <div class="row middle-md landing-header__top-block">
           <div class="col-md-4">
             <div class="box landing-header__top-link">
-              <a href="#how-does-it-work">How does it work?</a>
+              <a
+                href="#how-does-it-work"
+                v-smooth-scroll
+              >How does it work?</a>
             </div>
           </div>
           <div class="col-md-4">
@@ -162,6 +165,7 @@
 </style>
 
 <script>
+import Vue from 'vue'
 import ModalsMixin from '../mixins/modals-mixin'
 import ModalsAskMeAnything from '../components/modals/ask-me-anything'
 

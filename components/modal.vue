@@ -28,7 +28,7 @@ export default {
 
   created () {
     if (process.client) {
-      this.tingle = require('tingle.js');
+      this.tingle = require('tingle.js')
     }
   },
 

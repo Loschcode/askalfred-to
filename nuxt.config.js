@@ -16,6 +16,8 @@ module.exports = {
 
   modules: ["@nuxtjs/redirect-module", "@nuxtjs/style-resources"],
 
+  plugins: [{ src: "@plugins/vue2-smooth-scroll", ssr: false }],
+
   redirect: [
     // { from: '^/$', to: '/url' }
   ],
@@ -41,6 +43,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    vendor: ["vue2-smooth-scroll"],
     /*
      ** Run ESLint on save
      */
