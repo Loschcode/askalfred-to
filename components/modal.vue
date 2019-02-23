@@ -1,14 +1,11 @@
 <template>
-  <div
-    class="modal"
-    v-show="isOpened"
-  >
-    <slot></slot>
+  <div>
+    <!-- Blank slate, keep it this way -->
   </div>
 </template>
 
 <style lang="scss">
-.modal {
+.tingle-modal-box__content {
   padding: 1em;
 }
 </style>
@@ -70,17 +67,16 @@ export default {
       });
     },
 
-    setContentWithSlot () {
-      this.content = this.$el
-    },
-
     renderModal () {
-      this.setContentWithSlot();
       this.modal.open()
     },
 
     unloadModal () {
       this.modal.close()
+    },
+
+    setWithContentOf (context, ref) {
+      this.content = context.$refs[ref]
     }
   }
 }

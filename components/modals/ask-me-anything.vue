@@ -1,42 +1,44 @@
 <template>
   <div class="ask-me-anything">
-    <modal ref="current-modal">
-      <div class="content-coming-soon">
-        <div class="wrap container">
-          <div class="row center-xs">
-            <div class="col-md-12">
-              <h2>Alfred is coming soon!</h2>
-              <p>
-                Our team is working on making Alfred just perfect for you. Sign-up now and get it for free in advance!
-              </p>
-            </div>
-          </div>
-          <div class="row center-xs">
-            <div class="col-md-12">
-              <div class="input">
-                <input
-                  type="email"
-                  placeholder="my-email@gmail.com"
-                  autofocus
-                />
+    <modal ref="current-modal" />
+
+    <!-- Below  are all the successive content we want to set depending actions -->
+    <div class="+hidden">
+      <div ref="coming-soon">
+        <div class="content-coming-soon">
+          <div class="wrap container">
+            <div class="row center-xs">
+              <div class="col-md-12">
+                <h2>Alfred is coming soon!</h2>
+                <p>
+                  Our team is working on making Alfred just perfect for you. Sign-up now and get it for free in advance!
+                </p>
               </div>
             </div>
-          </div>
-          <div class="row center-xs">
-            <div class="col-md-12">
-              <div class="content-coming-soon__call-to-action">
-                <span class="button__on-white button__on-white--squared content-coming-soon__call-to-action-button">
-                  <a @click="getItForFree()">Get it for free now</a>
-                </span>
+            <div class="row center-xs">
+              <div class="col-md-12">
+                <div class="input">
+                  <input
+                    type="email"
+                    placeholder="my-email@gmail.com"
+                    autofocus
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row center-xs">
+              <div class="col-md-12">
+                <div class="content-coming-soon__call-to-action">
+                  <span class="button__on-white button__on-white--squared content-coming-soon__call-to-action-button">
+                    <a @click="getItForFree()">Get it for free now</a>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </modal>
 
-    <!-- Below  are all the successive content we want to set depending actions -->
-    <div class="+hidden">
       <div ref="thank-you">
         <div class="content-thank-you">
           <div class="wrap container">
@@ -119,11 +121,12 @@ export default {
 
     open () {
       this.currentModal().open()
+      this.currentModal().setWithContentOf(this, 'coming-soon')
     },
 
     getItForFree () {
-      this.currentModal().content = this.$refs['thank-you']
-    }
+      this.currentModal().setWithContentOf(this, 'thank-you')
+    },
   },
   components: {
     Modal
