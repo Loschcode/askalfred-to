@@ -12,13 +12,13 @@
           </div>
           <div class="col-md-4">
             <div class="box landing-header__top-link">
-              <a href="#">About us</a>
+              <nuxt-link to="/about-us">About us</nuxt-link>
             </div>
           </div>
           <div class="col-md-4">
             <div class="box landing-header__top-link">
               <span class="landing-header__top-link--round">
-                <a href="#">Ask me anything</a>
+                <a @click="openModal('modals-ask-me-anything')">Ask me anything</a>
               </span>
             </div>
           </div>
@@ -41,8 +41,6 @@
             <a @click="openModal('modals-ask-me-anything')">Ask me anything</a>
           </span>
 
-          <modals-ask-me-anything ref="modals-ask-me-anything" />
-
         </div>
       </div>
 
@@ -59,6 +57,8 @@
       <div class="landing-header__background-spacing"></div>
     </div>
 
+    <!-- Modals -->
+    <modals-ask-me-anything ref="modals-ask-me-anything" />
   </div>
 </template>
 
@@ -162,14 +162,12 @@
 </style>
 
 <script>
+import ModalsMixin from '../mixins/modals-mixin'
 import ModalsAskMeAnything from '../components/modals/ask-me-anything'
 
 export default {
   name: 'LandingHeader',
   methods: {
-    openModal (ref) {
-      this.$refs[ref].open()
-    }
   },
 
   data () {
@@ -179,6 +177,9 @@ export default {
 
   props: {
   },
+
+  mixins: [ModalsMixin],
+
   components: {
     ModalsAskMeAnything
   }

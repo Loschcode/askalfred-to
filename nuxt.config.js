@@ -32,6 +32,35 @@ module.exports = {
       lang: "scss"
     }
   ],
+
+  /**
+   * Router configurations
+   */
+  // router: {
+  //   scrollBehavior(to, from, savedPosition) {
+  //     console.log("scroling and shit");
+  //     // return { x: 0, y: 0 };
+
+  //     if (savedPosition) {
+  //       return savedPosition;
+  //     } else {
+  //       let position = {};
+  //       if (to.matched.length < 2) {
+  //         position = { x: 0, y: 0 };
+  //       } else if (
+  //         to.matched.some(r => r.components.default.options.scrollToTop)
+  //       ) {
+  //         position = { x: 0, y: 0 };
+  //       }
+  //       if (to.hash) {
+  //         position = { selector: to.hash };
+  //       }
+  //       debugger;
+  //       return position;
+  //     }F
+  //   }
+  // },
+
   /*
    ** Customize the progress bar color
    */

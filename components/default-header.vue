@@ -7,13 +7,13 @@
         <div class="row middle-md default-header__top-block">
           <div class="col-md-offset-4 col-md-4">
             <div class="box default-header__top-link">
-              <a href="#">Back to home page</a>
+              <nuxt-link to="/">Back to home page</nuxt-link>
             </div>
           </div>
           <div class="col-md-4">
             <div class="box default-header__top-link">
               <span class="default-header__top-link--round">
-                <a href="#">Ask me anything</a>
+                <a @click="openModal('modals-ask-me-anything')">Ask me anything</a>
               </span>
             </div>
           </div>
@@ -35,6 +35,9 @@
     <div class="row">
       <div class="default-header__background-spacing"></div>
     </div>
+
+    <!-- Modals -->
+    <modals-ask-me-anything ref="modals-ask-me-anything" />
   </div>
 </template>
 
@@ -146,12 +149,22 @@
 </style>
 
 <script>
+import ModalsMixin from '../mixins/modals-mixin'
+import ModalsAskMeAnything from '../components/modals/ask-me-anything'
+
 export default {
   name: 'DefaultHeader',
   computed: {
     title () { return this.$store.state.header.title }
   },
+
   props: {
+  },
+
+  mixins: [ModalsMixin],
+
+  components: {
+    ModalsAskMeAnything
   }
 }
 </script>

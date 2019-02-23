@@ -1,5 +1,8 @@
 <template>
-  <section class="what-will-alfred-do">
+  <section
+    class="what-will-alfred-do"
+    @click="openModal('modals-ask-me-anything')"
+  >
     <div class="col-md-12">
       <div class="row center-xs">
         <div class="col-md-5 col-xs-12">
@@ -61,6 +64,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Modals -->
+    <modals-ask-me-anything ref="modals-ask-me-anything" />
   </section>
 </template>
 
@@ -96,13 +102,21 @@
 
 <script>
 import { mapMutations } from 'vuex'
+import ModalsMixin from '../mixins/modals-mixin'
+import ModalsAskMeAnything from '../components/modals/ask-me-anything'
 
 export default {
   layout: 'default',
+  scrollToTop: true,
+
   created () {
     this.$store.commit('header/setTitle', ['What will Alfred', 'do for you?'])
   },
+
+  mixins: [ModalsMixin],
+
   components: {
+    ModalsAskMeAnything
   }
 }
 </script>

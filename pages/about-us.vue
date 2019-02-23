@@ -23,6 +23,8 @@
 <script>
 export default {
   layout: 'default',
+  scrollToTop: true,
+
   created () {
     this.$store.commit('header/setTitle', ['About us'])
   },

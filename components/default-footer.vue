@@ -4,7 +4,8 @@
       <div class="row center-xs">
         <div class="col-md-12">
           <div class="footer__terms">
-            <a href="#">Privacy policy</a> | <a href="#">About us</a>
+            <nuxt-link to="/privacy-policy">Privacy policy</nuxt-link> |
+            <nuxt-link to="/about-us">About us</nuxt-link>
           </div>
         </div>
       </div>
