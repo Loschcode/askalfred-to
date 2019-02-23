@@ -19,7 +19,7 @@
                   <div class="col-md-12">
                     <div class="box messages messages__request">
                       <div class="messages__request-arrow"></div>
-                      I want to organize a romantic dinner with my girlfriend.
+                      {{ question }}
                     </div>
                   </div>
                 </div>
@@ -27,7 +27,7 @@
                   <div class="col-md-12">
                     <div class="box messages messages__answer">
                       <div class="messages__answer-arrow"></div>
-                      Sure, what budget do you have?
+                      {{ answer }}
                     </div>
                   </div>
                 </div>
@@ -153,9 +153,27 @@
 </style>
 
 <script>
+import CampaignService from '../services/campaign-service'
+
 export default {
   name: 'LandingWhat',
   props: {
+  },
+
+  data () {
+    return {
+      question: '',
+      answer: ''
+    }
+  },
+
+  created () {
+    Object.assign(this, {
+      campaignService: new CampaignService(this)
+    })
+
+    this.question = this.campaignService.question()
+    this.answer = this.campaignService.answer()
   }
 }
 </script>
