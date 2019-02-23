@@ -1,7 +1,7 @@
 <template>
   <div class="ask-me-anything">
     <modal ref="current-modal">
-      <div class="content-ask-me-anything">
+      <div class="content-coming-soon">
         <div class="wrap container">
           <div class="row center-xs">
             <div class="col-md-12">
@@ -24,8 +24,8 @@
           </div>
           <div class="row center-xs">
             <div class="col-md-12">
-              <div class="content-ask-me-anything__call-to-action">
-                <span class="button__on-white button__on-white--squared content-ask-me-anything__call-to-action-button">
+              <div class="content-coming-soon__call-to-action">
+                <span class="button__on-white button__on-white--squared content-coming-soon__call-to-action-button">
                   <a @click="getItForFree()">Get it for free now</a>
                 </span>
               </div>
@@ -56,7 +56,7 @@
 </template>
 
 <style lang="scss">
-.content-ask-me-anything {
+.content-coming-soon {
   @include breakpoint("lg") {
     width: 30vw;
   }
@@ -90,13 +90,13 @@
   }
 }
 
-.content-ask-me-anything__call-to-action {
+.content-coming-soon__call-to-action {
   margin-top: spacing(2);
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-.content-ask-me-anything__call-to-action-button {
+.content-coming-soon__call-to-action-button {
   background-color: $color-persistent-blue;
   a {
     font-size: sizing(2);
