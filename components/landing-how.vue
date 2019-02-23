@@ -1,5 +1,6 @@
 <template>
   <div class="landing-how">
+    <a id="how-does-it-work" />
     <div class="row">
       <div class="landing-how__title">
         <h2>How does it work?</h2>
