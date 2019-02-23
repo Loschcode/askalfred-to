@@ -9,6 +9,7 @@
 
 <style lang="scss">
 .modal {
+  padding: 1em;
 }
 </style>
 
@@ -34,6 +35,10 @@ export default {
     }
   },
 
+  mounted () {
+    this.setupModal()
+  },
+
   watch: {
     content (next, prev) {
       this.modal.setContent(next)
@@ -42,7 +47,6 @@ export default {
 
   methods: {
     open () {
-      this.setupModal()
       this.renderModal()
     },
 

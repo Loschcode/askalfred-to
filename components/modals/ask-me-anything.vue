@@ -69,7 +69,6 @@
   @include breakpoint("xs") {
     width: 80vw;
   }
-  padding: 1em;
   text-align: center;
 
   p {
