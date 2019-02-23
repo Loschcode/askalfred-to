@@ -29,8 +29,11 @@
             <div class="row center-xs">
               <div class="col-md-12">
                 <div class="content-coming-soon__call-to-action">
-                  <span class="button__on-white button__on-white--squared content-coming-soon__call-to-action-button">
-                    <a @click="getItForFree()">Get it for free now</a>
+                  <span
+                    @click="getItForFree()"
+                    class="button__on-white button__on-white--squared content-coming-soon__call-to-action-button"
+                  >
+                    <a>Get it for free now</a>
                   </span>
                 </div>
               </div>
@@ -99,6 +102,7 @@
 
 .content-coming-soon__call-to-action-button {
   background-color: $color-persistent-blue;
+  cursor: pointer;
   a {
     font-size: sizing(2);
     padding-left: 3.1em;
