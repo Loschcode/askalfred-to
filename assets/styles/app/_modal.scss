@@ -88,7 +88,8 @@ $tingle-breakpoint: 541px !default;
 }
 
 .tingle-modal-box__content {
-  padding: 0;
+  padding: 1em;
+  overflow-y: visible;
 }
 
 .tingle-modal-box {

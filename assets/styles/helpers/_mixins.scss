@@ -76,6 +76,12 @@
   list-style-position: inside;
 }
 
+@mixin absolute-center() {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 @mixin extend-clickable($width: 2em, $height: 2em) {
   padding-top: $height;
   padding-bottom: $height;

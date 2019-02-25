@@ -5,7 +5,7 @@
     <!-- Below  are all the successive content we want to set depending actions -->
     <div class="+hidden">
       <div ref="coming-soon">
-        <div class="content-coming-soon">
+        <div class="content content-coming-soon">
           <div class="wrap container">
             <div class="row center-xs">
               <div class="col-md-12">
@@ -43,14 +43,25 @@
       </div>
 
       <div ref="thank-you">
-        <div class="content-thank-you">
+        <div class="content content-thank-you">
           <div class="wrap container">
             <div class="row center-xs">
               <div class="col-md-12">
+                <div class="content-thank-you__icon">
+                  <img src="/modals/check.svg" />
+                </div>
                 <h2>Thank you!</h2>
                 <p>
-                  Blablablabla
+                  We will get back to you shortly to give your early access.
                 </p>
+                <div class="content-thank-you__call-to-action">
+                  <span
+                    @click="close()"
+                    class="button button__on-black"
+                  >
+                    Continue
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -61,7 +72,7 @@
 </template>
 
 <style lang="scss">
-.content-coming-soon {
+.content {
   @include breakpoint("lg") {
     width: 30vw;
   }
@@ -74,6 +85,38 @@
   @include breakpoint("xs") {
     width: 80vw;
   }
+}
+
+.content-thank-you {
+  position: relative;
+  margin-top: 2em;
+  h1 {
+  }
+  p {
+    margin: spacing(2);
+    color: $color-grey-modal;
+    font-weight: 200;
+    font-size: sizing(3);
+  }
+}
+
+.content-thank-you__call-to-action {
+  position: absolute;
+  font-weight: bold;
+  @include absolute-center();
+  bottom: -4em;
+}
+
+.content-thank-you__icon {
+  position: absolute;
+  @include absolute-center();
+  top: -6em;
+  img {
+    width: sizing(13);
+  }
+}
+
+.content-coming-soon {
   text-align: center;
 
   p {
@@ -121,6 +164,10 @@ export default {
   methods: {
     currentModal () {
       return this.$refs['current-modal']
+    },
+
+    close () {
+      this.currentModal().close()
     },
 
     open () {

@@ -5,9 +5,6 @@
 </template>
 
 <style lang="scss">
-.tingle-modal-box__content {
-  padding: 1em;
-}
 </style>
 
 <script>
