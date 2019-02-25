@@ -24,10 +24,12 @@
     <div class="row top-md center-xs center-sm start-md">
       <div class="col-md-6 col-lg-5">
         <div class="box default-header__introduction">
-          <h1>
-            <div class="title__first">{{title[0]}}</div>
-            <div class="title__last">{{title[1]}}</div>
-          </h1>
+          <nuxt-link to="/">
+            <h1>
+              <div class="title__first">{{title[0]}}</div>
+              <div class="title__last">{{title[1]}}</div>
+            </h1>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -43,6 +45,7 @@
 
 <style lang="scss">
 .title__first {
+  color: $color-white;
   text-align: left;
   @include breakpoint("sm") {
     text-align: center;
@@ -50,6 +53,7 @@
 }
 
 .title__last {
+  color: $color-white;
   text-align: right;
   @include breakpoint("sm") {
     text-align: center;
