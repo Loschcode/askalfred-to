@@ -17,11 +17,19 @@
             </div>
             <div class="row center-xs">
               <div class="col-md-12">
-                <div class="input">
+                <div
+                  class="input"
+                  v-bind:class="{'input__error': (errors.has('email'))}"
+                >
                   <input
                     type="email"
+                    name="email"
                     placeholder="my-email@gmail.com"
+                    v-model="email"
+                    v-validate="'required|email'"
+                    data-vv-validate-on="custom"
                     autofocus
+                    v-on:keyup.enter="getItForFree()"
                   />
                 </div>
               </div>
@@ -72,6 +80,12 @@
 </template>
 
 <style lang="scss">
+.input__error {
+  input {
+    border: 2px solid $color-red !important;
+  }
+}
+
 .content {
   @include breakpoint("lg") {
     width: 30vw;
@@ -161,6 +175,13 @@ export default {
   name: 'ModalsAskMeAnything',
   props: {
   },
+
+  data () {
+    return {
+      email: ''
+    }
+  },
+
   methods: {
     currentModal () {
       return this.$refs['current-modal']
@@ -176,7 +197,11 @@ export default {
     },
 
     getItForFree () {
-      this.currentModal().setWithContentOf(this, 'thank-you')
+      this.$validator.validateAll().then(success => {
+        if (success) {
+          this.currentModal().setWithContentOf(this, 'thank-you')
+        }
+      })
     },
   },
   components: {

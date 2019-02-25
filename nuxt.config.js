@@ -14,7 +14,11 @@ module.exports = {
     link: [{ rel: "icon", type: "image/ico", href: "/favicon.png" }]
   },
 
-  modules: ["@nuxtjs/redirect-module", "@nuxtjs/style-resources"],
+  modules: [
+    "@nuxtjs/redirect-module",
+    "@nuxtjs/style-resources",
+    ["nuxt-validate", { lang: "en" }]
+  ],
 
   plugins: [{ src: "@plugins/vue2-smooth-scroll", ssr: false }],
 
