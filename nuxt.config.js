@@ -20,7 +20,10 @@ module.exports = {
     ["nuxt-validate", { lang: "en" }]
   ],
 
-  plugins: [{ src: "@plugins/vue2-smooth-scroll", ssr: false }],
+  plugins: [
+    { src: "@plugins/vue2-smooth-scroll", ssr: false },
+    { src: "@plugins/firebase", ssr: false }
+  ],
 
   redirect: [
     // { from: '^/$', to: '/url' }
