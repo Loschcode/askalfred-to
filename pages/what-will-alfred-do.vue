@@ -109,9 +109,18 @@ export default {
   layout: 'default',
   scrollToTop: true,
 
-  created () {
-    this.$store.commit('header/setTitle', ['What will Alfred', 'do for you?'])
+  head () {
+    return {
+      title: 'What will Alfred do? - AskAlfred',
+      meta: [
+        { hid: 'description', name: 'What will Alfred do?', content: 'He can do many things with his H24/24 7/7 support.' }
+      ]
+    }
   },
+
+  // created () {
+  //   this.$store.commit('header/setTitle', ['What will Alfred', 'do for you?'])
+  // },
 
   mixins: [ModalsMixin],
 

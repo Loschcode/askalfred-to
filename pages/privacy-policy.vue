@@ -170,9 +170,19 @@ export default {
   layout: 'default',
   scrollToTop: true,
 
+  head () {
+    return {
+      title: 'Privacy policy - AskAlfred',
+      meta: [
+        { hid: 'description', name: 'Privacy policy', content: 'Our company privacy policy' }
+      ]
+    }
+  },
+
   created () {
     this.$store.commit('header/setTitle', ['Privacy policy'])
   },
+
   components: {
   }
 }

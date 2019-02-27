@@ -5,11 +5,11 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: "laurent-tech",
+    title: "AskAlfred",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Nuxt.js project" }
+      { hid: "description", name: "AskAlfred", content: "Are you tired of losing time? Give it to Alfred." }
     ],
     link: [{ rel: "icon", type: "image/ico", href: "/favicon.png" }]
   },
