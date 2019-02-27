@@ -118,9 +118,9 @@ export default {
     }
   },
 
-  // created () {
-  //   this.$store.commit('header/setTitle', ['What will Alfred', 'do for you?'])
-  // },
+  created () {
+    this.$store.commit('header/setTitle', ['What will Alfred', 'do for you?'])
+  },
 
   mixins: [ModalsMixin],
 
