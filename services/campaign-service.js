@@ -84,7 +84,7 @@ class CampaignService {
         question:
           "This tracking doesn't make sense, can you call the post office and tell me what happened to my package ?",
         answer:
-          "They lost your package, do you want me to process a complain for you?"
+          "They lost your package, do you want me to process a complaint for you?"
       },
       {
         question:
