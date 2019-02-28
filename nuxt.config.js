@@ -9,7 +9,11 @@ module.exports = {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "AskAlfred", content: "Are you tired of losing time? Give it to Alfred." }
+      {
+        hid: "description",
+        name: "AskAlfred",
+        content: "Are you tired of losing time? Give it to Alfred."
+      }
     ],
     link: [{ rel: "icon", type: "image/ico", href: "/favicon.png" }]
   },
@@ -22,7 +26,8 @@ module.exports = {
 
   plugins: [
     { src: "@plugins/vue2-smooth-scroll", ssr: false },
-    { src: "@plugins/firebase", ssr: false }
+    { src: "@plugins/firebase", ssr: false },
+    { src: "@plugins/ga", ssr: false }
   ],
 
   redirect: [
