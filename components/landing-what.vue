@@ -39,7 +39,7 @@
             <div class="col-md-12">
               <div class="box">
                 <span class="button__on-white what__call-to-action">
-                  <nuxt-link to="/what-will-alfred-do">See more examples</nuxt-link>
+                  <nuxt-link rel="canonical" to="/what-will-alfred-do">See more examples</nuxt-link>
                 </span>
               </div>
             </div>

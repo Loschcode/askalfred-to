@@ -7,7 +7,7 @@
         <div class="row middle-md default-header__top-block">
           <div class="col-md-offset-4 col-md-4">
             <div class="box default-header__top-link">
-              <nuxt-link to="/">Back to home page</nuxt-link>
+              <nuxt-link rel="canonical" to="/">Back to home page</nuxt-link>
             </div>
           </div>
           <div class="col-md-4">
@@ -24,7 +24,7 @@
     <div class="row top-md center-xs center-sm start-md">
       <div class="col-md-6 col-lg-5">
         <div class="box default-header__introduction">
-          <nuxt-link to="/">
+          <nuxt-link rel="canonical" to="/">
             <h1>
               <div class="title__first">{{title[0]}}</div>
               <div class="title__last">{{title[1]}}</div>

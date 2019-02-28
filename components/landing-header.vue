@@ -15,7 +15,7 @@
           </div>
           <div class="col-md-4">
             <div class="box landing-header__top-link">
-              <nuxt-link to="/about-us">About us</nuxt-link>
+              <nuxt-link rel="canonical" to="/about-us">About us</nuxt-link>
             </div>
           </div>
           <div class="col-md-4">
