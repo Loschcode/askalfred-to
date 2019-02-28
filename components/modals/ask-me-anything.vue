@@ -109,7 +109,7 @@
   p {
     margin: spacing(2);
     color: $color-grey-modal;
-    font-weight: 200;
+    font-weight: 400;
     font-size: sizing(3);
   }
 }
