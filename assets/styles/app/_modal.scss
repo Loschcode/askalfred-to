@@ -72,6 +72,7 @@ $tingle-breakpoint: 541px !default;
   -webkit-touch-callout: none;
   -o-user-select: none;
   -moz-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 
   @media (max-width: $tingle-breakpoint) {
     position: fixed;
