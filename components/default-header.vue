@@ -1,13 +1,19 @@
 <template>
   <div class="default-header">
-    <div class="default-header__background"></div>
+    <div
+      class="default-header__background"
+      v-bind:class="{'default-header__background--simple': (!doubleTitle())}"
+    ></div>
     <div class="row middle-md">
       <div class="col-md-offset-5 col-md-7 +more-than-sm">
         <!-- Buttons top right -->
         <div class="row middle-md default-header__top-block">
           <div class="col-md-offset-4 col-md-4">
             <div class="box default-header__top-link">
-              <nuxt-link rel="canonical" to="/">Back to home page</nuxt-link>
+              <nuxt-link
+                rel="canonical"
+                to="/"
+              >Back to home page</nuxt-link>
             </div>
           </div>
           <div class="col-md-4">
@@ -24,10 +30,16 @@
     <div class="row top-md center-xs center-sm start-md">
       <div class="col-md-6 col-lg-5">
         <div class="box default-header__introduction">
-          <nuxt-link rel="canonical" to="/">
+          <nuxt-link
+            rel="canonical"
+            to="/"
+          >
             <h1>
               <div class="title__first">{{title[0]}}</div>
-              <div class="title__last">{{title[1]}}</div>
+              <div
+                v-if="doubleTitle()"
+                class="title__last"
+              >{{title[1]}}</div>
             </h1>
           </nuxt-link>
         </div>
@@ -35,7 +47,10 @@
     </div>
     <!-- Inside layout -->
     <div class="row">
-      <div class="default-header__background-spacing"></div>
+      <div
+        v-if="doubleTitle()"
+        class="default-header__background-spacing"
+      ></div>
     </div>
 
     <!-- Modals -->
@@ -108,6 +123,13 @@
   }
 }
 
+.default-header__background--simple {
+  @include header-background(40);
+  @include breakpoint("sm") {
+    @include header-background(30);
+  }
+}
+
 .default-header__background-spacing {
   padding-top: spacing(25);
   @include breakpoint("sm") {
@@ -160,6 +182,12 @@ export default {
   name: 'DefaultHeader',
   computed: {
     title () { return this.$store.state.header.title }
+  },
+
+  methods: {
+    doubleTitle () {
+      return this.title[1]
+    }
   },
 
   props: {
