@@ -16,6 +16,7 @@ body {
   font-family: $font-default;
   font-size: sizing(2.5);
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:focus {
@@ -68,6 +69,7 @@ a {
   text-decoration: none;
   color: $color-blue;
   font-family: $font-button;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
 }
 
