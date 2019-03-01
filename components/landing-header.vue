@@ -77,9 +77,7 @@
 .landing-header__image {
   margin: spacing(10);
   width: spacing(70);
-  img {
-    min-width: spacing(70);
-  }
+  min-height: spacing(80);
 }
 
 .landing-header__top-block {
