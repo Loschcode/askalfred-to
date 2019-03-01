@@ -15,7 +15,10 @@
           </div>
           <div class="col-md-4">
             <div class="box landing-header__top-link">
-              <nuxt-link rel="canonical" to="/about-us">About us</nuxt-link>
+              <nuxt-link
+                rel="canonical"
+                to="/about-us"
+              >About us</nuxt-link>
             </div>
           </div>
           <div class="col-md-4">
@@ -105,6 +108,9 @@
   color: $color-blue;
   font-weight: bold;
   margin: auto 0;
+  @include breakpoint("xs") {
+    margin-left: 0.5em;
+  }
   a {
     @include extend-clickable(5em, 5em);
   }
@@ -112,6 +118,9 @@
 
 .landing-header__background {
   @include header-background(110);
+  @include breakpoint("xs") {
+    @include header-background(100);
+  }
 }
 
 .landing-header__background-spacing {
@@ -125,7 +134,7 @@
     padding-top: spacing(10);
   }
   @include breakpoint("xs") {
-    padding-top: spacing(30);
+    padding-top: spacing(23);
   }
 }
 
@@ -139,6 +148,7 @@
   }
   @include breakpoint("xs") {
     display: inline-block;
+    margin-left: 1em;
   }
 
   margin-top: spacing(3);

@@ -6,7 +6,7 @@
           <img src="/landing-what/phone.svg" />
         </div>
       </div>
-      <div class="col-md-offset-1 col-md-4 center-sm start-lg">
+      <div class="col-md-offset-1 col-md-4 col-xs-10 center-sm start-lg">
         <div class="box what__details">
           <h2>What will Alfred do for you?</h2>
           <p>He can work on any task you don't want to do.</p>
@@ -39,7 +39,10 @@
             <div class="col-md-12">
               <div class="box">
                 <span class="button__on-white what__call-to-action">
-                  <nuxt-link rel="canonical" to="/what-will-alfred-do">See more examples</nuxt-link>
+                  <nuxt-link
+                    rel="canonical"
+                    to="/what-will-alfred-do"
+                  >See more examples</nuxt-link>
                 </span>
               </div>
             </div>

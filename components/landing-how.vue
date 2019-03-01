@@ -128,7 +128,7 @@
 }
 
 .landing-how__content {
-  @include no-max-width();
+  // @include no-max-width();
   position: relative;
   background-color: $color-light-grey;
 }
