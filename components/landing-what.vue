@@ -17,16 +17,16 @@
 
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="messages messages__request">
-                      <div class="messages__request-arrow"></div>
+                    <div class="messages message__myself">
+                      <div class="message__myself-arrow"></div>
                       {{ question }}
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="messages messages__answer">
-                      <div class="messages__answer-arrow"></div>
+                    <div class="messages message__yourself">
+                      <div class="message__yourself-arrow"></div>
                       {{ answer }}
                     </div>
                   </div>

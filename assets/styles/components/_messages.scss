@@ -9,14 +9,17 @@
   border-radius: 2px;
 }
 
-.messages__request {
+.message {
+}
+
+.message__myself {
   background-color: $background-message-request;
   border: 1px solid $border-message-request;
   text-align: right;
   float: right;
 }
 
-.messages__request-arrow {
+.message__myself-arrow {
   position: absolute;
   right: -18px;
   top: 32%;
@@ -27,7 +30,7 @@
   border-color: transparent transparent transparent $border-message-request;
 }
 
-.messages__request-arrow:after {
+.message__myself-arrow:after {
   position: absolute;
   width: 0;
   height: 0;
@@ -39,14 +42,14 @@
   right: 0px;
 }
 
-.messages__answer {
+.message__yourself {
   background-color: $background-message-answer;
   border: 1px solid $border-message-answer;
   text-align: left;
   float: left;
 }
 
-.messages__answer-arrow {
+.message__yourself-arrow {
   position: absolute;
   left: -18px;
   top: 32%;
@@ -57,7 +60,7 @@
   border-color: transparent $border-message-answer transparent transparent;
 }
 
-.messages__answer-arrow:after {
+.message__yourself-arrow:after {
   position: absolute;
   width: 0;
   height: 0;

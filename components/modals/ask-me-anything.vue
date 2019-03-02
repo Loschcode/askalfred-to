@@ -140,7 +140,7 @@ export default {
 <style scoped lang="scss">
 .input__error {
   input {
-    border: 2px solid $color-red !important;
+    border: pixeling(2) solid $color-red !important;
   }
 }
 
@@ -199,13 +199,13 @@ export default {
     font-size: sizing(3);
   }
   input {
-    border-radius: 5px;
+    border-radius: pixeling(5);
     text-align: center;
     font-size: sizing(3);
     width: spacing(49);
     color: $color-persistent-blue;
     padding: spacing(2);
-    border: 1px solid $color-grey-modal;
+    border: pixeling(1) solid $color-grey-modal;
     @include placeholder-color($color-grey-modal);
   }
 }

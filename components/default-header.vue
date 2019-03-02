@@ -127,7 +127,7 @@ export default {
   .default-header__top-link--round {
     @include button-radius("big");
     padding: spacing(1, 4, 1, 4);
-    border: 1px solid $color-white;
+    border: pixeling(1) solid $color-white;
   }
 }
 
