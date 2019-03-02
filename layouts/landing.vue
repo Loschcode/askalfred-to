@@ -16,9 +16,6 @@
   </div>
 </template>
 
-<style lang="scss">
-</style>
-
 <script>
 import LandingHeader from '../components/landing-header';
 import DefaultFooter from '../components/default-footer';
@@ -33,3 +30,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+</style>

@@ -58,6 +58,33 @@
   </div>
 </template>
 
+<script>
+import ModalsMixin from '../mixins/modals-mixin'
+import ModalsAskMeAnything from '../components/modals/ask-me-anything'
+
+export default {
+  name: 'DefaultHeader',
+  computed: {
+    title () { return this.$store.state.header.title }
+  },
+
+  methods: {
+    doubleTitle () {
+      return this.title[1]
+    }
+  },
+
+  props: {
+  },
+
+  mixins: [ModalsMixin],
+
+  components: {
+    ModalsAskMeAnything
+  }
+}
+</script>
+
 <style lang="scss">
 .title__first {
   color: $color-white;
@@ -165,7 +192,7 @@
 
     li {
       padding-left: spacing(4);
-      background: url("/bullet.svg") no-repeat left spacing(1.5);
+      background: url("/elements/bullet.svg") no-repeat left spacing(1.5);
       font-size: sizing(3);
       margin-top: spacing(3);
       font-weight: 200;
@@ -174,29 +201,3 @@
 }
 </style>
 
-<script>
-import ModalsMixin from '../mixins/modals-mixin'
-import ModalsAskMeAnything from '../components/modals/ask-me-anything'
-
-export default {
-  name: 'DefaultHeader',
-  computed: {
-    title () { return this.$store.state.header.title }
-  },
-
-  methods: {
-    doubleTitle () {
-      return this.title[1]
-    }
-  },
-
-  props: {
-  },
-
-  mixins: [ModalsMixin],
-
-  components: {
-    ModalsAskMeAnything
-  }
-}
-</script>

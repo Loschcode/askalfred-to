@@ -1,8 +1,3 @@
-// import Cable from '@/misc/Cable'
-// import _ from 'lodash'
-// import { createAnonymousUser } from '@/store/models/User'
-// import EventsService from './EventsService'
-
 class CampaignService {
   constructor(vm, campaign) {
     this.vm = vm;
@@ -10,9 +5,6 @@ class CampaignService {
     this.mapSelection = this.random(this.map());
   }
 
-  /**
-   * We take care of the connection
-   */
   question() {
     return this.mapSelection.question;
   }
@@ -101,21 +93,6 @@ class CampaignService {
   random(array) {
     return array[(Math.random() * array.length) | 0];
   }
-
-  /**
-   * process the anonymous log-in
-   * this will create a new user
-   * and connect it completely
-   */
-  // async _connectAnonymous() {
-  //   try {
-  //     console.log("connect anonymous ...");
-  //     const response = await createAnonymousUser(this.vm);
-  //     localStorage.setItem("userToken", response.token);
-  //   } catch (error) {
-  //     this.events.crash("We were unable to create an anonymous user");
-  //   }
-  // }
 }
 
 export default CampaignService;

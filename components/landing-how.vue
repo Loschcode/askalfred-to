@@ -83,6 +83,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'Landinglanding-how',
+  props: {
+  }
+}
+</script>
+
 <style lang="scss">
 .landing-how__details {
   padding-bottom: spacing(5);
@@ -140,11 +148,3 @@
   background-color: $color-light-grey;
 }
 </style>
-
-<script>
-export default {
-  name: 'Landinglanding-how',
-  props: {
-  }
-}
-</script>

@@ -7,9 +7,6 @@
   </section>
 </template>
 
-<style lang="scss">
-</style>
-
 <script>
 import LandingWhat from '../components/landing-what';
 import LandingHow from '../components/landing-how';
@@ -22,3 +19,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+</style>

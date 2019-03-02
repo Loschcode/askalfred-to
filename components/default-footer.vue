@@ -4,14 +4,28 @@
       <div class="row center-xs">
         <div class="col-md-12">
           <div class="footer__terms">
-            <nuxt-link rel="canonical" to="/privacy-policy">Privacy policy</nuxt-link> |
-            <nuxt-link rel="canonical" to="/about-us">About us</nuxt-link>
+            <nuxt-link
+              rel="canonical"
+              to="/privacy-policy"
+            >Privacy policy</nuxt-link> |
+            <nuxt-link
+              rel="canonical"
+              to="/about-us"
+            >About us</nuxt-link>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'DefaultFooter',
+  props: {
+  }
+}
+</script>
 
 <style lang="scss">
 .footer {
@@ -35,11 +49,3 @@
   overflow: hidden;
 }
 </style>
-
-<script>
-export default {
-  name: 'DefaultFooter',
-  props: {
-  }
-}
-</script>

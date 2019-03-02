@@ -80,6 +80,63 @@
   </div>
 </template>
 
+<script>
+import Modal from '../../components/modal'
+import { firebase, db } from '../../plugins/firebase'
+
+export default {
+  name: 'ModalsAskMeAnything',
+  props: {
+  },
+
+  data () {
+    return {
+      email: ''
+    }
+  },
+
+  methods: {
+    currentModal () {
+      return this.$refs['current-modal']
+    },
+
+    close () {
+      this.currentModal().close()
+    },
+
+    open () {
+      this.autoFocus()
+      this.currentModal().open()
+      this.currentModal().setWithContentOf(this, 'coming-soon')
+    },
+
+    autoFocus () {
+      this.$nextTick(() => this.$refs.email.focus())
+    },
+
+    getItForFree () {
+      this.$validator.validateAll().then(success => {
+        if (success) {
+
+          db.collection('get-it-for-free').add({
+            email: this.email
+          }).then((docRef) => {
+            // docRef.id
+            this.currentModal().setWithContentOf(this, 'thank-you')
+          }).catch((error) => {
+            // error
+            return false
+          });
+        }
+      })
+    },
+  },
+  components: {
+    Modal
+  }
+}
+</script>
+
 <style lang="scss">
 .input__error {
   input {
@@ -168,60 +225,3 @@
   }
 }
 </style>
-
-<script>
-import Modal from '../../components/modal'
-import { firebase, db } from '../../plugins/firebase'
-
-export default {
-  name: 'ModalsAskMeAnything',
-  props: {
-  },
-
-  data () {
-    return {
-      email: ''
-    }
-  },
-
-  methods: {
-    currentModal () {
-      return this.$refs['current-modal']
-    },
-
-    close () {
-      this.currentModal().close()
-    },
-
-    open () {
-      this.autoFocus()
-      this.currentModal().open()
-      this.currentModal().setWithContentOf(this, 'coming-soon')
-    },
-
-    autoFocus () {
-      this.$nextTick(() => this.$refs.email.focus())
-    },
-
-    getItForFree () {
-      this.$validator.validateAll().then(success => {
-        if (success) {
-
-          db.collection('get-it-for-free').add({
-            email: this.email
-          }).then((docRef) => {
-            // docRef.id
-            this.currentModal().setWithContentOf(this, 'thank-you')
-          }).catch((error) => {
-            // error
-            return false
-          });
-        }
-      })
-    },
-  },
-  components: {
-    Modal
-  }
-}
-</script>

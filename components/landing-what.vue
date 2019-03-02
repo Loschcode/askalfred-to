@@ -53,6 +53,32 @@
   </div>
 </template>
 
+<script>
+import CampaignService from '../services/campaign-service'
+
+export default {
+  name: 'LandingWhat',
+  props: {
+  },
+
+  data () {
+    return {
+      question: '',
+      answer: ''
+    }
+  },
+
+  created () {
+    Object.assign(this, {
+      campaignService: new CampaignService(this)
+    })
+
+    this.question = this.campaignService.question()
+    this.answer = this.campaignService.answer()
+  }
+}
+</script>
+
 <style lang="scss">
 .what {
   padding-bottom: spacing(10);
@@ -154,29 +180,3 @@
   left: 0px;
 }
 </style>
-
-<script>
-import CampaignService from '../services/campaign-service'
-
-export default {
-  name: 'LandingWhat',
-  props: {
-  },
-
-  data () {
-    return {
-      question: '',
-      answer: ''
-    }
-  },
-
-  created () {
-    Object.assign(this, {
-      campaignService: new CampaignService(this)
-    })
-
-    this.question = this.campaignService.question()
-    this.answer = this.campaignService.answer()
-  }
-}
-</script>

@@ -162,9 +162,6 @@
   </section>
 </template>
 
-<style lang="scss">
-</style>
-
 <script>
 export default {
   layout: 'default',
@@ -187,3 +184,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+</style>

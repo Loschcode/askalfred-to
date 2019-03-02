@@ -1,5 +1,8 @@
 <template>
-  <div class="wrapper default" v-show="titleLoaded()">
+  <div
+    class="wrapper default"
+    v-show="titleLoaded()"
+  >
     <div class="wrap container-fluid">
       <default-header />
     </div>
@@ -15,9 +18,6 @@
     </div>
   </div>
 </template>
-
-<style lang="scss">
-</style>
 
 <script>
 import DefaultHeader from '../components/default-header';
@@ -58,3 +58,6 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+</style>

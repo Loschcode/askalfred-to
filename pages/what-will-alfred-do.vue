@@ -70,36 +70,6 @@
   </section>
 </template>
 
-<style lang="scss">
-.what-will-alfred-do__block {
-  &:hover {
-    cursor: pointer;
-    @include button-radius(medium);
-    background-color: $background-hover-links;
-    p {
-      color: $color-persistent-blue;
-    }
-  }
-
-  margin-left: sizing(5);
-  margin-right: sizing(5);
-  padding: sizing(3);
-
-  h3 {
-    color: $color-persistent-blue;
-    font-weight: 600;
-    text-align: left;
-  }
-
-  p {
-    margin-top: sizing(2);
-    color: $color-detail;
-    font-size: sizing(2.7);
-    text-align: justify;
-  }
-}
-</style>
-
 <script>
 import { mapMutations } from 'vuex'
 import ModalsMixin from '../mixins/modals-mixin'
@@ -129,3 +99,33 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.what-will-alfred-do__block {
+  &:hover {
+    cursor: pointer;
+    @include button-radius(medium);
+    background-color: $background-hover-links;
+    p {
+      color: $color-persistent-blue;
+    }
+  }
+
+  margin-left: sizing(5);
+  margin-right: sizing(5);
+  padding: sizing(3);
+
+  h3 {
+    color: $color-persistent-blue;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  p {
+    margin-top: sizing(2);
+    color: $color-detail;
+    font-size: sizing(2.7);
+    text-align: justify;
+  }
+}
+</style>

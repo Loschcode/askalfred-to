@@ -15,7 +15,7 @@ module.exports = {
         content: "Are you tired of losing time? Give it to Alfred."
       }
     ],
-    link: [{ rel: "icon", type: "image/ico", href: "/favicon.png" }]
+    link: [{ rel: "icon", type: "image/ico", href: "/favicons/favicon.png" }]
   },
 
   modules: [
