@@ -79,7 +79,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .what {
   padding-bottom: spacing(10);
 }

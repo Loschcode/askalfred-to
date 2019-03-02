@@ -137,7 +137,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .input__error {
   input {
     border: 2px solid $color-red !important;

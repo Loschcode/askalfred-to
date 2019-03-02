@@ -85,7 +85,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .title__first {
   color: $color-white;
   text-align: left;

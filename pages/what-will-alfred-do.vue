@@ -100,7 +100,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .what-will-alfred-do__block {
   &:hover {
     cursor: pointer;

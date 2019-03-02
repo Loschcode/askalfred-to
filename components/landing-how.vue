@@ -91,7 +91,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .landing-how__details {
   padding-bottom: spacing(5);
   @include breakpoint("sm") {
