@@ -17,7 +17,7 @@
 
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="messages message__myself">
+                    <div class="message message__myself">
                       <div class="message__myself-arrow"></div>
                       {{ question }}
                     </div>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="messages message__yourself">
+                    <div class="message message__yourself">
                       <div class="message__yourself-arrow"></div>
                       {{ answer }}
                     </div>
