@@ -22,6 +22,7 @@
                   v-bind:class="{'input__error': (errors.has('email'))}"
                 >
                   <input
+                    ref="email"
                     type="email"
                     name="email"
                     placeholder="my-email@gmail.com"
@@ -193,8 +194,13 @@ export default {
     },
 
     open () {
+      this.autoFocus()
       this.currentModal().open()
       this.currentModal().setWithContentOf(this, 'coming-soon')
+    },
+
+    autoFocus () {
+      this.$nextTick(() => this.$refs.email.focus())
     },
 
     getItForFree () {
