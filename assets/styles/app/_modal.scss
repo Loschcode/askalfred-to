@@ -1,57 +1,3 @@
-// /**
-//  * The following is required to ensure the grid's breakpoints stay up to date
-//  * when changed in the project.
-//  */
-
-// $av-breakpoints: (
-//   "small": "screen and (min-width: #{$small-breakpoint})",
-//   "medium": "screen and (min-width: #{$medium-breakpoint})",
-//   "wide": "screen and (min-width: #{$wide-breakpoint})",
-//   "x-wide": "screen and (min-width: #{$x-wide-breakpoint})",
-//   "xx-wide": "screen and (min-width: #{$xx-wide-breakpoint})"
-// );
-
-// /*------------------------------------*\
-//    #RESPOND-TO
-// \*------------------------------------*/
-
-// /**
-//  * Used to create a media query within a Sass selector.
-//  * The breakpoints are based on settings/_breakpoints.scss
-//  */
-
-// $breakpoints: (
-//   "small": #{$small-breakpoint},
-//   "medium": #{$medium-breakpoint},
-//   "wide": #{$wide-breakpoint},
-//   "x-wide": #{$x-wide-breakpoint},
-//   "xx-wide": #{$xx-wide-breakpoint},
-//   "tingle-medium": #{$tingle-medium-breakpoint}
-// );
-
-// @mixin respond-to($breakpoint) {
-//   @if map-has-key($breakpoints, $breakpoint) {
-//     @media screen and (min-width: map-get($breakpoints, $breakpoint)), print {
-//       @content;
-//     }
-//   } @else {
-//     @warn 'The breakpoint #{$breakpoint} is not registered in mixins/_respond_to.scss';
-//   }
-// }
-
-/*------------------------------------*\
-    #TINGLE
-\*------------------------------------*/
-
-// .tingle-modal-box {
-//   height: 100%;
-
-//   // @include respond-to("tingle-medium") {
-//   //   height: auto;
-//   // }
-// }
-//
-
 .tingle-modal__close {
   text-align: center;
   background-color: transparent;
@@ -83,11 +29,6 @@ $tingle-breakpoint: 541px !default;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    // background: rgba(0, 0, 0, 0.8);
-    // top: 0;
-    // display: block;
-    // padding-top: 60px;
-    // width: 100%;
   }
 }
 .tingle-modal__closeLabel {
@@ -95,7 +36,7 @@ $tingle-breakpoint: 541px !default;
 }
 
 .tingle-modal-box__content {
-  padding: 1em;
+  padding: spacing(3);
   overflow-y: visible;
 }
 

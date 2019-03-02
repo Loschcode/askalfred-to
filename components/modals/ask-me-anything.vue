@@ -66,7 +66,7 @@
                 <div class="content-thank-you__call-to-action">
                   <span
                     @click="close()"
-                    class="button button__on-black"
+                    class="button button__white-on-blue"
                   >
                     Continue
                   </span>
@@ -161,7 +161,8 @@ export default {
 
 .content-thank-you {
   position: relative;
-  margin-top: 2em;
+  margin-top: spacing(7);
+
   h1 {
   }
   p {
@@ -176,13 +177,13 @@ export default {
   position: absolute;
   font-weight: bold;
   @include absolute-center();
-  bottom: -4em;
+  bottom: spacing(-13);
 }
 
 .content-thank-you__icon {
   position: absolute;
   @include absolute-center();
-  top: -6em;
+  top: spacing(-20);
   img {
     width: sizing(13);
   }
@@ -203,7 +204,7 @@ export default {
     font-size: sizing(3);
     width: spacing(49);
     color: $color-persistent-blue;
-    padding: 0.5em;
+    padding: spacing(2);
     border: 1px solid $color-grey-modal;
     @include placeholder-color($color-grey-modal);
   }
@@ -211,8 +212,8 @@ export default {
 
 .content-coming-soon__call-to-action {
   margin-top: spacing(2);
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: spacing(3);
+  padding-bottom: spacing(3);
 }
 
 .content-coming-soon__call-to-action-button {
@@ -220,8 +221,8 @@ export default {
   cursor: pointer;
   a {
     font-size: sizing(2);
-    padding-left: 3.1em;
-    padding-right: 3.1em;
+    padding-left: spacing(10);
+    padding-right: spacing(10);
   }
 }
 </style>

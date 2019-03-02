@@ -41,7 +41,7 @@ export default {
 }
 
 .footer__background {
-  margin-top: 10em;
+  margin-top: spacing(33);
   @include background-absolute();
   @include top-radius(50%);
   bottom: 0;

@@ -2,12 +2,12 @@
   <div class="what">
     <div class="row center-xs">
       <div class="col-md-4">
-        <div class="box what__image +more-than-sm">
+        <div class="what__image +more-than-sm">
           <img src="/landing-what/phone.svg" />
         </div>
       </div>
       <div class="col-md-offset-1 col-md-4 col-xs-10 center-sm start-lg">
-        <div class="box what__details">
+        <div class="what__details">
           <h2>What will Alfred do for you?</h2>
           <p>He can work on any task you don't want to do.</p>
 
@@ -17,7 +17,7 @@
 
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="box messages messages__request">
+                    <div class="messages messages__request">
                       <div class="messages__request-arrow"></div>
                       {{ question }}
                     </div>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="box messages messages__answer">
+                    <div class="messages messages__answer">
                       <div class="messages__answer-arrow"></div>
                       {{ answer }}
                     </div>
@@ -37,7 +37,7 @@
 
           <div class="row center-xs center-sm start-md start-lg">
             <div class="col-md-12">
-              <div class="box">
+              <div>
                 <span class="button button__blue-on-white what__call-to-action">
                   <nuxt-link
                     rel="canonical"
@@ -96,7 +96,7 @@ export default {
 
 .what__image {
   img {
-    height: 18em;
+    height: spacing(60);
   }
 }
 

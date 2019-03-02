@@ -6,7 +6,7 @@
         <!-- Buttons top right -->
         <div class="row middle-md landing-header__top-block">
           <div class="col-md-4">
-            <div class="box landing-header__top-link">
+            <div class="landing-header__top-link">
               <a
                 href="#how-does-it-work"
                 v-smooth-scroll
@@ -14,7 +14,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="box landing-header__top-link">
+            <div class="landing-header__top-link">
               <nuxt-link
                 rel="canonical"
                 to="/about-us"
@@ -22,7 +22,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="box landing-header__top-link">
+            <div class="landing-header__top-link">
               <span class="landing-header__top-link--round">
                 <a @click="openModal('modals-ask-me-anything')">Ask me anything</a>
               </span>
@@ -34,7 +34,7 @@
 
     <div class="row top-md center-xs center-sm">
       <div class="col-md-6 col-sm-6 col-xs-12">
-        <div class="box landing-header__introduction">
+        <div class="landing-header__introduction">
           <h1>I'm Alfred</h1>
           <p>Are you tired of<br />losing time ?</p>
           <ul>
@@ -51,7 +51,7 @@
       </div>
 
       <div class="col-md-6 col-sm-6">
-        <div class="box">
+        <div>
           <div class="landing-header__image +more-than-xs">
             <img src="/landing-header/phone-fist.svg" />
           </div>
@@ -127,7 +127,7 @@ export default {
 
 .landing-header__call-to-action {
   @include button-radius("big");
-  margin: -0.5em;
+  margin: spacing(-2);
   padding: spacing(4, 12, 4, 12);
   font-size: sizing(2);
   text-transform: uppercase;
@@ -136,7 +136,7 @@ export default {
   font-weight: bold;
   margin: auto 0;
   @include breakpoint("xs") {
-    margin-left: 0.5em;
+    margin-left: spacing(2);
   }
   a {
     @include extend-clickable(5em, 5em);
@@ -175,7 +175,7 @@ export default {
   }
   @include breakpoint("xs") {
     display: inline-block;
-    margin-left: 1em;
+    margin-left: spacing(3);
   }
 
   margin-top: spacing(3);
