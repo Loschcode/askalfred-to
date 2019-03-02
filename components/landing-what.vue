@@ -37,14 +37,12 @@
 
           <div class="row center-xs center-sm start-md start-lg">
             <div class="col-md-12">
-              <div>
-                <span class="button button__blue-on-white what__call-to-action">
-                  <nuxt-link
-                    rel="canonical"
-                    to="/what-will-alfred-do"
-                  >See more examples</nuxt-link>
-                </span>
-              </div>
+              <span class="button button__blue-on-white what__call-to-action">
+                <nuxt-link
+                  rel="canonical"
+                  to="/what-will-alfred-do"
+                >See more examples</nuxt-link>
+              </span>
             </div>
           </div>
         </div>
