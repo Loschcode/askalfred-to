@@ -206,7 +206,7 @@ export default {
     color: $text-input-color;
     padding: spacing(2);
     border: pixeling(1) solid $border-input-color;
-    @include placeholder-color($text-input-color-placeholder);
+    @include placeholder-color($text-input-placeholder-color);
   }
 }
 
@@ -217,7 +217,7 @@ export default {
 }
 
 .content-coming-soon__call-to-action-button {
-  background-color: $background-coming-soon-call-to-action;
+  background-color: $background-coming-soon-call-to-action-color;
   cursor: pointer;
   a {
     font-size: sizing(2);

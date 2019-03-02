@@ -10,8 +10,8 @@
 }
 
 .message__myself {
-  background-color: $background-message-myself;
-  border: 1px solid $border-message-myself;
+  background-color: $background-message-myself-color;
+  border: 1px solid $border-message-myself-color;
   text-align: right;
   float: right;
 }
@@ -24,7 +24,7 @@
   height: 0;
   border-style: solid;
   border-width: 10px 2px 10px 15px;
-  border-color: transparent transparent transparent $border-message-myself;
+  border-color: transparent transparent transparent $border-message-myself-color;
 }
 
 .message__myself-arrow:after {
@@ -33,7 +33,7 @@
   height: 0;
   border-style: solid;
   border-width: 10px 2px 10px 15px;
-  border-color: transparent transparent transparent $background-message-myself;
+  border-color: transparent transparent transparent $background-message-myself-color;
   content: "";
   top: -10px;
   right: 0px;
@@ -41,7 +41,7 @@
 
 .message__yourself {
   background-color: $background-message-yourself;
-  border: 1px solid $border-message-yourself;
+  border: 1px solid $border-message-yourself-color;
   text-align: left;
   float: left;
 }
@@ -54,7 +54,7 @@
   height: 0;
   border-style: solid;
   border-width: 10px 15px 10px 2px;
-  border-color: transparent $border-message-yourself transparent transparent;
+  border-color: transparent $border-message-yourself-color transparent transparent;
 }
 
 .message__yourself-arrow:after {
