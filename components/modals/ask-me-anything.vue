@@ -52,28 +52,12 @@
       </div>
 
       <div ref="thank-you">
-        <div class="content content-thank-you">
-          <div class="wrap container">
-            <div class="row center-xs">
-              <div class="col-md-12">
-                <div class="content-thank-you__icon">
-                  <img src="/modals/check.svg" />
-                </div>
-                <h2>Thank you!</h2>
-                <p>
-                  We will get back to you shortly to give your early access.
-                </p>
-                <div class="content-thank-you__call-to-action">
-                  <span
-                    @click="close()"
-                    class="button button__white-on-blue"
-                  >
-                    Continue
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="content">
+          <modals-common-success
+          :title="`Thank you!`"
+          :content="`We will get back to you shortly to give your early access.`"
+          :action="close"
+          />
         </div>
       </div>
     </div>
@@ -83,6 +67,8 @@
 <script>
 import Modal from '../../components/modal'
 import { firebase, db } from '../../plugins/firebase'
+
+import ModalsCommonSuccess from '../../components/modals/common/success'
 
 export default {
   name: 'ModalsAskMeAnything',
@@ -132,7 +118,8 @@ export default {
     },
   },
   components: {
-    Modal
+    Modal,
+    ModalsCommonSuccess
   }
 }
 </script>
@@ -156,36 +143,6 @@ export default {
   }
   @include breakpoint("xs") {
     width: 80vw;
-  }
-}
-
-.content-thank-you {
-  position: relative;
-  margin-top: spacing(7);
-
-  h1 {
-  }
-  p {
-    margin: spacing(2);
-    color: $text-modal-color;
-    font-weight: 400;
-    font-size: sizing(3);
-  }
-}
-
-.content-thank-you__call-to-action {
-  position: absolute;
-  font-weight: bold;
-  @include absolute-center();
-  bottom: spacing(-13);
-}
-
-.content-thank-you__icon {
-  position: absolute;
-  @include absolute-center();
-  top: spacing(-20);
-  img {
-    width: sizing(13);
   }
 }
 
