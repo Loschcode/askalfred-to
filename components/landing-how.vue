@@ -99,7 +99,7 @@ export default {
   }
 
   img {
-    width: spacing(50);
+    width: big-spacing(5);
     padding-bottom: spacing(2);
   }
   h3 {

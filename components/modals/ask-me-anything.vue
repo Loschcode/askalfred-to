@@ -54,9 +54,9 @@
       <div ref="thank-you">
         <div class="content">
           <modals-common-success
-          :title="`Thank you!`"
-          :content="`We will get back to you shortly to give your early access.`"
-          :action="close"
+            :title="`Thank you!`"
+            :content="`We will get back to you shortly to give your early access.`"
+            :action="close"
           />
         </div>
       </div>
@@ -159,7 +159,7 @@ export default {
     border-radius: pixeling(5);
     text-align: center;
     font-size: sizing(3);
-    width: spacing(49);
+    width: big-spacing(5);
     color: $text-input-color;
     padding: spacing(2);
     border: pixeling(1) solid $border-input-color;
@@ -178,8 +178,8 @@ export default {
   cursor: pointer;
   a {
     font-size: sizing(2);
-    padding-left: spacing(10);
-    padding-right: spacing(10);
+    padding-left: big-spacing(1);
+    padding-right: big-spacing(1);
   }
 }
 </style>

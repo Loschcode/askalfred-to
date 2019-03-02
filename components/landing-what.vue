@@ -81,7 +81,7 @@ export default {
 
 <style scoped lang="scss">
 .what {
-  padding-bottom: spacing(10);
+  padding-bottom: big-spacing(1);
 }
 
 .what__messages {
@@ -96,7 +96,7 @@ export default {
 
 .what__image {
   img {
-    height: spacing(60);
+    height: big-spacing(6);
   }
 }
 

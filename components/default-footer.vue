@@ -29,7 +29,7 @@ export default {
 
 <style scoped lang="scss">
 .footer {
-  padding-top: spacing(20);
+  padding-top: big-spacing(2);
 }
 
 .footer__terms {
@@ -41,7 +41,7 @@ export default {
 }
 
 .footer__background {
-  margin-top: spacing(33);
+  margin-top: big-spacing(3.3);
   @include background-absolute();
   @include top-radius(50%);
   bottom: 0;

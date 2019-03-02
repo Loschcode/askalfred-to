@@ -2,9 +2,9 @@
 }
 
 .page__block {
-  margin-left: sizing(5);
-  margin-right: sizing(5);
-  padding: sizing(5);
+  margin-left: spacing(7);
+  margin-right: spacing(7);
+  padding: spacing(10);
 
   color: $text-details-color;
   text-align: justify;
@@ -22,7 +22,7 @@
   }
 
   p {
-    margin-top: sizing(2);
+    margin-top: spacing(4);
     font-size: sizing(2.7);
   }
 

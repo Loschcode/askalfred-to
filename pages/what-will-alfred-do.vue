@@ -111,9 +111,9 @@ export default {
     }
   }
 
-  margin-left: sizing(5);
-  margin-right: sizing(5);
-  padding: sizing(3);
+  margin-left: spacing(7);
+  margin-right: spacing(7);
+  padding: spacing(5);
 
   h3 {
     color: $text-subtitle-color;
@@ -122,7 +122,7 @@ export default {
   }
 
   p {
-    margin-top: sizing(2);
+    margin-top: spacing(3);
     color: $text-details-color;
     font-size: sizing(2.7);
     text-align: justify;

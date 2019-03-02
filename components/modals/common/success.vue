@@ -55,15 +55,15 @@ export default {
   position: absolute;
   font-weight: bold;
   @include absolute-center();
-  bottom: spacing(-13);
+  bottom: big-spacing(-1.3);
 }
 
 .modal-success__icon {
   position: absolute;
   @include absolute-center();
-  top: spacing(-20);
+  top: big-spacing(-2);
   img {
-    width: sizing(13);
+    width: spacing(17);
   }
 }
 </style>
