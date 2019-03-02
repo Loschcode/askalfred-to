@@ -119,3 +119,29 @@
     width: 150%;
   }
 }
+
+@mixin triangle-right($border, $background) {
+  border-style: solid;
+  border-width: 10px 2px 10px 15px;
+  border-color: transparent transparent transparent $border;
+  &:after {
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 2px 10px 15px;
+    border-color: transparent transparent transparent $background;
+    content: "";
+  }
+}
+
+@mixin triangle-left($border, $background) {
+  border-style: solid;
+  border-width: 10px 15px 10px 2px;
+  border-color: transparent $border transparent transparent;
+  &:after {
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 15px 10px 2px;
+    border-color: transparent $background transparent transparent;
+    content: "";
+  }
+}
