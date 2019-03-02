@@ -174,7 +174,7 @@ export default {
 }
 
 .content-coming-soon__call-to-action-button {
-  background-color: $background-coming-soon-call-to-action-color;
+  background-color: $background-modal-call-to-action-color;
   cursor: pointer;
   a {
     font-size: sizing(2);
