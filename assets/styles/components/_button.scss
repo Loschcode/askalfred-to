@@ -11,16 +11,16 @@
 }
 
 .button__blue-on-white {
-  background-color: $color-blue;
+  background-color: $backgroud-blue-button;
   a {
-    color: $color-white;
+    color: $text-blue-button;
   }
 }
 
 .button__white-on-blue {
-  background-color: $color-white;
+  background-color: $background-white-button;
   a {
-    color: $color-black;
+    color: $text-white-button;
   }
 }
 

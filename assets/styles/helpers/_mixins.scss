@@ -98,7 +98,7 @@
   @include background-absolute();
   @include bottom-radius(50%);
   z-index: -1;
-  background: $color-blue url("/landing-header/background.svg") no-repeat fixed center;
+  background: $background-header-alt-color url("/landing-header/background.svg") no-repeat fixed center;
   overflow: hidden;
   background-size: cover;
   padding-bottom: spacing($height);

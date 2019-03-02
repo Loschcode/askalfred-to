@@ -107,7 +107,7 @@ export default {
     @include button-radius(medium);
     background-color: $background-hover-links;
     p {
-      color: $color-persistent-blue;
+      color: $text-highlighted-color;
     }
   }
 
@@ -116,14 +116,14 @@ export default {
   padding: sizing(3);
 
   h3 {
-    color: $color-persistent-blue;
+    color: $text-subtitle-color;
     font-weight: 600;
     text-align: left;
   }
 
   p {
     margin-top: sizing(2);
-    color: $color-detail;
+    color: $text-details-color;
     font-size: sizing(2.7);
     text-align: justify;
   }

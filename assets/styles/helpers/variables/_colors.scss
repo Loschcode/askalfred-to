@@ -1,27 +1,52 @@
 // Base colors
-$color-blue-purple-gradient: linear-gradient(-140deg, #7f83ef 6%, #3a7bd5 100%);
 $color-white: #ffffff;
-$color-black: black;
-$color-light-grey: #f7f8fd;
+
 $color-light-blue: #e4edff;
 $color-blue: #5f8ae4;
 $color-persistent-blue: #4979d5;
-
-$color-flashy-blue: #eef9ff;
-$color-grey-whiteish: #dfe2e6;
-$color-grey-blueish: #becde2;
-$color-grey-modal: #90a4ae;
-
-$color-detail: #808988;
+$color-blue-purple-gradient: linear-gradient(-140deg, #7f83ef 6%, #3a7bd5 100%);
 
 $color-red: #d75a4a;
 
+$color-flashy-blue: #eef9ff;
+$color-very-light-grey: #f7f8fd;
+$color-light-grey: #dfe2e6;
+$color-grey-blueish: #becde2;
+$color-grey: #90a4ae;
+$color-dark-grey: #808988;
+
+$color-black: black;
+
 // Elements colors
-$background-main: $color-white;
-$background-down: $color-light-grey;
-$background-up: $color-blue-purple-gradient;
+$text-modal-color: $color-grey;
+$text-input-color-placeholder: $color-grey;
+$text-input-color: $color-persistent-blue;
+$text-header-call-to-action-color: $color-blue;
+$text-footer-color: $color-white;
+$text-title-color: $color-white;
+$text-header-color: $color-white;
+$text-blue-button: $color-white;
+$text-white-button: $color-black;
+$text-details-color: $color-dark-grey;
+$text-subtitle-color: $color-persistent-blue;
+$text-tag-color: $color-persistent-blue;
+$text-highlighted-color: $color-persistent-blue;
+$text-base-link-color: $color-blue;
+$text-page-link-color: $color-blue;
+
+$background-landing-how-color: $color-very-light-grey;
+$background-header-call-to-action-color: $color-white;
+$background-white-button: $color-white;
+$background-header-color: $color-white;
 $background-message-myself: $color-flashy-blue;
 $background-hover-links: $color-light-blue;
 $background-message-yourself: $color-white;
+$background-footer-color: $color-blue;
+$backgroud-blue-button: $color-blue;
+$background-header-alt-color: $color-blue;
+$background-coming-soon-call-to-action: $color-persistent-blue;
+
+$border-error-color: $color-red;
+$border-input-color: $color-grey;
 $border-message-myself: $color-grey-blueish;
-$border-message-yourself: $color-grey-whiteish;
+$border-message-yourself: $color-light-grey;

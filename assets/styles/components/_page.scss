@@ -6,16 +6,16 @@
   margin-right: sizing(5);
   padding: sizing(5);
 
-  color: $color-detail;
+  color: $text-details-color;
   text-align: justify;
 
   a {
     padding-bottom: spacing(1);
-    border-bottom: 1px solid $color-blue;
+    border-bottom: 1px solid $text-page-link-color;
   }
 
   h3 {
-    color: $color-persistent-blue;
+    color: $text-subtitle-color;
     font-weight: 600;
     text-align: left;
     padding-top: spacing(5);

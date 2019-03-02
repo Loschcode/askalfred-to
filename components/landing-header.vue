@@ -96,7 +96,7 @@ export default {
 
 <style scoped lang="scss">
 .landing-header {
-  color: $color-white;
+  color: $text-header-color;
   position: relative;
 }
 
@@ -109,20 +109,20 @@ export default {
 .landing-header__top-block {
   a {
     @include extend-clickable();
-    color: $color-white;
+    color: $text-header-color;
   }
   margin: auto;
   padding-top: spacing(6);
+}
 
-  .landing-header__top-link {
-    text-align: center;
-  }
+.landing-header__top-link {
+  text-align: center;
+}
 
-  .landing-header__top-link--round {
-    @include button-radius("big");
-    padding: spacing(1, 4, 1, 4);
-    border: pixeling(1) solid $color-white;
-  }
+.landing-header__top-link--round {
+  @include button-radius("big");
+  padding: spacing(1, 4, 1, 4);
+  border: pixeling(1) solid $text-header-color;
 }
 
 .landing-header__call-to-action {
@@ -131,8 +131,8 @@ export default {
   padding: spacing(4, 12, 4, 12);
   font-size: sizing(2);
   text-transform: uppercase;
-  background-color: $color-white;
-  color: $color-blue;
+  background-color: $background-header-call-to-action-color;
+  color: $text-header-call-to-action-color;
   font-weight: bold;
   margin: auto 0;
   @include breakpoint("xs") {

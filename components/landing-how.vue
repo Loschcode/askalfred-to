@@ -103,7 +103,7 @@ export default {
     padding-bottom: spacing(2);
   }
   h3 {
-    color: $color-persistent-blue;
+    color: $text-subtitle-color;
     text-align: left;
     padding-bottom: spacing(2);
   }
@@ -113,7 +113,7 @@ export default {
     @include breakpoint("xs") {
       max-width: 100%;
     }
-    color: $color-detail;
+    color: $text-details-color;
     text-align: justify;
   }
 }
@@ -121,7 +121,7 @@ export default {
 .landing-how__details--tag {
   padding-top: spacing(3);
   text-align: left;
-  color: $color-persistent-blue;
+  color: $text-tag-color;
   font-size: sizing(2);
   text-transform: uppercase;
   font-weight: 600;
@@ -132,19 +132,19 @@ export default {
   padding-bottom: 7vh;
   @include no-max-width();
   @include top-radius(100%);
-  background-color: $color-light-grey;
+  background-color: $background-landing-how-color;
 }
 
 .landing-how__content {
   // @include no-max-width();
   position: relative;
-  background-color: $color-light-grey;
+  background-color: $background-landing-how-color;
 }
 
 .landing-how__after-content {
   @include no-max-width();
   position: absolute;
   height: 10vh;
-  background-color: $color-light-grey;
+  background-color: $background-landing-how-color;
 }
 </style>

@@ -34,9 +34,9 @@ export default {
 
 .footer__terms {
   padding: spacing(6);
-  color: $color-white;
+  color: $text-footer-color;
   a {
-    color: $color-white;
+    color: $text-footer-color;
   }
 }
 
@@ -45,7 +45,7 @@ export default {
   @include background-absolute();
   @include top-radius(50%);
   bottom: 0;
-  background: $color-blue no-repeat fixed left;
+  background: $background-footer-color no-repeat fixed left;
   overflow: hidden;
 }
 </style>

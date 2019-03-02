@@ -35,10 +35,10 @@
             to="/"
           >
             <h1>
-              <div class="title__first">{{title[0]}}</div>
+              <div class="default-header-title__first">{{title[0]}}</div>
               <div
                 v-if="doubleTitle()"
-                class="title__last"
+                class="default-header-title__last"
               >{{title[1]}}</div>
             </h1>
           </nuxt-link>
@@ -86,16 +86,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.title__first {
-  color: $color-white;
+.default-header-title__first {
+  color: $text-title-color;
   text-align: left;
   @include breakpoint("sm") {
     text-align: center;
   }
 }
 
-.title__last {
-  color: $color-white;
+.default-header-title__last {
+  color: $text-title-color;
   text-align: right;
   @include breakpoint("sm") {
     text-align: center;
@@ -103,19 +103,14 @@ export default {
 }
 
 .default-header {
-  color: $color-white;
+  color: $text-header-color;
   position: relative;
-}
-
-.default-header__image {
-  margin: spacing(10);
-  width: spacing(70);
 }
 
 .default-header__top-block {
   a {
     @include extend-clickable();
-    color: $color-white;
+    color: $text-header-color;
   }
   margin: auto;
   padding-top: spacing(6);
@@ -127,20 +122,8 @@ export default {
   .default-header__top-link--round {
     @include button-radius("big");
     padding: spacing(1, 4, 1, 4);
-    border: pixeling(1) solid $color-white;
+    border: pixeling(1) solid $text-header-color;
   }
-}
-
-.default-header__call-to-action {
-  @include button-radius("big");
-  margin: spacing(-2);
-  padding: spacing(4, 12, 4, 12);
-  font-size: sizing(2);
-  text-transform: uppercase;
-  background-color: $color-white;
-  color: $color-blue;
-  font-weight: bold;
-  margin: auto 0;
 }
 
 .default-header__background {

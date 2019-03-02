@@ -140,7 +140,7 @@ export default {
 <style scoped lang="scss">
 .input__error {
   input {
-    border: pixeling(2) solid $color-red !important;
+    border: pixeling(2) solid $border-error-color !important;
   }
 }
 
@@ -167,7 +167,7 @@ export default {
   }
   p {
     margin: spacing(2);
-    color: $color-grey-modal;
+    color: $text-modal-color;
     font-weight: 400;
     font-size: sizing(3);
   }
@@ -194,7 +194,7 @@ export default {
 
   p {
     margin: spacing(2);
-    color: $color-grey-modal;
+    color: $text-modal-color;
     font-weight: 400;
     font-size: sizing(3);
   }
@@ -203,10 +203,10 @@ export default {
     text-align: center;
     font-size: sizing(3);
     width: spacing(49);
-    color: $color-persistent-blue;
+    color: $text-input-color;
     padding: spacing(2);
-    border: pixeling(1) solid $color-grey-modal;
-    @include placeholder-color($color-grey-modal);
+    border: pixeling(1) solid $border-input-color;
+    @include placeholder-color($text-input-color-placeholder);
   }
 }
 
@@ -217,7 +217,7 @@ export default {
 }
 
 .content-coming-soon__call-to-action-button {
-  background-color: $color-persistent-blue;
+  background-color: $background-coming-soon-call-to-action;
   cursor: pointer;
   a {
     font-size: sizing(2);
