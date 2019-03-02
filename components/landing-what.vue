@@ -38,7 +38,7 @@
           <div class="row center-xs center-sm start-md start-lg">
             <div class="col-md-12">
               <div class="box">
-                <span class="button__on-white what__call-to-action">
+                <span class="button button__blue-on-white what__call-to-action">
                   <nuxt-link
                     rel="canonical"
                     to="/what-will-alfred-do"
@@ -107,76 +107,5 @@ export default {
     font-size: sizing(3);
     font-weight: 200;
   }
-}
-
-.messages {
-  position: relative;
-  padding: spacing(3);
-  display: flex;
-  margin-top: spacing(1);
-  margin-bottom: spacing(1);
-  max-width: 370px;
-  word-wrap: break-word;
-  border-radius: 2px;
-}
-
-.messages__request {
-  background-color: $background-message-request;
-  border: 1px solid $border-message-request;
-  text-align: right;
-  float: right;
-}
-
-.messages__request-arrow {
-  position: absolute;
-  right: -18px;
-  top: 32%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 2px 10px 15px;
-  border-color: transparent transparent transparent $border-message-request;
-}
-
-.messages__request-arrow:after {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 2px 10px 15px;
-  border-color: transparent transparent transparent $background-message-request;
-  content: "";
-  top: -10px;
-  right: 0px;
-}
-
-.messages__answer {
-  background-color: $background-message-answer;
-  border: 1px solid $border-message-answer;
-  text-align: left;
-  float: left;
-}
-
-.messages__answer-arrow {
-  position: absolute;
-  left: -18px;
-  top: 32%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 15px 10px 2px;
-  border-color: transparent $border-message-answer transparent transparent;
-}
-
-.messages__answer-arrow:after {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 15px 10px 2px;
-  border-color: transparent $background-message-answer transparent transparent;
-  content: "";
-  top: -10px;
-  left: 0px;
 }
 </style>

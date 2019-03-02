@@ -40,7 +40,7 @@
                 <div class="content-coming-soon__call-to-action">
                   <span
                     @click="getItForFree()"
-                    class="button__on-white button__on-white--squared content-coming-soon__call-to-action-button"
+                    class="button button__blue-on-white button--squared content-coming-soon__call-to-action-button"
                   >
                     <a>Get it for free now</a>
                   </span>
