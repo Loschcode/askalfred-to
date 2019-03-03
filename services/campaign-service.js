@@ -22,7 +22,7 @@ class CampaignService {
       },
       {
         question:
-          "I'm very tired in the airport, can you search for lounges I can sleep in here ?",
+          "I'm very tired in the airport, can you search for lounges I can sleep in here?",
         answer: "Sure, there's one next to you."
       },
       {
@@ -59,12 +59,12 @@ class CampaignService {
       },
       {
         question:
-          "I'm free around March, I've $500 budget, can you give me some possible trips ? I want a warm country.",
+          "I'm free around March, I've $500 budget, can you give me some possible trips? I want a warm country.",
         answer: "Here are a few possibilities you might like..."
       },
       {
         question:
-          "I booked some tickets for Thailand, can you send me what I need to fill for the visa there ?",
+          "I booked some tickets for Thailand, can you send me what I need to fill for the visa there?",
         answer:
           "You'll need to fulfil this form. Do you want me to use your data and send it through?"
       },
@@ -74,13 +74,13 @@ class CampaignService {
       },
       {
         question:
-          "This tracking doesn't make sense, can you call the post office and tell me what happened to my package ?",
+          "This tracking doesn't make sense, can you call the post office and tell me what happened to my package?",
         answer:
           "They lost your package, do you want me to process a complaint for you?"
       },
       {
         question:
-          "Can you book me a ticket to Vancouver around 15th March when it's below 500€ ?",
+          "Can you book me a ticket to Vancouver around 15th March when it's below 500€?",
         answer: "No problem."
       },
       {
