@@ -38,7 +38,7 @@
 
             <h3>Clear gifs/web beacons information</h3>
 
-            <p>When you use the Service, we may employ clear GIFs (also known as web beacons) which are used to anonymously track the online usage patterns of our Users. In addition, we may also use clear GIFs in HTML-based emails sent to our users to track which emails are opened and which links are clicked by recipients. This information allows for more accurate reporting and improvement of the Service.</p>
+            <p>When you use the Service, we may employ clear GIFs (also known as web beacons) which are used to anonymously track the online usage patterns of our Identitys. In addition, we may also use clear GIFs in HTML-based emails sent to our users to track which emails are opened and which links are clicked by recipients. This information allows for more accurate reporting and improvement of the Service.</p>
 
             <h3>Device identifiers</h3>
 
@@ -61,7 +61,7 @@
               <li>Customer happiness: We use information about you, information that you provide to our customer happiness team, and information about your interactions with the Service to resolve technical issues you experience with the Service, and to ensure that we can repair and improve the Service for all AskAlfred users.</li>
               <li>For security measures: We use information about you to monitor activity that we think is suspicious or potentially fraudulent, and to identify violations or this Privacy Policy or our Terms of Use.</li>
               <li>For matters that you have specifically consent to: From time to time AskAlfred may seek your consent to use your information for a particular purpose. Where you consent to our doing so, we will use it for that purpose. Where you no longer want us to use your information for that purpose you may withdraw your consent to this use.</li>
-              <li>For matters that we are required to use your information by law: AskAlfred will use or disclose your information where we reasonably believe that such action is necessary to (a) comply with the law and the reasonable requests of law enforcement; (b) to enforce our Terms of Use or to protect the security or integrity of our Service; and/or (c) to exercise or protect the rights, property, or personal safety of AskAlfred, our Users or others.</li>
+              <li>For matters that we are required to use your information by law: AskAlfred will use or disclose your information where we reasonably believe that such action is necessary to (a) comply with the law and the reasonable requests of law enforcement; (b) to enforce our Terms of Use or to protect the security or integrity of our Service; and/or (c) to exercise or protect the rights, property, or personal safety of AskAlfred, our Identitys or others.</li>
             </ul>
 
             <h3>Legal bases for processing information under the GDPR (for users in the EEA)</h3>
@@ -96,7 +96,7 @@
               <li>Delivery of physical products;</li>
             </ul>
 
-            <h3>Who you may choose to share your User Content with</h3>
+            <h3>Who you may choose to share your Identity Content with</h3>
 
             <p>AskAlfred may share your information with third parties in certain circumstances, such as where:</p>
 
@@ -106,13 +106,13 @@
               <li>you have consented to our sharing it with a third party for a particular purpose.</li>
             </ul>
 
-            <p>AskAlfred may also share your information with a third party in circumstances where we sell divest or transfer AskAlfred (including any shares in AskAlfred), or any combination of its products, services, assets and/or businesses to a third party. Information such as customer names and email addresses, User Content and other user information related to the Service may be among the items sold or otherwise transferred in these types of transactions. We may also sell, assign or otherwise transfer such information in the course of corporate divestitures, mergers, acquisitions, bankruptcies, dissolutions, reorganisations, liquidations, similar transactions or proceedings involving all or a portion of the AskAlfred.</p>
+            <p>AskAlfred may also share your information with a third party in circumstances where we sell divest or transfer AskAlfred (including any shares in AskAlfred), or any combination of its products, services, assets and/or businesses to a third party. Information such as customer names and email addresses, Identity Content and other user information related to the Service may be among the items sold or otherwise transferred in these types of transactions. We may also sell, assign or otherwise transfer such information in the course of corporate divestitures, mergers, acquisitions, bankruptcies, dissolutions, reorganisations, liquidations, similar transactions or proceedings involving all or a portion of the AskAlfred.</p>
 
             <p>We may also aggregate or otherwise strip data of all personally identifying characteristics and may share that aggregated, anonymized data with third parties.</p>
 
-            <h3>Who you may choose to share your User Content with</h3>
+            <h3>Who you may choose to share your Identity Content with</h3>
 
-            <p>Any information or content that you voluntarily disclose for posting to the Service, such as User Content, becomes available to us. If you remove information that you posted to the Service, copies may remain viewable in cached and archived pages of the Service.</p>
+            <p>Any information or content that you voluntarily disclose for posting to the Service, such as Identity Content, becomes available to us. If you remove information that you posted to the Service, copies may remain viewable in cached and archived pages of the Service.</p>
 
             <h3>How we transfer, store and protect your data</h3>
 
@@ -120,11 +120,11 @@
 
             <h3>Cross-border transfers of information (for users in the EEA)</h3>
 
-            <p>For Users in the EEA, where we transfer your information to a third party provider that is not located in the EEA, and is not subject to an adequacy decision by the EU Commission, we will require those third party providers to enter into an agreement that provides appropriate safeguards for your information. From time to time we may also seek your consent to transfer your information to a third country outside the EEA.</p>
+            <p>For Identitys in the EEA, where we transfer your information to a third party provider that is not located in the EEA, and is not subject to an adequacy decision by the EU Commission, we will require those third party providers to enter into an agreement that provides appropriate safeguards for your information. From time to time we may also seek your consent to transfer your information to a third country outside the EEA.</p>
 
             <h3>Keeping your information safe</h3>
 
-            <p>AskAlfred cares about the security of your information, and uses appropriate safeguards to preserve the integrity and security of all information collected through the Service. To protect your privacy and security, we take reasonable steps (such as requesting a unique password) to verify your identity before granting you access to your account. You are responsible for maintaining the secrecy of your unique password and account information, and for controlling access to your email communications from AskAlfred, at all times. However, AskAlfred cannot ensure or warrant the security of any information you transmit to AskAlfred or guarantee that information on the Service may not be accessed, disclosed, altered, or destroyed. Your privacy settings may also be affected by changes to the functionality of third party sites and services that you add to the AskAlfred Service, such as social networks. AskAlfred is not responsible for the functionality or security measures of any third party.</p>
+            <p>AskAlfred cares about the security of your information, and uses appropriate safeguards to preserve the integrity and security of all information collected through the Service. To protect your privacy and security, we take reasonable steps (such as requesting a unique password) to verify your user before granting you access to your account. You are responsible for maintaining the secrecy of your unique password and account information, and for controlling access to your email communications from AskAlfred, at all times. However, AskAlfred cannot ensure or warrant the security of any information you transmit to AskAlfred or guarantee that information on the Service may not be accessed, disclosed, altered, or destroyed. Your privacy settings may also be affected by changes to the functionality of third party sites and services that you add to the AskAlfred Service, such as social networks. AskAlfred is not responsible for the functionality or security measures of any third party.</p>
 
             <h3>Compromise of information</h3>
 
@@ -140,9 +140,9 @@
 
             <p>Please refer to your mobile device or browser’s technical information for instructions on how to delete and disable cookies, and other tracking/recording tools. Depending on your type of device, it may not be possible to delete or disable tracking mechanisms on your mobile device. Note that disabling cookies and/or other tracking tools prevents AskAlfred or its business partners from tracking your browser’s activities in relation to the Service, and for use in targeted advertising activities by third parties. However, doing so may disable many of the features available through the Service. If you have any questions about opting out of the collection of cookies and other tracking/recording tools, you can contact us directly at <a href="mailto:support@askalfred.app">support@askalfred.app</a></p>
 
-            <h3>How long we keep your User Content</h3>
+            <h3>How long we keep your Identity Content</h3>
 
-            <p>Following termination or deactivation of your User account, AskAlfred may retain your profile information and User Content for a commercially reasonable time, and for as long as we have a valid purpose to do so. In particular, AskAlfred may retain your information for the purpose of comply with its legal and audit obligations, and for backup and archival purposes.</p>
+            <p>Following termination or deactivation of your Identity account, AskAlfred may retain your profile information and Identity Content for a commercially reasonable time, and for as long as we have a valid purpose to do so. In particular, AskAlfred may retain your information for the purpose of comply with its legal and audit obligations, and for backup and archival purposes.</p>
 
             <h3>Children’s privacy</h3>
 
@@ -150,7 +150,7 @@
 
             <h3>Links to other websites and services</h3>
 
-            <p>We are not responsible for the practices employed by websites or services linked to or from the Service, including the information or content contained therein. Please remember that when you use a link to go from the Service to another website, our Privacy Policy does not apply to third-party websites or services. Your browsing and interaction on any third-party website or service, including those that have a link or advertisement on our website, are subject to that third party’s own rules and policies. In addition, you agree that we are not responsible for and we do not exercise control over any third-parties that you authorize to access your User Content. If you are using a third-party website or service (like Facebook) and you allow such a third-party access to your User Content you do so at your own risk. This Privacy Policy does not apply to information we collect by other means (including offline) or from other sources other than through the Service.</p>
+            <p>We are not responsible for the practices employed by websites or services linked to or from the Service, including the information or content contained therein. Please remember that when you use a link to go from the Service to another website, our Privacy Policy does not apply to third-party websites or services. Your browsing and interaction on any third-party website or service, including those that have a link or advertisement on our website, are subject to that third party’s own rules and policies. In addition, you agree that we are not responsible for and we do not exercise control over any third-parties that you authorize to access your Identity Content. If you are using a third-party website or service (like Facebook) and you allow such a third-party access to your Identity Content you do so at your own risk. This Privacy Policy does not apply to information we collect by other means (including offline) or from other sources other than through the Service.</p>
 
             <h3>How to contact us</h3>
 

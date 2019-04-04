@@ -1,7 +1,9 @@
 <template>
-  <section class="col-md-12">
-    <!-- What can you ask ? -->
-    <landing-what />
+  <section>
+    <div class="col-md-12">
+      <!-- What can you ask ? -->
+      <landing-what />
+    </div>
     <!-- How does it work ? -->
     <landing-how />
   </section>
