@@ -7,8 +7,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-        <div class="landing-how__content undo-wrap">
+      <div class="col-md-12 undo-wrap">
+        <div class="landing-how__content">
 
           <!-- You send requests to Alfred -->
           <div class="landing-how__details">
