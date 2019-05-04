@@ -71,7 +71,6 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
 import ModalsMixin from '../mixins/modals-mixin'
 import ModalsAskMeAnything from '../components/modals/ask-me-anything'
 
