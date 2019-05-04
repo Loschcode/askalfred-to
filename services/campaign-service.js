@@ -18,7 +18,7 @@ class CampaignService {
       {
         question:
           "I just arrived to Berlin, what's the best way to move around the city?",
-        answer: 'I have a few suggestions depending for you.'
+        answer: 'I have a few suggestions for you depeding your budget.'
       },
       {
         question:
@@ -32,7 +32,7 @@ class CampaignService {
       },
       {
         question:
-          'Find me a gym near my new flat for a budget of $60 / month without subscription',
+          'Find me a gym near my new flat for a budget of $60 / month without engagemet',
         answer:
           "Sure, here's a list of gym, do you want me to call them up to crack some discounts?"
       },
