@@ -87,10 +87,8 @@ export default {
     }
   },
 
-  created () {
-    this.$nextTick(() => {
-      this.$store.commit('header/setTitle', ['What will Alfred', 'do for you?'])
-    })
+  mounted () {
+    this.$store.commit('header/setTitle', ['What will Alfred', 'do for you?'])
   },
 
   mixins: [ModalsMixin],
