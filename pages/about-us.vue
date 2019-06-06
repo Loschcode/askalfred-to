@@ -14,7 +14,7 @@
             <p>Starting from this statement, we tried to cross-check all possibilities, tried things, rolled back and tried again to make all this work smoothly.</p>
             <p>We now entered the testing phase. The service is still in a closed-alpha version but will soon be available publicly, if you want an early access, please register your email; we filter this manually.</p>
             <h3>We are hiring!</h3>
-            <p>If you're eager to learn about data science, artificial intelligence and programming in general, you're more than welcome to send an email to <a href="mailto:jobs@askalfred.app">jobs@askalfred.app</a></p>
+            <p>If you're eager to learn about data science, artificial intelligence and programming in general, you're more than welcome to send an email to <a href="mailto:jobs@askalfred.to">jobs@askalfred.to</a></p>
           </div>
         </div>
       </div>
