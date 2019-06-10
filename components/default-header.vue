@@ -19,7 +19,7 @@
           <div class="col-md-4">
             <div class="default-header__top-link">
               <span class="default-header__top-link--round">
-                <a @click="openModal('modals-ask-me-anything')">Ask me anything</a>
+                <a href="https://app.askalfred.to">Ask me anything</a>
               </span>
             </div>
           </div>
@@ -52,15 +52,10 @@
         class="default-header__background-spacing"
       ></div>
     </div>
-
-    <!-- Modals -->
-    <modals-ask-me-anything ref="modals-ask-me-anything" />
   </div>
 </template>
 
 <script>
-import ModalsMixin from '../mixins/modals-mixin'
-import ModalsAskMeAnything from '../components/modals/ask-me-anything'
 
 export default {
   name: 'DefaultHeader',
@@ -71,16 +66,15 @@ export default {
   methods: {
     doubleTitle () {
       return this.title[1]
-    }
+    },
   },
 
   props: {
   },
 
-  mixins: [ModalsMixin],
+  mixins: [],
 
   components: {
-    ModalsAskMeAnything
   }
 }
 </script>

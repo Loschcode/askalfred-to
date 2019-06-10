@@ -24,7 +24,7 @@
           <div class="col-md-4">
             <div class="landing-header__top-link">
               <span class="landing-header__top-link--round">
-                <a @click="openModal('modals-ask-me-anything')">Ask me anything</a>
+                <a href="https://app.askalfred.to">Ask me anything</a>
               </span>
             </div>
           </div>
@@ -44,7 +44,7 @@
           </ul>
 
           <span class="landing-header__call-to-action">
-            <a @click="openModal('modals-ask-me-anything')">Ask me anything</a>
+            <a href="https://app.askalfred.to">Ask me anything</a>
           </span>
 
         </div>
@@ -60,16 +60,11 @@
     <div class="row">
       <div class="landing-header__background-spacing"></div>
     </div>
-
-    <!-- Modals -->
-    <modals-ask-me-anything ref="modals-ask-me-anything" />
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
-import ModalsMixin from '../mixins/modals-mixin'
-import ModalsAskMeAnything from '../components/modals/ask-me-anything'
 
 export default {
   name: 'LandingHeader',
@@ -84,10 +79,9 @@ export default {
   props: {
   },
 
-  mixins: [ModalsMixin],
+  mixins: [],
 
   components: {
-    ModalsAskMeAnything
   }
 }
 </script>

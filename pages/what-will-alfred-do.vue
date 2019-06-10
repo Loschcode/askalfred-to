@@ -1,7 +1,7 @@
 <template>
   <section
     class="what-will-alfred-do"
-    @click="openModal('modals-ask-me-anything')"
+    @click="goToApp()"
   >
     <div class="col-md-12">
       <div class="row center-xs">
@@ -64,15 +64,10 @@
         </div>
       </div>
     </div>
-
-    <!-- Modals -->
-    <modals-ask-me-anything ref="modals-ask-me-anything" />
   </section>
 </template>
 
 <script>
-import ModalsMixin from '../mixins/modals-mixin'
-import ModalsAskMeAnything from '../components/modals/ask-me-anything'
 
 export default {
   layout: 'default',
@@ -91,10 +86,15 @@ export default {
     this.$store.commit('header/setTitle', ['What will Alfred', 'do for you?'])
   },
 
-  mixins: [ModalsMixin],
+  mixins: [],
+
+  methods: {
+    goToApp () {
+      window.location = 'https://app.askalfred.to'
+    }
+  },
 
   components: {
-    ModalsAskMeAnything
   }
 }
 </script>
