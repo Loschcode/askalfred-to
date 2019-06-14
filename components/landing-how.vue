@@ -67,7 +67,7 @@
               <div class="col-md-4 col-xs-8">
                 <div class="box">
                   <h3>He gives you the results</h3>
-                  <p>Alfred will give you the result of his investigation and all the details of what he has done. Depending your decision he can even go further and keep going with it until you’re 100% satisfied.</p>
+                  <p>Alfred will give you the result of his investigation and all the details of what he has done. Depending your decision he can even go further and keep going with it until you’re 100% satisfied. He can pay, dispatch or book for you.</p>
                   <div class="landing-how__details--tag">
                     Step 3
                   </div>

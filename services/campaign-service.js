@@ -23,7 +23,7 @@ class CampaignService {
       {
         question:
           "I'm very tired in the airport, can you search for lounges I can sleep in here?",
-        answer: "Sure, there's one next to you."
+        answer: "Sure, there's one next to you. Do you want me to make a short reservation while you walk there?"
       },
       {
         question:
@@ -48,23 +48,23 @@ class CampaignService {
       },
       {
         question:
-          'I have a date tonight, she seems fancy as fuck, can you recommend me a good restaurant?',
+          'I have a date tonight, she seems very fancy, can you recommend me a good restaurant?',
         answer: 'Sure, what budget do you have?'
       },
       {
         question:
           'Can you call my gym and cancel my membership, let me know if you need anything from me',
         answer:
-          "I will need you to sign this document, I'll send it through via post."
+          "I will need you to sign this document, I'll send it via post."
       },
       {
         question:
-          "I'm free around March, I've $500 budget, can you give me some possible trips? I want a warm country.",
+          "I'm free around March, I've 350€ budget, can you give me some possible trips? I want a warm country.",
         answer: 'Here are a few possibilities you might like...'
       },
       {
         question:
-          'I booked some tickets for Thailand, can you send me what I need to fill for the visa there?',
+          'I booked some tickets for Cuba, can you send me all the documents I need to fill for the visa there?',
         answer:
           "You'll need to fulfil this form. Do you want me to use your data and send it through?"
       },
@@ -80,12 +80,12 @@ class CampaignService {
       },
       {
         question:
-          "Can you book me a ticket to Vancouver around 15th March when it's below 500€?",
+          "Can you book me a one-way to Vancouver when it goes below 250€?",
         answer: 'No problem.'
       },
       {
-        question: 'I need you to call this place for me about my package',
-        answer: 'This will be done today.'
+        question: 'I need you to call this place for me about my package everyday for a week. They lost it.',
+        answer: 'This will be done.'
       }
     ]
   }

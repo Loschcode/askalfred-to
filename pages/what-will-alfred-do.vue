@@ -8,13 +8,13 @@
         <div class="col-md-5 col-xs-12">
           <div class="what-will-alfred-do__block">
             <h3>Travel</h3>
-            <p>You want to plan a trip but don't have time to search all the different possibilities and best options? Just give the details to Alfred and he will find the best balance.</p>
+            <p>You want to plan a trip but don't have time to search all the different possibilities and best options? Just give the details to Alfred and he will find the best balance. He can even wait for the best price to show up and book it then so you don't miss the best deals. You'll never be annoyed by the little details anymore.</p>
           </div>
         </div>
         <div class="col-md-5 col-xs-12">
           <div class="what-will-alfred-do__block">
-            <h3>City</h3>
-            <p>Need to call a cleaning lady or a fast repair? Want a gym in your area which you didn't try yet, within a specific budget? Alfred will search all that for you.</p>
+            <h3>Paperwork</h3>
+            <p>Tired of calling your embassy to know how to process your Visa, or even filling the form? You don't want to call the post-office or send this letter to any administration? Alfred can just do it all for you. From finding the correct form, filling it and sending it through.</p>
           </div>
         </div>
       </div>
@@ -23,13 +23,13 @@
         <div class="col-md-5 col-xs-12">
           <div class="what-will-alfred-do__block">
             <h3>Assistance</h3>
-            <p>Do you need help fast? Alfred can help you out and assist you through a hard time. Lost in the middle of nowhere and your GPS has stopped working? Need fast advices? Need to call a service within minutes? This is the kind of situation he can answer.</p>
+            <p>Do you need help fast? Alfred can help you out and assist you through a hard time. Lost in the middle of nowhere and your GPS has stopped working? Need fast advices? Need to call a service within minutes? This is the kind of stressful situation he can answer to. You'll never be on your own when facing unforeseen events anymore.</p>
           </div>
         </div>
         <div class="col-md-5 col-xs-12">
           <div class="what-will-alfred-do__block">
-            <h3>Paperwork</h3>
-            <p>Tired of calling your embassy to know how to process your Visa, or even filling the form? You don't want to call the post-office or send this letter to any administration? Alfred can just do it all for you.</p>
+            <h3>Reservation</h3>
+            <p>You must go climbing with your friends but the place only accepts phone calls? Alfred can make a short call for you. Do you need to book a restaurant for tomorrow? No problem, he will handle it. Losing time for all kind of reservations is part of your past now.</p>
           </div>
         </div>
       </div>
@@ -37,29 +37,14 @@
       <div class="row center-xs">
         <div class="col-md-5 col-xs-12">
           <div class="what-will-alfred-do__block">
-            <h3>Shopping</h3>
-            <p>If you need to do some online shopping but have no time for it, Alfred can just do it for you, knowing your preferences and what you usually take you can just send a quick request so he processes it all. This doesn't stop there, as Alfred can help you out finding the cheapest platforms or products depending your need.</p>
+            <h3>City</h3>
+            <p>Need to call a cleaning lady or a fast repair? Want a gym in your area which you didn't try yet, within a specific budget? Alfred will search around your area for you and compare the services.</p>
           </div>
         </div>
-        <div class="col-md-5 col-xs-12">
-          <div class="what-will-alfred-do__block">
-            <h3>Food</h3>
-            <p>You must eat but the place only accepts phone calls? Alfred can make a short call to order it for you. Do you need to book a restaurant for tomorrow? No problem, he can book it. Losing time for all kind of food related is part of your past now.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row center-xs">
         <div class="col-md-5 col-xs-12">
           <div class="what-will-alfred-do__block">
             <h3>Social</h3>
-            <p>Do you want to send a surprise to your mother or friend but have no idea what to pick? Alfred can list you some ideas, and even send it directly if you need to.</p>
-          </div>
-        </div>
-        <div class="col-md-5 col-xs-12">
-          <div class="what-will-alfred-do__block">
-            <h3>Events</h3>
-            <p>You need to organize an event but don't know where to start? Alfred can lead the way, or even do everything from A to Z following your instructions.</p>
+            <p>Do you want to send a surprise to your mother or friend but have no idea what to pick? Alfred can list you some ideas, and even send it directly if you need to. You need to organize an event but don't know where to start? Alfred can lead the way, or do everything from A to Z following your precise instructions.</p>
           </div>
         </div>
       </div>
