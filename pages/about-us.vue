@@ -12,7 +12,7 @@
             <h3>Our [short] story</h3>
             <p>We started to build up Alfred as personal assistant in early 2019. The idea behind it was to design a system where anyone would be able to invoke Alfred to help him out for anything.</p>
             <p>Starting from this statement, we tried to cross-check all possibilities, tried things, rolled back and tried again to make all this work smoothly.</p>
-            <p>We now entered the testing phase. The service is still in a closed-alpha version but will soon be available publicly, if you want an early access, please register your email; we filter this manually.</p>
+            <p>We now entered the testing phase. The service is in open-beta version.</p>
             <h3>We are hiring!</h3>
             <p>If you're eager to learn about data science, artificial intelligence and programming in general, you're more than welcome to send an email to <a href="mailto:jobs@askalfred.to">jobs@askalfred.to</a></p>
           </div>

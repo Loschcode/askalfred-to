@@ -6,8 +6,16 @@
           <div class="footer__terms">
             <nuxt-link
               rel="canonical"
+              to="/terms-of-use"
+            >Terms of use</nuxt-link> |
+            <nuxt-link
+              rel="canonical"
               to="/privacy-policy"
             >Privacy policy</nuxt-link> |
+            <nuxt-link
+              rel="canonical"
+              to="/legal-notice"
+            >Legal notice</nuxt-link> |
             <nuxt-link
               rel="canonical"
               to="/about-us"
