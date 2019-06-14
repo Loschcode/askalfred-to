@@ -32,12 +32,6 @@ class CampaignService {
       },
       {
         question:
-          'Find me a gym near my new flat for a budget of $60 / month without engagemet',
-        answer:
-          "Sure, here's a list of gym, do you want me to call them up to crack some discounts?"
-      },
-      {
-        question:
           'Can you find me someone to clean my flat today? My girlfriend arrives soon...',
         answer: 'No problem, as usual and in your budget.'
       },
