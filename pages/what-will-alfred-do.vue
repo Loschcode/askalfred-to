@@ -22,14 +22,14 @@
       <div class="row center-xs">
         <div class="col-md-5 col-xs-12">
           <div class="what-will-alfred-do__block">
-            <h3>Assistance</h3>
-            <p>Do you need help fast? Alfred can help you out and assist you through a hard time. Lost in the middle of nowhere and your GPS has stopped working? Need fast advices? Need to call a service within minutes? This is the kind of stressful situation he can answer to. You'll never be on your own when facing unforeseen events anymore.</p>
+            <h3>Reservation</h3>
+            <p>You must go climbing with your friends but the place only accepts phone calls? Alfred can make a short call for you. Do you need to book a restaurant for tomorrow? No problem, he will handle it. Losing time for all kind of reservations is part of your past now.</p>
           </div>
         </div>
         <div class="col-md-5 col-xs-12">
           <div class="what-will-alfred-do__block">
-            <h3>Reservation</h3>
-            <p>You must go climbing with your friends but the place only accepts phone calls? Alfred can make a short call for you. Do you need to book a restaurant for tomorrow? No problem, he will handle it. Losing time for all kind of reservations is part of your past now.</p>
+            <h3>Assistance</h3>
+            <p>Do you need help fast? Alfred can help you out and assist you through a hard time. Lost in the middle of nowhere and your GPS has stopped working? Need fast advices? Need to call a service within minutes? This is the kind of stressful situation he can answer to. You'll never be on your own when facing unforeseen events anymore.</p>
           </div>
         </div>
       </div>
