@@ -18,7 +18,7 @@ class CampaignService {
       {
         question:
           "I just arrived to Berlin, what's the best way to move around the city?",
-        answer: 'I have a few suggestions for you depeding your budget.'
+        answer: 'I have a few suggestions for you depending your budget.'
       },
       {
         question:

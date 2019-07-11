@@ -41,7 +41,7 @@
                 <nuxt-link
                   rel="canonical"
                   to="/what-will-alfred-do"
-                >See more examples</nuxt-link>
+                >Learn more about Alfred</nuxt-link>
               </span>
             </div>
           </div>
