@@ -2,7 +2,9 @@ class OriginHelper {
   setFrom (vm) {
     if (process.server) return;
 
-    const endValue = vm.$route.query
+    const getVariables = vm.$route.query
+    const httpReferrer = { referrer: document.referrer }
+    const endValue = Object.assign({}, getVariables, httpReferrer)
 
     vm.$cookies.set('origin', endValue, {
       path: '/',
