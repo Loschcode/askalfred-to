@@ -53,6 +53,7 @@
 </template>
 
 <script>
+import OriginHelper from '../helpers/origin-helper'
 
 export default {
   layout: 'default',
@@ -69,6 +70,10 @@ export default {
 
   mounted () {
     this.$store.commit('header/setTitle', ['What will Alfred', 'do for you?'])
+  },
+
+  created () {
+    OriginHelper.setFrom(this)
   },
 
   mixins: [],

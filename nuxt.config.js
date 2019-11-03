@@ -21,7 +21,8 @@ module.exports = {
   modules: [
     "@nuxtjs/redirect-module",
     "@nuxtjs/style-resources",
-    ["nuxt-validate", { lang: "en" }]
+    ["nuxt-validate", { lang: "en" }],
+    ["cookie-universal-nuxt", { parseJSON: false }],
   ],
 
   plugins: [

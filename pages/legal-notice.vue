@@ -73,6 +73,8 @@
 </template>
 
 <script>
+import OriginHelper from '../helpers/origin-helper'
+
 export default {
   layout: 'default',
   scrollToTop: true,
@@ -88,6 +90,7 @@ export default {
 
   created () {
     this.$store.commit('header/setTitle', ['Legal notice'])
+    OriginHelper.setFrom(this)
   },
 
   components: {

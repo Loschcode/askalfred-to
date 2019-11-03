@@ -12,12 +12,17 @@
 <script>
 import LandingWhat from '../components/landing-what';
 import LandingHow from '../components/landing-how';
+import OriginHelper from '../helpers/origin-helper'
 
 export default {
   layout: 'landing',
   components: {
     LandingWhat,
     LandingHow
+  },
+
+  created () {
+    OriginHelper.setFrom(this)
   }
 }
 </script>

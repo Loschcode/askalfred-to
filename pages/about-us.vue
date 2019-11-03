@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import OriginHelper from '../helpers/origin-helper'
+
 export default {
   layout: 'default',
   scrollToTop: true,
@@ -37,6 +39,7 @@ export default {
   },
 
   created () {
+    OriginHelper.setFrom(this)
     this.$store.commit('header/setTitle', ['About us'])
   },
   components: {
