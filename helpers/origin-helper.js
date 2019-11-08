@@ -8,7 +8,8 @@ class OriginHelper {
 
     vm.$cookies.set('origin', endValue, {
       path: '/',
-      domain: this.getDomain()
+      domain: this.getDomain(),
+      sameSite: false
     })
   }
 
