@@ -37,7 +37,7 @@ export default {
 
 <style scoped lang="scss">
 .footer {
-  padding-top: big-spacing(2);
+  padding-top: big-spacing(1.75);
 }
 
 .footer__terms {
@@ -50,10 +50,12 @@ export default {
 
 .footer__background {
   margin-top: big-spacing(3.3);
-  @include background-absolute();
+  position: absolute;
+  width: 100vw;
+  // @include background-absolute();
   @include top-radius(50%);
   bottom: 0;
   background: $background-footer-color no-repeat fixed left;
-  overflow: hidden;
+  // overflow: hidden;
 }
 </style>

@@ -51,8 +51,7 @@
 
 @mixin background-absolute() {
   position: absolute;
-  left: -15%;
-  width: 130%;
+  width: 100vw;
 }
 
 @mixin no-max-width() {
@@ -96,7 +95,7 @@
 
 @mixin header-background($height) {
   @include background-absolute();
-  @include bottom-radius(50%);
+  @include bottom-radius(15%);
   z-index: -1;
   background: $background-header-alt-color url("/landing-header/background.svg") no-repeat fixed center;
   //  overflow: hidden;

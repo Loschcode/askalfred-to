@@ -2,12 +2,14 @@
   <div class="landing-how">
     <a id="how-does-it-work" />
     <div class="row">
-      <div class="landing-how__title">
-        <h2>How does it work?</h2>
+      <div class="col-md-12 +no-padding">
+        <div class="landing-how__title">
+          <h2>How does it work?</h2>
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 undo-wrap">
+      <div class="col-md-12 +no-padding">
         <div class="landing-how__content">
 
           <!-- You send requests to Alfred -->
@@ -130,14 +132,18 @@ export default {
 .landing-how__title {
   padding-top: 10vh;
   padding-bottom: 7vh;
-  @include no-max-width();
+  margin-left: 0;
+  margin-right: 0;
+  // @include no-max-width();
   @include top-radius(100%);
   background-color: $background-landing-how-color;
 }
 
 .landing-how__content {
-  // @include no-max-width();
+  @include no-max-width();
   position: relative;
+  margin-left: 0;
+  margin-right: 0;
   background-color: $background-landing-how-color;
 }
 
@@ -145,6 +151,8 @@ export default {
   @include no-max-width();
   position: absolute;
   height: 10vh;
+  margin-left: 0;
+  margin-right: 0;
   background-color: $background-landing-how-color;
 }
 </style>

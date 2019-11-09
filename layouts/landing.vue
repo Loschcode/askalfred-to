@@ -4,7 +4,7 @@
       <landing-header />
     </div>
 
-    <div class="wrap container">
+    <div class="wrap container-fluid">
       <div class="row center-xs">
         <nuxt />
       </div>

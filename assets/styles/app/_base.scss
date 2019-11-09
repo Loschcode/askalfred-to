@@ -16,7 +16,7 @@ body {
   // height: 100%; <-- this will crash the scrollToTop, so do not put it
   font-family: $font-default;
   font-size: sizing(2.5);
-  overflow-x: hidden;
+  // overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
 
   ::selection {
