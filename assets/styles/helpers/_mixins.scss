@@ -99,7 +99,7 @@
   @include bottom-radius(50%);
   z-index: -1;
   background: $background-header-alt-color url("/landing-header/background.svg") no-repeat fixed center;
-  overflow: hidden;
+  //  overflow: hidden;
   background-size: cover;
   padding-bottom: spacing($height);
 
