@@ -52,7 +52,7 @@
 
       <div class="col-md-6 col-sm-6">
         <div class="landing-header__image +more-than-xs">
-          <img src="/landing-header/phone-fist.svg" />
+          <img alt="phone fist" src="/landing-header/phone-fist.svg" />
         </div>
       </div>
     </div>

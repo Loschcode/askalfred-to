@@ -5,7 +5,7 @@
       <div class="row center-xs">
         <div class="col-md-12">
           <div class="modal-success__icon">
-            <img src="/modals/check.svg" />
+            <img alt="check" src="/modals/check.svg" />
           </div>
           <h2>{{ title }}</h2>
           <p>

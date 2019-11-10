@@ -3,7 +3,7 @@
     <div class="row center-xs">
       <div class="col-md-4">
         <div class="what__image +more-than-sm">
-          <img src="/landing-what/phone.svg" />
+          <img alt="phone" src="/landing-what/phone.svg" />
         </div>
       </div>
       <div class="col-md-offset-1 col-md-4 col-xs-10 center-sm start-lg">

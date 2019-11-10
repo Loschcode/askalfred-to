@@ -18,7 +18,7 @@
               <!-- Image -->
               <div class="col-md-5 col-xs-8">
                 <div class="box">
-                  <img src="/landing-how/you-send-request-to-alfred.svg" />
+                  <img alt="you send request to alfred" src="/landing-how/you-send-request-to-alfred.svg" />
                 </div>
               </div>
               <!-- Text -->
@@ -50,7 +50,7 @@
               <!-- Image -->
               <div class="col-md-4 col-xs-8 first-xs first-sm last-md">
                 <div class="box">
-                  <img src="landing-how/he-works-on-it.svg" />
+                  <img alt="he works on it" src="landing-how/he-works-on-it.svg" />
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@
               <!-- Image -->
               <div class="col-md-5 col-xs-8">
                 <div class="box">
-                  <img src="landing-how/he-gives-you-the-results.svg" />
+                  <img alt="he gives you the results" src="landing-how/he-gives-you-the-results.svg" />
                 </div>
               </div>
               <!-- Text -->

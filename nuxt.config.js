@@ -19,6 +19,7 @@ module.exports = {
   },
 
   modules: [
+    "nuxt-ssr-cache",
     "@nuxtjs/redirect-module",
     "@nuxtjs/style-resources",
     ["nuxt-validate", { lang: "en" }],
@@ -35,6 +36,7 @@ module.exports = {
   redirect: [
     // { from: '^/$', to: '/url' }
   ],
+
   /**
    * CSS loads
    */
@@ -48,6 +50,18 @@ module.exports = {
       lang: "scss"
     }
   ],
+
+  cache: {
+    pages: [
+      '/',
+    ],
+  },
+
+  store: {
+    type: 'memory',
+    max: 100,
+    ttl: 60,
+  },
 
   /*
    ** Customize the progress bar color
