@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/sitemap": "^2.0.0",
     "cookie-universal-nuxt": "^2.0.18",
     "firebase": "^5.8.4",
     "flexboxgrid": "^6.3.1",

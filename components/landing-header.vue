@@ -33,7 +33,7 @@
     </div>
 
     <div class="row top-md center-xs center-sm">
-      <div class="col-md-6 col-sm-6 col-xs-12">
+      <div class="col-md-6 col-sm-5 col-xs-12">
         <div class="landing-header__introduction">
           <h1>I'm Alfred</h1>
           <p>Are you tired of<br />losing time ?</p>

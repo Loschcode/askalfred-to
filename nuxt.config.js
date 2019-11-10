@@ -23,6 +23,7 @@ module.exports = {
     "@nuxtjs/style-resources",
     ["nuxt-validate", { lang: "en" }],
     ["cookie-universal-nuxt", { parseJSON: false }],
+    "@nuxtjs/sitemap", // keep at the end
   ],
 
   plugins: [
