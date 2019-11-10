@@ -2,7 +2,7 @@
   <div class="landing-how">
     <a id="how-does-it-work" />
     <div class="row">
-      <div class="col-md-12 +no-padding">
+      <div class="col-md-12 col-xs-12 +no-padding">
         <div class="landing-how__title">
           <h2>How does it work?</h2>
         </div>
