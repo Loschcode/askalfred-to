@@ -40,6 +40,7 @@
 }
 
 @mixin bottom-radius($percent) {
+  // border-radius: 0% 100% 10% 90% / 75% 0% 100% 25%;
   border-bottom-left-radius: $percent;
   border-bottom-right-radius: $percent;
 }
@@ -95,7 +96,7 @@
 
 @mixin header-background($height) {
   @include background-absolute();
-  @include bottom-radius(15%);
+  @include bottom-radius(12%);
   z-index: -1;
   background: $background-header-alt-color url("/landing-header/background.svg") no-repeat fixed center;
   //  overflow: hidden;
@@ -103,17 +104,17 @@
   padding-bottom: spacing($height);
 
   @include breakpoint("md") {
-    @include bottom-radius(40%);
+    @include bottom-radius(20%);
     padding-bottom: spacing($height * 0.9);
   }
 
   @include breakpoint("sm") {
-    @include bottom-radius(40%);
+    @include bottom-radius(20%);
     padding-bottom: spacing($height * 0.9);
   }
 
   @include breakpoint("xs") {
-    @include bottom-radius(20%);
+    @include bottom-radius(5%);
     left: -25%;
     width: 150%;
   }
