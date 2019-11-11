@@ -24,7 +24,7 @@
           <div class="col-md-4">
             <div class="landing-header__top-link">
               <span class="landing-header__top-link--round">
-                <a href="https://app.askalfred.to">Ask me anything</a>
+                <a href="https://app.askalfred.to">Let's try now</a>
               </span>
             </div>
           </div>
@@ -38,13 +38,13 @@
           <h1>I'm Alfred</h1>
           <p>Are you tired of<br />losing time ?</p>
           <ul>
-            <li>You give me the task</li>
-            <li>I work on it</li>
+            <li>You tell me what to do</li>
+            <li>I just do it</li>
             <li>You enjoy the result</li>
           </ul>
 
           <span class="landing-header__call-to-action">
-            <a href="https://app.askalfred.to">Ask me anything</a>
+            <a href="https://app.askalfred.to">Let's try now</a>
           </span>
 
         </div>

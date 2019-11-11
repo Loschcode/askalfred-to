@@ -9,7 +9,7 @@
       <div class="col-md-offset-1 col-md-4 col-xs-10 center-sm start-lg">
         <div class="what__details">
           <h2>What will Alfred do for you?</h2>
-          <p>He can work on any task you don't want to do.</p>
+          <p>He can fulfill any task you don't want to do.</p>
 
           <div class="row center-xs start">
             <div class="col-md-12 col-xs-10">
