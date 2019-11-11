@@ -87,8 +87,15 @@ class CampaignService {
         answer: 'Your food is on the way.'
       },
       {
+        id: 'busy-reschedule-appointment',
+        sample: ['phone', 'busy', 'appointment'],
+        question:
+          "I'm really busy right now, can you reschedule my appointment?",
+        answer: 'Sure, just tell me who and when.'
+      },
+      {
         id: 'date-tonight,recommend-good-restaurant-here',
-        sample: ['tips'],
+        sample: ['tips', 'restaurant'],
         question:
           'I have a date tonight, can you recommend me a good restaurant around here?',
         answer: 'Sure, what budget do you have?'
@@ -98,13 +105,6 @@ class CampaignService {
         sample: ['tips', 'sport'],
         question:
           'I want to do a random sport activity this Saturday with my friends.',
-        answer: 'Sure, what budget do you have?'
-      },
-      {
-        id: 'date-tonight,recommendd-good-restaurant',
-        sample: ['tips', 'restaurant'],
-        question:
-          'I have a date tonight, can you recommend me a good restaurant around here?',
         answer: 'Sure, what budget do you have?'
       },
       {
