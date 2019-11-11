@@ -53,6 +53,7 @@
 
 <script>
 import CampaignService from '../services/campaign-service'
+import OriginHelper from '../helpers/origin-helper'
 
 export default {
   name: 'LandingWhat',
@@ -62,7 +63,8 @@ export default {
   data () {
     return {
       question: '',
-      answer: ''
+      answer: '',
+      id: ''
     }
   },
 
@@ -75,6 +77,11 @@ export default {
 
     this.question = this.campaignService.question()
     this.answer = this.campaignService.answer()
+    this.id = this.campaignService.id()
+
+    OriginHelper.addToOrigin(this, {
+      'sample_id': this.id
+    })
   }
 }
 </script>

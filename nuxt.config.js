@@ -19,17 +19,16 @@ module.exports = {
   },
 
   modules: [
-    "nuxt-ssr-cache",
     "@nuxtjs/redirect-module",
     "@nuxtjs/style-resources",
     ["nuxt-validate", { lang: "en" }],
-    ["cookie-universal-nuxt", { parseJSON: false }],
+    ["cookie-universal-nuxt", { parseJSON: true }],
     "@nuxtjs/sitemap", // keep at the end
   ],
 
   plugins: [
     { src: "@plugins/vue2-smooth-scroll", ssr: false },
-    { src: "@plugins/firebase", ssr: false },
+    // { src: "@plugins/firebase", ssr: false },
     { src: "@plugins/ga", ssr: false }
   ],
 
@@ -50,18 +49,6 @@ module.exports = {
       lang: "scss"
     }
   ],
-
-  cache: {
-    pages: [
-      '/',
-    ],
-  },
-
-  store: {
-    type: 'memory',
-    max: 100,
-    ttl: 60,
-  },
 
   /*
    ** Customize the progress bar color

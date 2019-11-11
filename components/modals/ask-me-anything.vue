@@ -66,7 +66,7 @@
 
 <script>
 import Modal from '../../components/modal'
-import { firebase, db } from '../../plugins/firebase'
+// import { firebase, db } from '../../plugins/firebase'
 
 import ModalsCommonSuccess from '../../components/modals/common/success'
 
@@ -100,22 +100,22 @@ export default {
       this.$nextTick(() => this.$refs.email.focus())
     },
 
-    getItForFree () {
-      this.$validator.validateAll().then(success => {
-        if (success) {
+    // getItForFree () {
+    //   this.$validator.validateAll().then(success => {
+    //     if (success) {
 
-          db.collection('get-it-for-free').add({
-            email: this.email
-          }).then((docRef) => {
-            // docRef.id
-            this.currentModal().setWithContentOf(this, 'thank-you')
-          }).catch((error) => {
-            // error
-            return false
-          });
-        }
-      })
-    },
+    //       db.collection('get-it-for-free').add({
+    //         email: this.email
+    //       }).then((docRef) => {
+    //         // docRef.id
+    //         this.currentModal().setWithContentOf(this, 'thank-you')
+    //       }).catch((error) => {
+    //         // error
+    //         return false
+    //       });
+    //     }
+    //   })
+    // },
   },
   components: {
     Modal,
