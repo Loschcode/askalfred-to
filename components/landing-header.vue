@@ -39,7 +39,7 @@
           <p>Are you tired of<br />losing time ?</p>
           <ul>
             <li>You tell me what to do</li>
-            <li>I just do it</li>
+            <li>I just do it for you</li>
             <li>You enjoy the result</li>
           </ul>
 
@@ -128,7 +128,7 @@ export default {
   font-weight: bold;
   margin: auto 0;
   @include breakpoint("xs") {
-    margin-left: spacing(2);
+    margin-left: spacing(6);
   }
   a {
     @include extend-clickable(5em, 5em);

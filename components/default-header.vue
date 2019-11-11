@@ -19,7 +19,7 @@
           <div class="col-md-4">
             <div class="default-header__top-link">
               <span class="default-header__top-link--round">
-                <a href="https://app.askalfred.to">Ask me anything</a>
+                <a href="https://app.askalfred.to">Let's try now</a>
               </span>
             </div>
           </div>
