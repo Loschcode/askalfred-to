@@ -67,8 +67,10 @@ export default {
   },
 
   created () {
+    const sample = this.$route.query.sample
+
     Object.assign(this, {
-      campaignService: new CampaignService(this)
+      campaignService: new CampaignService(this, sample)
     })
 
     this.question = this.campaignService.question()
