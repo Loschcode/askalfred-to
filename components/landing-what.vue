@@ -82,7 +82,12 @@ export default {
     OriginHelper.addToOrigin(this, {
       'sample_id': this.id
     })
-  }
+
+    if (OriginHelper.getCookie(this, 'token')) return
+    this.$axios.post('https://api.askalfred.to/open/create_guest').then((response) => {
+       OriginHelper.setToken(this, 'token', response.token)
+    })
+  },
 }
 </script>
 

@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@netsells/nuxt-hotjar": "^0.1.2",
+    "@nuxtjs/axios": "^5.8.0",
     "@nuxtjs/sitemap": "^2.0.0",
     "cookie-universal-nuxt": "^2.0.18",
     "core-js": "^2.0.0",

@@ -19,15 +19,31 @@ class OriginHelper {
     return { referrer: document.referrer }
   }
 
+  setToken(vm, token) {
+    this.setCookie(vm, 'token', token)
+  }
+
   addToOrigin(vm, addedOrigin) {
     const currentOrigin = vm.$cookies.get('origin')
     const endValue = Object.assign({}, addedOrigin, currentOrigin)
 
-    vm.$cookies.set('origin', endValue, {
+    this.setCookie(vm, 'origin', endValue)
+  }
+
+  getCookie(vm, label) {
+    vm.$cookies.get(label, this.cookieSettings())
+  }
+
+  setCookie (vm, label, value) {
+    vm.$cookies.set(label, value, this.cookieSettings())
+  }
+
+  cookieSettings () {
+    return {
       path: '/',
       domain: this.getDomain(),
       sameSite: false
-    })
+    }
   }
 }
 

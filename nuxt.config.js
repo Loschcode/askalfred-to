@@ -21,6 +21,7 @@ module.exports = {
   modules: [
     "@nuxtjs/redirect-module",
     "@nuxtjs/style-resources",
+    '@nuxtjs/axios',
     ["nuxt-validate", { lang: "en" }],
     ["cookie-universal-nuxt", { parseJSON: true }],
     ['@netsells/nuxt-hotjar', {
