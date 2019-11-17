@@ -31,11 +31,11 @@ class OriginHelper {
   }
 
   getCookie(vm, label) {
-    vm.$cookies.get(label, this.cookieSettings())
+    return vm.$cookies.get(label, this.cookieSettings())
   }
 
   setCookie (vm, label, value) {
-    vm.$cookies.set(label, value, this.cookieSettings({ maxAge: 60 * 60 * 24 * 365 * 10 }))
+    return vm.$cookies.set(label, value, this.cookieSettings({ maxAge: 60 * 60 * 24 * 365 * 10 }))
   }
 
   cookieSettings (extra = {}) {
