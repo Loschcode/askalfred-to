@@ -54,7 +54,7 @@
 <script>
 import CampaignService from '../services/campaign-service'
 import OriginHelper from '../helpers/origin-helper'
-
+import EnvHelper from '../helpers/env-helper'
 export default {
   name: 'LandingWhat',
   props: {
@@ -84,7 +84,7 @@ export default {
     })
 
     if (OriginHelper.getCookie(this, 'token')) return
-    this.$axios.post('https://api.askalfred.to/open/create_guest').then((response) => {
+    this.$axios.post(`${EnvHelper.config.apiUrl}/open/create_guest`).then((response) => {
        OriginHelper.setToken(this, 'token', response.token)
     })
   },
