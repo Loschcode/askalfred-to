@@ -35,15 +35,14 @@ class OriginHelper {
   }
 
   setCookie (vm, label, value) {
-    vm.$cookies.set(label, value, this.cookieSettings())
+    vm.$cookies.set(label, value, this.cookieSettings({ maxAge: 60 * 60 * 24 * 365 * 10 }))
   }
 
-  cookieSettings () {
-    return {
+  cookieSettings (extra = {}) {
+    return Object.assign({
       path: '/',
       domain: this.getDomain(),
-      sameSite: false
-    }
+    }, extra)
   }
 }
 

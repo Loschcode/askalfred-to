@@ -85,7 +85,7 @@ export default {
 
     if (OriginHelper.getCookie(this, 'token')) return
     this.$axios.post(`${EnvHelper.config.apiUrl}/open/create_guest`).then((response) => {
-      OriginHelper.setToken(this, 'token', response.data.token)
+      OriginHelper.setToken(this, response.data.token)
     })
   },
 }
