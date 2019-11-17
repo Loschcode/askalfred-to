@@ -69,8 +69,6 @@ export default {
   },
 
   created () {
-    if (process.server) return
-
     const sample = this.$route.query.sample
 
     Object.assign(this, {
