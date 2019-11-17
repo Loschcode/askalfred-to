@@ -16,7 +16,7 @@
               <div class="what__messages">
 
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-12" v-if="question">
                     <div class="message message__myself">
                       <div class="message__myself-arrow"></div>
                       {{ question }}
@@ -24,7 +24,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-12" v-if="answer">
                     <div class="message message__yourself">
                       <div class="message__yourself-arrow"></div>
                       {{ answer }}
@@ -69,6 +69,8 @@ export default {
   },
 
   created () {
+    if (process.server) return
+
     const sample = this.$route.query.sample
 
     Object.assign(this, {
@@ -87,7 +89,9 @@ export default {
     this.$axios.post(`${EnvHelper.config.apiUrl}/open/create_guest`).then((response) => {
       OriginHelper.setToken(this, response.data.token)
     })
+
   },
+
 }
 </script>
 
@@ -98,6 +102,7 @@ export default {
 
 .what__messages {
   padding-bottom: spacing(8);
+  min-height: 185px;
 }
 
 .what__call-to-action {
