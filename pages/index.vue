@@ -2,7 +2,9 @@
   <section>
     <div class="col-md-12">
       <!-- What can you ask ? -->
-      <landing-what />
+      <client-only>
+        <landing-what />
+      </client-only>
     </div>
     <!-- How does it work ? -->
     <landing-how />
