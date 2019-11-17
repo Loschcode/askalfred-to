@@ -23,6 +23,10 @@ module.exports = {
     "@nuxtjs/style-resources",
     ["nuxt-validate", { lang: "en" }],
     ["cookie-universal-nuxt", { parseJSON: true }],
+    ['@netsells/nuxt-hotjar', {
+        id: '1575098',
+        sv: '6',
+    }],
     "@nuxtjs/sitemap", // keep at the end
   ],
 

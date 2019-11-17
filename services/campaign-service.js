@@ -1,6 +1,6 @@
 class CampaignService {
   // samples
-  // holidays, phone, tips, sport, assistance, restaurant, deals, post, booking
+  // holidays, phone, tips, sport, assistance, restaurant, deals, post, booking, 'busy', 'appointment'
   // scubadive
   constructor (vm, sample) {
     this.vm = vm
